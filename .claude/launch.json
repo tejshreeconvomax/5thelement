@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "php-server",
+      "runtimeExecutable": "E:\\xampp82\\php\\php.exe",
+      "runtimeArgs": ["-S", "localhost:8081", "-t", "E:\\Projects\\nextjs\\5thelement-php"],
+      "port": 8081,
+      "autoPort": false
+    }
+  ]
+}

@@ -1,0 +1,5172 @@
+[
+  {
+    "label": "Appetizers — Veg",
+    "icon": "🥘",
+    "order": 1,
+    "items": [
+      {
+        "name": "Aloo Bajji",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 80
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 110
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Aloo Bonda (30 pcs Min)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Aloo Pakoda",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 80
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 110
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Aloo Tikki (30 pcs Min)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Babycorn Manchuria",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 140
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Bajji Mixer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 100
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Baby Corn",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 140
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Gobi",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 130
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Paneer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Cut Mirchi",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gobi 65",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 130
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gobi Manchuria",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 130
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Idly with Chutney’s (30 pcs Min)",
+        "options": [
+          {
+            "size": "With Sambhar",
+            "price": 3
+          },
+          {
+            "size": "Without Sambhar",
+            "price": 2
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Masala Wada (30 pcs Min)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Medu Wada with Chutney’s (30 pcs Min)",
+        "options": [
+          {
+            "size": "With Sambhar",
+            "price": 3
+          },
+          {
+            "size": "Without Sambhar",
+            "price": 2
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mirchi Bhajji",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Mix Veg Pakoda",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 80
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 110
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mysore Bonda (30 pcs Min)",
+        "options": null,
+        "simple": "$2.25",
+        "unit": "per piece"
+      },
+      {
+        "name": "Onion Mirchi Bhajji (Min 20 pcs)",
+        "options": null,
+        "simple": "$2.25",
+        "unit": "per piece"
+      },
+      {
+        "name": "Onion Pakoda",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 40
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 75
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 100
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Palli Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 110
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 130
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Manchuria",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Pakora",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 110
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 130
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Tikka",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Pongal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Punjabi Pakoda",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 80
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 110
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Samosa Chat",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Spinach Pakoda",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 80
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 110
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tomato Bath With Chutney",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Upma",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Veg Cutlet (Min 30 pc)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Vegetable Manchuria",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Vegetable Samosa",
+        "options": [
+          {
+            "size": "Regular",
+            "price": 2
+          },
+          {
+            "size": "Cocktail",
+            "price": 1.5
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Vegetable Spring Rolls (Min 25pc)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      }
+    ]
+  },
+  {
+    "label": "Appetizers — Non-Veg",
+    "icon": "🍗",
+    "order": 2,
+    "items": [
+      {
+        "name": "Apollo Fish",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 150
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 220
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Bandar Kodi Vepudu (w Bones)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Batti Kabab",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Bullet Chicken",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Charminar Chicken Fry (w Bones)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken 555",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken 65",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Lollipop (Min 25 pc)",
+        "options": null,
+        "simple": "$3.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Chicken Majestic",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Manchuria",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Pakoda",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 100
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Roast(bones)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Samosa",
+        "options": null,
+        "simple": "$5.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Chicken Tikka",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Chicken (Indian Style)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Chicken (Indo-Chinese)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Prawns",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 110
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 160
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 225
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Fish Pakora",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goat Chukka",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goat Pepper Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goat Roast",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Karampodi Chicken (Boneless)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Karivepaku Chicken fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Chops (15 pc Min )",
+        "options": null,
+        "simple": "$7.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Lamb Chukka",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 210
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Pepper Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 210
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Roast",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 210
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Samosa",
+        "options": null,
+        "simple": "$5.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Lamb Seekh Kebab",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 150
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 220
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Malai Kebab",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mixed Kabab (Only Chicken)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 150
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 210
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Monagadu Chicken",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Fry (S.I)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 110
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 160
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 225
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tandoori Chicken  (25 pc Min)",
+        "options": null,
+        "simple": "$3.50",
+        "unit": "per piece"
+      },
+      {
+        "name": "Tandoori Fish",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 150
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 220
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tandoori Mix Grill (Chicken, Lamb & Shrimp)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 170
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 230
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tandoori Shrimp",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 120
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 180
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 240
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tangdi Kebab (25 pc Min)",
+        "options": null,
+        "simple": "$3.50",
+        "unit": "per piece"
+      },
+      {
+        "name": "Tawa Fish",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 150
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 220
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Vegetarian Dishes",
+    "icon": "🥬",
+    "order": 3,
+    "items": [
+      {
+        "name": "Aloo Chole",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Aloo Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Aloo Gobhi",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Aloo Muttor (w Cream / w/ Cream)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Aloo Saag",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Bagara Baigan",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Baigan Bhartha",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Beans Poriyal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Bhindi Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Bhindi Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Cabbage Poriyal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Cashew Malai Muttor Methi",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Channa Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Channa Saag",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Dal Makhni",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Dal Tadka",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Dappalam",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Dosakaya Pappu",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 100
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Eggplant Pakodi fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gobi Mussallam",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gutti Vankaya (Dry)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Kadai Paneer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Kadhai Vegetable",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Karela Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 135
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 165
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Malai Kofta",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mango Pappu",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 100
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Methi Dal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mirchi Ka Salaan",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mix Veg Poriyal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mukkala Pulusu",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Muttor Paneer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Navaratan Korma",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Butter Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Kunchan",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Makhani",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Tikka Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Punjabi Kadi pakodi",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Rasam",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 35
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 65
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 85
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Saag Khurchan",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Saag Paneer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Sambar",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 35
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 65
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 85
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shahi Paneer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tindura Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tindura Pakodi Fry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tomato Dal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 95
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Vegetable Korma (South Style)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Non-Veg Dishes",
+    "icon": "🥩",
+    "order": 4,
+    "items": [
+      {
+        "name": "Andhra Chicken Curry (with Bones)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 110
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 140
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Butter Chicken",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Curry (Boneless)",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Jalfrezi",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Kadhai",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 120
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Korma",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Tikka Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Garlic Chicken",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Ginger Chicken",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goat Curry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goat Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goat Roganjosh",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Curry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Korma",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Roganjosh",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Saag",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Tikka Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lamb Vindaloo",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mutton Keema Curry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 110
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 170
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 250
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mutton Keema Matar",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 110
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 170
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 250
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Natukodi Chicken Curry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 60
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 110
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Jewels of the Sea",
+    "icon": "🦐",
+    "order": 5,
+    "items": [
+      {
+        "name": "Andhra Chepala Pulusu",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Fish Curry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 130
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 180
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Fish Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 180
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Fish Tikka Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 95
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 150
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Goan Fish",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 90
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 180
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Bahar",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 120
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 160
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 210
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Curry",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 110
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 160
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Saag",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Tikka Masala",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 120
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 170
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 210
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Vindaloo",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 100
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 140
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 200
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Biryanis / Rice",
+    "icon": "🍚",
+    "order": 6,
+    "items": [
+      {
+        "name": "Bisibella Bath",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 85
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Charminar Chicken Biryani (With Bones)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 90
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 120
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken 65 Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 130
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Dum Biryani (Boneless)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 90
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 120
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Dum Biryani (with Bones)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 55
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 115
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Fry Biryani (With Bones)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 120
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Pulao",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 55
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 85
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 115
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chilly Chicken Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 130
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Coconut Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 35
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 55
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 80
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 115
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Curd Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 85
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Egg Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 110
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 140
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gongura Chicken Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 65
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 85
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 130
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gongura Mutton Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 70
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 100
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 135
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 170
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gongura Veg Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 55
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 125
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Guntur Chicken Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 120
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Guntur Paneer Biryani (No Vegetables)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 55
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 125
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Jeera Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 35
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 55
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 80
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 105
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Lemon Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 35
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 55
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 80
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 105
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mint Veg Pulao",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 85
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 115
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mughlai Chicken Biryani (With Bones)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 80
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 130
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 150
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mutton Dum Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 65
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 90
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 130
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 160
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mutton Fry Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 70
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 95
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 140
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 170
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Paneer Veg Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 50
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 75
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 115
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Peas Pulao",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 85
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 115
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Plain Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 25
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 35
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 65
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 80
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 65
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 90
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 160
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 190
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Tamarind Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 35
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 55
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 80
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 115
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Vangi Bath",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 85
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Veg Dum Biryani",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 50
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 70
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 95
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Vegetable Pulao",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-13-15-people",
+            "price": 95
+          },
+          {
+            "size": "large-tray-22-25-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Noodles",
+    "icon": "🍜",
+    "order": 7,
+    "items": [
+      {
+        "name": "Chicken  Hakka Noodles",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 55
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 75
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 105
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Chicken Fried Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 55
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 75
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 105
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Egg Fried Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 50
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 70
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 95
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Egg Hakka Noodles",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 50
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 70
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 100
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 130
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mixed Fried rice (with egg, chicken, shrimp)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 65
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 85
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 115
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mixed Noodles (with egg, chicken, shrimp)",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 65
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 85
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 115
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shrimp Hakka Noodles",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 60
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 85
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 125
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 165
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Veg Fried Rice",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 85
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Vegetable Hakka Noodles",
+        "options": [
+          {
+            "size": "small-tray-4-6-people",
+            "price": 45
+          },
+          {
+            "size": "medium-tray-8-10-people",
+            "price": 65
+          },
+          {
+            "size": "medium-large-tray-15-20-people",
+            "price": 95
+          },
+          {
+            "size": "large-tray-25-30-people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Indian Breads",
+    "icon": "🥖",
+    "order": 8,
+    "items": [
+      {
+        "name": "Assorted Naans       (Min 20)",
+        "options": null,
+        "simple": "$3.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Bhatura                     (Min 50)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Bullet Naan             (Min20)",
+        "options": null,
+        "simple": "$3.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Butter Naan            (Min 20)",
+        "options": null,
+        "simple": "$2.25",
+        "unit": "per piece"
+      },
+      {
+        "name": "Chapathi                  (Min 20)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Garlic Naan             (Min 20)",
+        "options": null,
+        "simple": "$3.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Onion Kulcha           (Min 20)",
+        "options": null,
+        "simple": "$3.25",
+        "unit": "per piece"
+      },
+      {
+        "name": "Plain  Naan              (Min 20)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Poori (Min 50)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      }
+    ]
+  },
+  {
+    "label": "Curd's",
+    "icon": "🥛",
+    "order": 9,
+    "items": [
+      {
+        "name": "Aloo Raita",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 30
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 75
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 95
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Boondi Raita",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 30
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 75
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 95
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Mixed Raita",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 30
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 75
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 95
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Okra Raita",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 30
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 75
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 95
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Pineapple Raita",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 35
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 80
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 105
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Plain Curd/Yogurt",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 30
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 75
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 95
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  },
+  {
+    "label": "Desserts",
+    "icon": "🍮",
+    "order": 10,
+    "items": [
+      {
+        "name": "Chakra Pongal",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Double Ka Meetha",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gajar Ka Halwa",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Gulab Jamun (Min 25pcs)",
+        "options": null,
+        "simple": "$1.50",
+        "unit": "per piece"
+      },
+      {
+        "name": "Kaddu Ka Halwa",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 85
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 165
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Kala Jamun (Min 25pcs)",
+        "options": null,
+        "simple": "$2.00",
+        "unit": "per piece"
+      },
+      {
+        "name": "Pineapple Rava Kesari",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 70
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 115
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 135
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Rasagolla (Min 25pcs)",
+        "options": null,
+        "simple": "$1.70",
+        "unit": "per piece"
+      },
+      {
+        "name": "Rasmalai (Min 25pcs)",
+        "options": null,
+        "simple": "$2.50",
+        "unit": "per piece"
+      },
+      {
+        "name": "Rava Kesari",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Rice Kheer",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 45
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 65
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 105
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 125
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Semiya Payasam",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 50
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 75
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 145
+          }
+        ],
+        "simple": null,
+        "unit": null
+      },
+      {
+        "name": "Shahi Tukada",
+        "options": [
+          {
+            "size": "Small Tray",
+            "people": "8–12 people",
+            "price": 55
+          },
+          {
+            "size": "Medium Tray",
+            "people": "15–20 people",
+            "price": 80
+          },
+          {
+            "size": "Medium Large Tray",
+            "people": "30–40 people",
+            "price": 125
+          },
+          {
+            "size": "Large Tray",
+            "people": "50–60 people",
+            "price": 155
+          }
+        ],
+        "simple": null,
+        "unit": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+/* Shared styling entry point for Sample 1. Page-specific rules remain beside
+   their components until that design is refactored into smaller modules. */
+:root{--sample-1-primary:#c0392b;--sample-1-gold:#c9a876;--sample-1-paper:#fbf7f0;--sample-1-ink:#2a1f17}
+body{background:var(--sample-1-paper);color:var(--sample-1-ink)}
+a{transition:color .2s ease,transform .2s ease}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
