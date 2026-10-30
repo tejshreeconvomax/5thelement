@@ -3,6 +3,7 @@
  if (!tracks.length) return;
 
  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+ const mobileViewport = window.matchMedia('(max-width: 767px)');
  const states = new Map();
 
  const initializeTrack = track => {
@@ -123,6 +124,7 @@
    const elapsed = Math.min(48, time - state.lastTime);
    if (
     !state.interacting &&
+    !(mobileViewport.matches && state.track.matches('.blog-track, .review-track')) &&
     time >= state.pauseUntil &&
     document.visibilityState === 'visible' &&
     state.track.scrollWidth > state.track.clientWidth

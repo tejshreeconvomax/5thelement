@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/sample-2-home.css?v=6">
+  <link rel="stylesheet" href="/assets/css/sample-2-home.css?v=10">
 </head>
 <body class="home-page">
 <svg xmlns="http://www.w3.org/2000/svg" class="icon-definitions" aria-hidden="true"><defs>
@@ -141,7 +141,7 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMe
 document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeMenu(); toggle.focus(); } });
 const newsletterForm=document.querySelector('#newsletter-form');
 if(newsletterForm)newsletterForm.addEventListener('submit', event => { event.preventDefault(); document.querySelector('#newsletter-status').textContent = 'Thank you! This is a design preview; your email has not been subscribed.'; });
-</script><script src="/assets/js/sample-2-carousel.js?v=2" defer></script><script src="/assets/js/sample-2-home.js?v=3" defer></script>
+</script><script src="/assets/js/sample-2-carousel.js?v=3" defer></script><script src="/assets/js/sample-2-home.js?v=3" defer></script>
 </body>
 </html>
 

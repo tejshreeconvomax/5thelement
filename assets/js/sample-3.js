@@ -15,7 +15,17 @@
   const peek = document.querySelector('.op-hero-peek');
   if (hero && plate && !reduced) hero.addEventListener('pointermove', event => { if (!matchMedia('(hover:hover)').matches) return; const rect = hero.getBoundingClientRect(); const x = (event.clientX - rect.left) / rect.width - .5; const y = (event.clientY - rect.top) / rect.height - .5; plate.style.translate = `${x * 18}px ${y * 12}px`; if (peek) peek.style.translate = `${x * -14}px ${y * -8}px`; });
   hero?.addEventListener('pointerleave', () => { if (plate) plate.style.translate = ''; if (peek) peek.style.translate = ''; });
-  if ('IntersectionObserver' in window && !reduced) { const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .1 }); document.querySelectorAll('.op-reveal').forEach(element => observer.observe(element)); } else document.querySelectorAll('.op-reveal').forEach(element => element.classList.add('visible'));
+  if ('IntersectionObserver' in window && !reduced) {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    }), { threshold: .1 });
+    document.querySelectorAll('.op-reveal').forEach(element => observer.observe(element));
+    // A direct hash link can land between observer thresholds. Never leave content hidden.
+    window.setTimeout(() => document.querySelectorAll('.op-reveal:not(.visible)').forEach(element => element.classList.add('visible')), 900);
+  } else document.querySelectorAll('.op-reveal').forEach(element => element.classList.add('visible'));
   document.querySelectorAll('.op-cinema-photo video').forEach(video => { const fallback = video.nextElementSibling; video.addEventListener('canplay', () => { if (fallback) fallback.hidden = true; }, { once: true }); video.addEventListener('error', () => { video.hidden = true; if (fallback) fallback.hidden = false; }, { once: true }); });
   document.querySelector('#op-newsletter')?.addEventListener('submit', event => { event.preventDefault(); document.querySelector('#op-newsletter-status').textContent = 'You’re on the list. We’ll keep it delicious.'; event.currentTarget.reset(); });
 })();
