@@ -1,0 +1,201 @@
+/* Baymeadows location page — scoped to prevent changes to the other Sample3 pages. */
+.sc-jacksonville-page {
+  --jl-cream: #f7f0e4;
+  --jl-paper: #fffaf2;
+  --jl-olive: #557938;
+  --jl-olive-deep: #344c24;
+  --jl-brown: #4b2b1f;
+  --jl-gold: #caa44e;
+  --jl-ink: #332017;
+  background: #faf3e7;
+  color: var(--jl-ink);
+  font-family: Oxygen, Arial, sans-serif;
+}
+
+.sc-jacksonville-page .op-header {
+  position: relative;
+  min-height: 68px;
+  padding-inline: var(--op-content-inset);
+  background: var(--jl-paper);
+  color: var(--jl-ink);
+  border-bottom: 1px solid rgba(75, 43, 31, .1);
+}
+.sc-jacksonville-page .op-header nav a { color: var(--jl-ink); }
+.sc-jacksonville-page .op-header nav a:hover,
+.sc-jacksonville-page .op-header nav a:focus-visible { color: var(--jl-olive-deep); }
+.sc-jacksonville-page .op-brand-logo { width: clamp(128px, 10vw, 158px); height: auto; }
+.sc-jacksonville-page .op-reserve { background: var(--jl-olive); color: #fff; }
+
+.sc-jacksonville-page .jl-container {
+  width: min(calc(100% - (2 * var(--op-content-inset))), var(--op-content-max));
+  margin-inline: auto;
+}
+.sc-jacksonville-page h1,
+.sc-jacksonville-page h2,
+.sc-jacksonville-page h3,
+.sc-jacksonville-page p { margin-top: 0; }
+.sc-jacksonville-page h1,
+.sc-jacksonville-page h2 { font-family: Oxygen, Arial, sans-serif; letter-spacing: -.055em; }
+.sc-jacksonville-page h1 em,
+.sc-jacksonville-page h2 em { font-style: italic; font-weight: 400; }
+
+.sc-jacksonville-page .jl-hero { position: relative; min-height: clamp(300px, 23.4vw, 450px); isolation: isolate; color: #fff; overflow: hidden; }
+.sc-jacksonville-page .jl-hero-bg { position: absolute; inset: 0; z-index: -2; background-image: url('/assets/images/hero-biryani.webp'); background-size: cover; background-position: center 50%; }
+.sc-jacksonville-page .jl-hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(31, 16, 8, .93) 0%, rgba(39, 20, 8, .78) 34%, rgba(49, 25, 8, .12) 68%, rgba(25, 14, 8, .15)); }
+.sc-jacksonville-page .jl-hero-content { min-height: inherit; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding-block: 3.4rem; }
+.sc-jacksonville-page .jl-kicker { margin-bottom: .45rem; color: #f2c764; font-size: .82rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.sc-jacksonville-page .jl-kicker::after { content: ''; display: inline-block; width: 44px; height: 1px; margin: 0 0 .22em .55em; background: currentColor; vertical-align: middle; }
+.sc-jacksonville-page .jl-kicker span { margin-inline: .18em; }
+.sc-jacksonville-page .jl-hero h1 { max-width: 650px; margin-bottom: .85rem; color: #fff9e8; font-size: clamp(2.5rem, 4vw, 4.6rem); line-height: .99; font-weight: 700; }
+.sc-jacksonville-page .jl-hero h1 em { color: #f3c766; }
+.sc-jacksonville-page .jl-hero-copy { margin-bottom: 1.3rem; color: #fff; font-size: clamp(1rem, 1.15vw, 1.25rem); line-height: 1.45; font-weight: 700; }
+
+.sc-jacksonville-page .jl-actions { display: flex; flex-wrap: wrap; gap: .85rem; }
+.sc-jacksonville-page .jl-button { display: inline-flex; min-height: 43px; align-items: center; justify-content: center; gap: .8rem; padding: .65rem 1.15rem; border: 1px solid transparent; border-radius: 999px; font-size: .83rem; font-weight: 700; line-height: 1; text-decoration: none; transition: transform .2s ease, background-color .2s ease, border-color .2s ease; }
+.sc-jacksonville-page .jl-button:hover { transform: translateY(-2px); }
+.sc-jacksonville-page .jl-button--olive { background: var(--jl-olive); color: #fff; box-shadow: 0 8px 20px rgba(34, 46, 20, .18); }
+.sc-jacksonville-page .jl-button--olive:hover { background: var(--jl-olive-deep); }
+.sc-jacksonville-page .jl-button--outline { border-color: #e6c778; color: #fff9e8; background: rgba(31, 16, 8, .25); }
+.sc-jacksonville-page .jl-button b { font-size: 1.05rem; }
+
+.sc-jacksonville-page .jl-address-bar { min-height: 42px; display: flex; align-items: center; justify-content: center; gap: .75rem; padding: .5rem var(--op-content-inset); background: #fffaf0; color: #2c251d; font-size: clamp(.78rem, 1vw, .94rem); font-weight: 700; text-align: center; box-shadow: inset 0 1px rgba(255, 255, 255, .75), inset 0 -1px rgba(121, 85, 48, .11); }
+.sc-jacksonville-page .jl-address-bar > span { color: var(--jl-brown); font-size: .85em; }
+.sc-jacksonville-page .jl-address-bar address { font-style: normal; }
+
+.sc-jacksonville-page .jl-intro { display: grid; grid-template-columns: 1fr 1fr; min-height: clamp(240px, 20vw, 360px); background: linear-gradient(112deg, #fffaf1 0%, #f9edd9 58%, #f0dfc1 100%); }
+.sc-jacksonville-page .jl-intro-image { overflow: hidden; }
+.sc-jacksonville-page .jl-intro-image img { width: 100%; height: 100%; min-height: inherit; display: block; object-fit: cover; }
+.sc-jacksonville-page .jl-intro-copy { align-self: center; max-width: 520px; padding: 3rem clamp(2.2rem, 6vw, 8rem); }
+.sc-jacksonville-page .jl-intro-copy .jl-ornament { justify-content: flex-start; }
+.sc-jacksonville-page .jl-intro-copy h2 { margin-bottom: 1rem; color: #293820; font-size: clamp(2rem, 3vw, 3.45rem); line-height: 1.05; }
+.sc-jacksonville-page .jl-intro-copy h2 em { color: var(--jl-olive); }
+.sc-jacksonville-page .jl-intro-copy p { max-width: 420px; color: #442f22; font-size: clamp(.9rem, 1.05vw, 1.04rem); line-height: 1.55; font-weight: 700; }
+
+.sc-jacksonville-page .jl-section { padding-block: clamp(2.25rem, 3.8vw, 4.25rem); background: #fbf6ec; }
+.sc-jacksonville-page .jl-heading { margin-bottom: clamp(1.4rem, 2.2vw, 2.4rem); }
+.sc-jacksonville-page .jl-heading--center { text-align: center; }
+.sc-jacksonville-page .jl-heading h2 { margin-bottom: 0; color: var(--jl-brown); font-size: clamp(2rem, 3.05vw, 3.35rem); line-height: 1.06; }
+.sc-jacksonville-page .jl-ornament { display: flex; align-items: center; justify-content: center; gap: .6rem; margin-bottom: .55rem; color: var(--jl-gold); }
+.sc-jacksonville-page .jl-ornament i { display: block; width: clamp(44px, 8vw, 95px); height: 1px; background: currentColor; opacity: .85; }
+.sc-jacksonville-page .jl-ornament span { font-size: 1rem; line-height: 1; }
+
+.sc-jacksonville-page .jl-services { padding-block: clamp(1.75rem, 3vw, 3rem); background: linear-gradient(180deg, #f0e0c3 0%, #faf4e8 22%, #faf4e8 100%); }
+.sc-jacksonville-page .jl-service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(.8rem, 1.5vw, 1.6rem); }
+.sc-jacksonville-page .jl-service { position: relative; min-height: clamp(120px, 12vw, 190px); display: flex; align-items: flex-end; justify-content: center; overflow: hidden; border-radius: 4px; color: #fff; text-decoration: none; isolation: isolate; box-shadow: 0 5px 14px rgba(73, 38, 18, .12); }
+.sc-jacksonville-page .jl-service img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; z-index: -2; }
+.sc-jacksonville-page .jl-service:nth-child(2) img { object-position: 25% center; }
+.sc-jacksonville-page .jl-service:nth-child(3) img { object-position: 75% center; }
+.sc-jacksonville-page .jl-service::after { content: ''; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, rgba(48, 21, 11, .92)); z-index: -1; }
+.sc-jacksonville-page .jl-service:hover img { transform: scale(1.07); }
+.sc-jacksonville-page .jl-service span { padding: .9rem .75rem; font-size: clamp(1rem, 1.25vw, 1.35rem); font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
+
+.sc-jacksonville-page .jl-buffet { position: relative; overflow: hidden; padding-block: 0; background: #f4e4c5; }
+.sc-jacksonville-page .jl-buffet::before { content: ''; position: absolute; inset: 0 auto 0 0; width: calc(var(--op-content-inset) + clamp(34rem, 33.8vw, 40rem)); background: linear-gradient(112deg, #fffaf0 0%, #fdf2dd 43%, #f7e7c8 76%, #eed7b2 100%); }
+.sc-jacksonville-page .jl-buffet-grid { position: relative; z-index: 1; width: calc(100% - var(--op-content-inset)); max-width: none; min-height: clamp(220px, 23vw, 430px); display: grid; grid-template-columns: clamp(34rem, 33.8vw, 40rem) minmax(0, 1fr); margin: 0 0 0 var(--op-content-inset); }
+.sc-jacksonville-page .jl-buffet-copy { display: flex; flex-direction: column; justify-content: center; padding-block: clamp(1.5rem, 2.6vw, 3rem); background: linear-gradient(112deg, #fffaf0 0%, #fdf2dd 48%, #f7e7c8 82%, #eed7b2 100%); color: #342719; }
+.sc-jacksonville-page .jl-buffet-copy h2 { margin-bottom: .75rem; color: #2c3922; font-size: clamp(1.7rem, 2.5vw, 3rem); line-height: 1.04; }
+.sc-jacksonville-page .jl-buffet-copy > p { margin-bottom: .65rem; color: #342719; font-size: clamp(.82rem, .95vw, 1rem); line-height: 1.4; font-weight: 700; }
+.sc-jacksonville-page .jl-buffet-copy > strong { margin-bottom: .8rem; color: #314624; font-size: .84rem; }
+.sc-jacksonville-page .jl-buffet-hours { display: flex; gap: clamp(1rem, 3vw, 3rem); margin-bottom: 1.3rem; }
+.sc-jacksonville-page .jl-buffet-hours div { display: flex; align-items: center; gap: .7rem; }
+.sc-jacksonville-page .jl-buffet-hours span { color: var(--jl-olive-deep); font-size: 1.1rem; }
+.sc-jacksonville-page .jl-buffet-hours p { margin: 0; font-size: .77rem; line-height: 1.45; font-weight: 700; }
+.sc-jacksonville-page .jl-buffet-hours b { font-weight: 400; }
+.sc-jacksonville-page .jl-buffet-copy .jl-button { align-self: flex-start; }
+.sc-jacksonville-page .jl-buffet-image { position: relative; min-width: 0; overflow: hidden; }
+.sc-jacksonville-page .jl-buffet-image::before { content: ''; position: absolute; z-index: 3; top: -4%; bottom: -4%; left: -12%; width: 30%; border: 8px solid var(--jl-olive); border-right: 0; border-radius: 100% 0 0 100% / 50% 0 0 50%; pointer-events: none; }
+.sc-jacksonville-page .jl-buffet-image::after { content: ''; position: absolute; z-index: 3; top: -4%; bottom: -4%; left: -9.5%; width: 30%; border: 2px solid #cda84d; border-right: 0; border-radius: 100% 0 0 100% / 50% 0 0 50%; pointer-events: none; }
+.sc-jacksonville-page .jl-buffet-image img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+.sc-jacksonville-page .jl-buffet-image-overlay { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(90deg, rgba(78, 48, 22, .16) 0%, rgba(78, 48, 22, .04) 22%, transparent 46%); }
+
+.sc-jacksonville-page .jl-gallery { padding-top: clamp(1.75rem, 3vw, 3rem); padding-bottom: clamp(2.25rem, 3.8vw, 4rem); background: linear-gradient(180deg, #f4e4c5 0%, #fffaf1 20%, #fffaf1 100%); }
+.sc-jacksonville-page .jl-gallery-grid { display: grid; grid-template-columns: 1.08fr 1fr; grid-template-rows: repeat(2, minmax(100px, 1fr)); gap: .65rem; height: clamp(150px, 16vw, 300px); }
+.sc-jacksonville-page .jl-gallery-grid figure { min-width: 0; margin: 0; overflow: hidden; border-radius: 4px; }
+.sc-jacksonville-page .jl-gallery-grid .jl-gallery-large { grid-row: 1 / span 2; }
+.sc-jacksonville-page .jl-gallery-grid img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .45s ease; }
+.sc-jacksonville-page .jl-gallery-grid figure:hover img { transform: scale(1.035); }
+.sc-jacksonville-page .jl-gallery-grid figure:nth-child(2) img { object-position: center 60%; }
+
+.sc-jacksonville-page .jl-testimonials { padding-top: clamp(1.75rem, 2.8vw, 3rem); padding-bottom: clamp(2.25rem, 3.8vw, 4rem); background: #fffaf2; }
+.sc-jacksonville-page .jl-testimonial-row { display: grid; grid-template-columns: 52px minmax(0, 690px) 52px; align-items: center; justify-content: space-between; gap: clamp(1rem, 5vw, 8rem); }
+.sc-jacksonville-page .jl-testimonial { min-height: 100px; margin: 0; padding: 1rem 2rem; border: 1px solid rgba(137, 97, 47, .18); border-radius: 8px; background: #fcf5e7; box-shadow: 0 10px 22px rgba(84, 47, 24, .06); color: #352218; text-align: center; }
+.sc-jacksonville-page .jl-testimonial.is-changing { opacity: .2; transition: opacity .13s ease; }
+.sc-jacksonville-page .jl-stars { margin-bottom: .45rem; color: #d5a52f; font-size: 1rem; letter-spacing: .2em; }
+.sc-jacksonville-page .jl-testimonial blockquote { margin: 0 0 .35rem; font-size: clamp(.92rem, 1.18vw, 1.05rem); line-height: 1.45; font-weight: 700; }
+.sc-jacksonville-page .jl-testimonial figcaption { font-size: .8rem; font-weight: 700; }
+.sc-jacksonville-page .jl-arrow { width: 39px; height: 39px; justify-self: center; display: grid; place-items: center; border: 1px solid #d9bc7a; border-radius: 50%; background: transparent; color: #573625; font-size: 2rem; line-height: 1; cursor: pointer; transition: color .2s ease, background .2s ease; }
+.sc-jacksonville-page .jl-arrow:hover { background: var(--jl-olive); border-color: var(--jl-olive); color: #fff; }
+
+.sc-jacksonville-page .jl-visit { background: radial-gradient(circle at 13% 20%, rgba(132, 79, 39, .36), transparent 35%), linear-gradient(112deg, #3d1e12 0%, #542d1b 56%, #65361f 100%); color: #fffdf5; }
+.sc-jacksonville-page .jl-visit-grid { width: calc(100% - var(--op-content-inset)); max-width: none; min-height: clamp(240px, 24vw, 430px); display: grid; grid-template-columns: clamp(34rem, 33.8vw, 40rem) minmax(0, 1fr); margin: 0 0 0 var(--op-content-inset); }
+.sc-jacksonville-page .jl-visit-copy { display: flex; flex-direction: column; justify-content: center; padding-block: clamp(1.75rem, 2.5vw, 3rem); }
+.sc-jacksonville-page .jl-visit-copy h2 { margin-bottom: 1.25rem; color: #fffaf0; font-size: clamp(2rem, 3.1vw, 3.5rem); line-height: 1.05; }
+.sc-jacksonville-page .jl-visit-detail { display: flex; align-items: flex-start; gap: .75rem; margin-bottom: .75rem; max-width: 390px; color: #fffaf0; font-size: clamp(.85rem, 1.05vw, 1rem); line-height: 1.45; font-weight: 700; }
+.sc-jacksonville-page .jl-visit-detail > span { flex: none; width: 1.1rem; color: #f1d58d; text-align: center; }
+.sc-jacksonville-page .jl-visit-detail p,
+.sc-jacksonville-page .jl-visit-detail address { margin: 0; font-style: normal; }
+.sc-jacksonville-page .jl-visit-detail a { color: inherit; text-decoration: none; }
+.sc-jacksonville-page .jl-visit-copy .jl-button { align-self: flex-start; margin-top: .8rem; }
+.sc-jacksonville-page .jl-visit-image { overflow: hidden; }
+.sc-jacksonville-page .jl-visit-image img { width: 100%; height: 100%; min-height: inherit; display: block; object-fit: cover; object-position: center; }
+
+.sc-jacksonville-page .jl-closing { position: relative; min-height: clamp(180px, 17vw, 300px); display: grid; place-items: center; isolation: isolate; overflow: hidden; color: #fff; }
+.sc-jacksonville-page .jl-closing-bg { position: absolute; inset: 0; z-index: -2; background: url('/assets/images/catering-bg.webp') center / cover; }
+.sc-jacksonville-page .jl-closing-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(55, 28, 13, .78), rgba(55, 28, 13, .58), rgba(55, 28, 13, .75)); }
+.sc-jacksonville-page .jl-closing-content { display: flex; flex-direction: column; align-items: center; padding-block: 2.5rem; text-align: center; }
+.sc-jacksonville-page .jl-closing h2 { margin-bottom: 1.25rem; color: #fff6dd; font-size: clamp(2rem, 3.35vw, 3.8rem); line-height: 1.1; font-style: italic; font-weight: 400; }
+.sc-jacksonville-page .jl-closing .jl-ornament { color: #f0cc73; }
+
+.sc-jacksonville-page .op-footer { background: linear-gradient(112deg, #4b2818 0%, #3b1d11 52%, #2c160d 100%); }
+
+@media (max-width: 900px) {
+  .sc-jacksonville-page .jl-service-grid { grid-template-columns: repeat(2, 1fr); }
+  .sc-jacksonville-page .jl-service { min-height: 185px; }
+  .sc-jacksonville-page .jl-buffet-grid { grid-template-columns: 1fr 1fr; }
+  .sc-jacksonville-page .jl-buffet-grid { grid-template-columns: clamp(30rem, 45vw, 34rem) minmax(0, 1fr); }
+  .sc-jacksonville-page .jl-buffet::before { width: calc(var(--op-content-inset) + clamp(30rem, 45vw, 34rem)); }
+  .sc-jacksonville-page .jl-buffet-image::before { left: -22%; width: 43%; }
+  .sc-jacksonville-page .jl-buffet-image::after { left: -19.5%; width: 43%; }
+  .sc-jacksonville-page .jl-visit-grid { grid-template-columns: clamp(30rem, 45vw, 34rem) minmax(0, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .sc-jacksonville-page .op-header { min-height: 60px; }
+  .sc-jacksonville-page .jl-container { width: min(calc(100% - (2 * var(--op-content-gutter))), var(--op-content-max)); }
+  .sc-jacksonville-page .jl-hero { min-height: 470px; }
+  .sc-jacksonville-page .jl-hero-bg { background-position: 62% center; }
+  .sc-jacksonville-page .jl-hero-bg::after { background: linear-gradient(90deg, rgba(31, 16, 8, .93), rgba(31, 16, 8, .62)); }
+  .sc-jacksonville-page .jl-hero h1 { font-size: clamp(2.35rem, 11vw, 3.3rem); }
+  .sc-jacksonville-page .jl-address-bar { align-items: flex-start; font-size: .8rem; }
+  .sc-jacksonville-page .jl-intro { grid-template-columns: 1fr; }
+  .sc-jacksonville-page .jl-intro-image { height: 270px; }
+  .sc-jacksonville-page .jl-intro-copy { padding: 2.8rem var(--op-content-gutter); text-align: center; }
+  .sc-jacksonville-page .jl-intro-copy .jl-ornament { justify-content: center; }
+  .sc-jacksonville-page .jl-intro-copy p { margin-inline: auto; }
+  .sc-jacksonville-page .jl-buffet::before { width: 100%; bottom: 300px; }
+  .sc-jacksonville-page .jl-buffet-grid { width: 100%; grid-template-columns: 1fr; margin: 0; }
+  .sc-jacksonville-page .jl-buffet-copy { padding-inline: var(--op-content-gutter); }
+  .sc-jacksonville-page .jl-buffet-copy { padding-top: 3.3rem; }
+  .sc-jacksonville-page .jl-buffet-image { height: 300px; }
+  .sc-jacksonville-page .jl-buffet-image::before { left: -15%; width: 32%; }
+  .sc-jacksonville-page .jl-buffet-image::after { left: -12.5%; width: 32%; }
+  .sc-jacksonville-page .jl-gallery-grid { height: 330px; grid-template-columns: 1fr; grid-template-rows: 1.3fr 1fr 1fr; }
+  .sc-jacksonville-page .jl-gallery-grid .jl-gallery-large { grid-row: auto; }
+  .sc-jacksonville-page .jl-testimonial-row { grid-template-columns: 38px minmax(0, 1fr) 38px; gap: .5rem; }
+  .sc-jacksonville-page .jl-testimonial { padding: 1.25rem .85rem; }
+  .sc-jacksonville-page .jl-testimonial blockquote br { display: none; }
+  .sc-jacksonville-page .jl-visit-grid { grid-template-columns: 1fr; }
+  .sc-jacksonville-page .jl-visit-grid { width: 100%; margin: 0; }
+  .sc-jacksonville-page .jl-visit-copy { padding: 3rem var(--op-content-gutter); }
+  .sc-jacksonville-page .jl-visit-image { height: 290px; }
+}
+
+@media (max-width: 440px) {
+  .sc-jacksonville-page .jl-service-grid { gap: .7rem; }
+  .sc-jacksonville-page .jl-service { min-height: 138px; }
+  .sc-jacksonville-page .jl-service span { padding: .65rem .4rem; font-size: 1rem; }
+  .sc-jacksonville-page .jl-buffet-hours { flex-direction: column; gap: .5rem; }
+  .sc-jacksonville-page .jl-button { width: 100%; }
+  .sc-jacksonville-page .jl-actions { width: 100%; }
+  .sc-jacksonville-page .jl-actions .jl-button { width: auto; }
+}
