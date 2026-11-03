@@ -1,0 +1,298 @@
+:root {
+    --cream: #fff3dc;
+    --gold: #e4ad48;
+    --ink: #fdf0d5
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    font-family: Bitter, Georgia, serif;
+    color: var(--ink)
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: clamp(480px, 48vw, 710px);
+    aspect-ratio: 1810/870;
+    overflow: hidden;
+    background: #1a0803 url('assets/steaming-copper-biryani-feast.png') center/cover no-repeat
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(22, 5, 1, .22), transparent 52%);
+    pointer-events: none
+}
+
+.nav-shell {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2.2vw, 2.7rem);
+    width: min(100%, 1450px);
+    margin: auto;
+    padding: clamp(1.2rem, 2vw, 2.5rem) clamp(2rem, 6.3vw, 7.6rem)
+}
+
+.brand {
+    display: block;
+    flex: 0 0 auto;
+    width: 150px
+}
+
+.brand img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2.25rem);
+    font-size: clamp(.75rem, 1.05vw, 1rem);
+    font-weight: 500;
+    text-shadow: 0 1px 4px #160600
+}
+
+.site-nav a {
+    position: relative
+}
+
+.site-nav a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -7px;
+    height: 1px;
+    background: var(--gold);
+    transition: .25s
+}
+
+.site-nav a:hover:after,
+.site-nav a.active:after {
+    left: 0;
+    right: 0
+}
+
+.order-button {
+    margin-left: auto;
+    flex: 0 0 auto;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    padding: .62em 1.22em;
+    background: rgba(88, 0, 8, .76);
+    box-shadow: inset 0 0 0 2px rgba(255, 236, 159, .12), 0 2px 7px rgba(0, 0, 0, .35);
+    font-size: clamp(.72rem, 1vw, .95rem);
+    font-weight: 600;
+    transition: .25s
+}
+
+.order-button:hover,
+.explore-button:hover {
+    transform: translateY(-3px);
+    background: #751011;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, .26)
+}
+
+.order-button b,
+.explore-button b {
+    margin-left: .45rem;
+    color: var(--gold)
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 2;
+    width: min(47%, 620px);
+    margin: clamp(3.5rem, 8.2vw, 10.5rem) 0 0 clamp(4.5rem, 10vw, 12.3rem);
+    text-shadow: 0 3px 12px rgba(15, 2, 0, .55)
+}
+
+.hero-copy h1 {
+    margin: 0 0 1.2rem;
+    font-size: clamp(3.35rem, 6.35vw, 6.6rem);
+    font-weight: 500;
+    letter-spacing: -.055em;
+    line-height: .94
+}
+
+.hero-copy p {
+    margin: 0 0 1.65rem;
+    font-size: clamp(1rem, 1.45vw, 1.32rem);
+    font-weight: 500
+}
+
+.explore-button {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid var(--gold);
+    border-radius: 999px;
+    padding: .75rem 1.35rem;
+    background: rgba(35, 8, 2, .34);
+    font-size: clamp(.78rem, 1.12vw, 1rem);
+    font-weight: 600;
+    transition: .25s
+}
+
+.cream-curve {
+    position: absolute;
+    z-index: 2;
+    bottom: -23px;
+    left: -3%;
+    width: 106%;
+    height: 45px;
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    background: var(--cream);
+    transform: rotate(1deg)
+}
+
+.placeholder {
+    min-height: 2px
+}
+
+.menu-toggle {
+    display: none
+}
+
+@media(max-width:850px) {
+    .hero {
+        min-height: 620px;
+        aspect-ratio: auto;
+        background-position: 58% center
+    }
+
+    .nav-shell {
+        padding: 1rem 1.2rem;
+        gap: .9rem
+    }
+
+    .brand {
+        width: 84px
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+        margin-left: auto;
+        width: 38px;
+        border: 0;
+        background: none;
+        cursor: pointer
+    }
+
+    .menu-toggle i {
+        display: block;
+        width: 27px;
+        height: 2px;
+        margin: 6px auto;
+        background: var(--gold)
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: .5rem 1.5rem 1.3rem;
+        background: rgba(52, 5, 4, .97)
+    }
+
+    .site-nav.open {
+        display: flex
+    }
+
+    .site-nav a {
+        width: 100%;
+        padding: .7rem 0;
+        border-bottom: 1px solid rgba(237, 181, 68, .2)
+    }
+
+    .site-nav a:after {
+        display: none
+    }
+
+    .order-button {
+        order: 3;
+        margin-left: 0;
+        font-size: .72rem
+    }
+
+    .hero-copy {
+        width: 76%;
+        margin: clamp(8rem, 26vw, 10.5rem) 0 0 10%
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(3.5rem, 11vw, 5.2rem)
+    }
+
+    .hero-copy p {
+        font-size: 1rem
+    }
+}
+
+@media(max-width:480px) {
+    .hero {
+        min-height: 570px;
+        background-position: 62% center
+    }
+
+    .brand {
+        width: 72px
+    }
+
+    .order-button {
+        padding: .53rem .75rem
+    }
+
+    .order-button b {
+        display: none
+    }
+
+    .hero-copy {
+        width: 86%;
+        margin-top: 8.5rem
+    }
+
+    .hero-copy h1 {
+        font-size: 3.35rem
+    }
+
+    .cream-curve {
+        height: 27px;
+        bottom: -14px
+    }
+}

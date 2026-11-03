@@ -1,0 +1,46 @@
+html, body { overflow-x: hidden; }
+.hero { height: 100%; }
+.placeholder { display: none; }
+
+@media (max-width: 850px) {
+  .hero {
+    height: 640px;
+    min-height: 640px;
+    aspect-ratio: auto;
+    background-position: 39% center;
+  }
+
+  .nav-shell {
+    justify-content: flex-start;
+    gap: .45rem;
+    padding: .9rem 1rem;
+  }
+
+  .menu-toggle {
+    width: 33px;
+    margin-left: .25rem !important;
+  }
+
+  .order-button {
+    margin-left: auto !important;
+    padding: .5rem .68rem;
+    font-size: .64rem;
+    white-space: nowrap;
+  }
+
+  .hero-copy {
+    width: 82%;
+    margin: 11.8rem 0 0 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero { height: 600px; min-height: 600px; background-position: 36% center; }
+  .nav-shell { justify-content: flex-start; }
+  .brand { width: 100px; }
+  .menu-toggle { flex: 0 0 33px; margin-left: 0 !important; }
+  .order-button { flex: 0 0 auto; margin-left: 0 !important; padding: .48rem .58rem; font-size: .58rem; }
+  .hero-copy { width: 88%; margin-top: 11rem; }
+  .hero-copy h1 { font-size: clamp(3.15rem, 14vw, 4.2rem); }
+  .hero-copy p { max-width: 280px; font-size: .91rem; }
+}
