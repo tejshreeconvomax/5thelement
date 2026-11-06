@@ -1,364 +1,131 @@
+<?php require_once __DIR__ . '/includes/functions.php'; require_once __DIR__ . '/includes/common-components.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>5th Element — Choose a Sample</title>
-  <style>
-    :root {
-      --night: #182622;
-      --night-soft: #22332e;
-      --lime: #b0ce68;
-      --saffron: #f29119;
-      --clay: #854030;
-      --cream: #fbf8ef;
-      --muted: #cbd2bc;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { background: var(--night); }
-
-    body {
-      min-width: 320px;
-      min-height: 100vh;
-      margin: 0;
-      color: var(--cream);
-      background:
-        radial-gradient(circle at 88% 4%, rgba(176, 206, 104, .16), transparent 25rem),
-        radial-gradient(circle at 3% 98%, rgba(242, 145, 25, .13), transparent 26rem),
-        var(--night);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    .shell {
-      width: min(1240px, calc(100% - 48px));
-      margin: 0 auto;
-      padding: clamp(24px, 4vw, 50px) 0 40px;
-    }
-
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid rgba(251, 248, 239, .18);
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      width: 230px;
-      background: transparent;
-    }
-
-    .brand img {
-      display: block;
-      width: 100%;
-      height: auto;
-      filter: drop-shadow(0 5px 8px rgba(0, 0, 0, .3));
-    }
-
-    .availability {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin: 0;
-      color: var(--muted);
-      font-size: .69rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    .availability::before {
-      width: 8px;
-      height: 8px;
-      content: "";
-      background: var(--lime);
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px rgba(176, 206, 104, .13);
-    }
-
-    .intro {
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(220px, .55fr);
-      gap: 50px;
-      align-items: end;
-      padding: clamp(52px, 9vw, 108px) 0 clamp(32px, 5vw, 54px);
-    }
-
-    .eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin: 0 0 17px;
-      color: var(--lime);
-      font-size: .69rem;
-      font-weight: 750;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      width: 29px;
-      height: 1px;
-      content: "";
-      background: currentColor;
-    }
-
-    h1 {
-      max-width: 800px;
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(3.1rem, 7.7vw, 7.1rem);
-      font-weight: 400;
-      letter-spacing: -.075em;
-      line-height: .83;
-    }
-
-    h1 em {
-      color: var(--lime);
-      font-style: italic;
-    }
-
-    .intro-copy {
-      max-width: 330px;
-      margin: 0 0 4px;
-      color: var(--muted);
-      font-size: .97rem;
-      line-height: 1.65;
-    }
-
-    .sample-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr;
-      gap: 15px;
-    }
-
-    .sample {
-      position: relative;
-      display: flex;
-      min-height: clamp(350px, 39vw, 480px);
-      overflow: hidden;
-      color: var(--cream);
-      isolation: isolate;
-      text-decoration: none;
-      background: var(--sample-base);
-      box-shadow: 0 20px 30px -26px #000;
-      transition: transform 300ms cubic-bezier(.22, .61, .36, 1), box-shadow 300ms ease;
-    }
-
-    .sample::before {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      content: "";
-      background: linear-gradient(180deg, rgba(13, 23, 20, .08) 10%, rgba(13, 23, 20, .35) 54%, rgba(13, 23, 20, .94) 100%);
-    }
-
-    .sample::after {
-      position: absolute;
-      inset: 13px;
-      z-index: 2;
-      content: "";
-      border: 1px solid rgba(255, 255, 255, .37);
-      transition: inset 300ms ease;
-    }
-
-    .sample:hover {
-      box-shadow: 0 28px 42px -25px #000;
-      transform: translateY(-7px);
-    }
-
-    .sample:hover::after { inset: 9px; }
-
-    .sample:focus-visible {
-      outline: 3px solid var(--lime);
-      outline-offset: 4px;
-    }
-
-    .sample-image {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.01);
-      transition: transform 700ms cubic-bezier(.22, .61, .36, 1), filter 300ms ease;
-    }
-
-    .sample:hover .sample-image {
-      filter: saturate(1.12);
-      transform: scale(1.08);
-    }
-
-    .sample-content {
-      position: relative;
-      z-index: 3;
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 29px;
-    }
-
-    .sample-tag {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin: 0;
-      font-size: .67rem;
-      font-weight: 750;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
-
-    .sample-tag span:last-child {
-      color: var(--sample-accent);
-    }
-
-    .sample-bottom { max-width: 28ch; }
-
-    .sample-name {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.2rem, 4vw, 4.3rem);
-      font-weight: 400;
-      letter-spacing: -.065em;
-      line-height: .86;
-    }
-
-    .sample-detail {
-      margin: 14px 0 0;
-      color: rgba(255, 255, 255, .82);
-      font-size: .82rem;
-      line-height: 1.5;
-    }
-
-    .sample-action {
-      display: inline-flex;
-      align-items: center;
-      gap: 13px;
-      margin-top: 23px;
-      padding-bottom: 7px;
-      color: var(--sample-accent);
-      border-bottom: 1px solid currentColor;
-      font-size: .68rem;
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-
-    .sample-action b {
-      font-size: 1.2rem;
-      font-weight: 400;
-      line-height: .6;
-      transition: transform 250ms ease;
-    }
-
-    .sample:hover .sample-action b { transform: translateX(5px); }
-
-    .sample-one { --sample-base: #7d3325; --sample-accent: #ffc86a; }
-    .sample-two { --sample-base: #195b50; --sample-accent: #bbdd76; }
-    .sample-three { --sample-base: #a5491c; --sample-accent: #ffe0a5; }
-
-    .footer-note {
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      padding-top: 21px;
-      color: rgba(203, 210, 188, .67);
-      border-top: 1px solid rgba(251, 248, 239, .18);
-      font-size: .69rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    @media (max-width: 800px) {
-      .intro { grid-template-columns: 1fr; gap: 23px; }
-      .sample-grid { grid-template-columns: 1fr; }
-      .sample { min-height: 360px; }
-      .sample-content { padding: 28px; }
-      .sample-name { font-size: 3.4rem; }
-    }
-
-    @media (max-width: 500px) {
-      .shell { width: min(100% - 30px, 1240px); }
-      .topbar { align-items: flex-start; flex-direction: column; }
-      .brand { width: 205px; }
-      h1 { font-size: clamp(3rem, 17vw, 4.9rem); }
-      .sample { min-height: 332px; }
-      .footer-note { flex-direction: column; gap: 8px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { transition-duration: .01ms !important; }
-    }
-  </style>
+  <title>5th Element — Tradition with a little fire</title>
+  <meta name="description" content="Discover Indian cuisine and warm hospitality at 5th Element in Florida. Explore our dishes, find your restaurant, or plan a catered celebration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/sample-2-home.css?v=21">
 </head>
-<body>
-  <main class="shell">
-    <header class="topbar">
-      <a class="brand" href="/" aria-label="5th Element sample selection">
-        <img src="assets/images/5th-element-logo-transparent.png?v=1" alt="5th Element Indian Restaurant">
-      </a>
-      <p class="availability">Three concepts to explore</p>
-    </header>
-
-    <section class="intro" aria-labelledby="page-title">
-      <div>
-        <p class="eyebrow">Explore our concepts</p>
-        <h1 id="page-title">Find your <em>favourite</em> flavour.</h1>
+<body class="home-page">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-definitions" aria-hidden="true"><defs>
+<symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="icon-dine" viewBox="0 0 24 24"><path d="M4 2v7m3-7v7m3-7v7M4 7h6M7 9v13M19 2c-4 3-4 9 0 10V2Zm0 10v10"/></symbol>
+<symbol id="icon-bag" viewBox="0 0 24 24"><path d="M4 8h16l1 13H3L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></symbol>
+<symbol id="icon-order" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6m-6 4h6m-6 4h4m-2 4h2"/></symbol>
+<symbol id="icon-delivery" viewBox="0 0 24 24"><path d="M1 5h13v12H1V5Zm13 4h5l4 5v3h-9M3 9h6"/><circle cx="5" cy="18" r="3"/><circle cx="18" cy="18" r="3"/></symbol>
+<symbol id="icon-feast" viewBox="0 0 24 24"><path d="M2 18h20M4 18a8 8 0 0 1 16 0M12 10V7m-2 0h4M4 22h16M8 3l1 2m7-2-1 2"/></symbol>
+<symbol id="icon-lotus" viewBox="0 0 24 24"><path d="M12 20C4 16 7 7 12 2c5 5 8 14 0 18Zm0 0C3 22 1 12 2 8c4 0 8 3 10 7m0 5c9 2 11-8 10-12-4 0-8 3-10 7"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+<?php $pageClass='home-page'; $headerCta='Find a table'; $headerTarget='#locations'; require __DIR__ . '/header.php'; unset($headerCta, $headerTarget); ?>
+<main id="main">
+<section class="hero" id="home">
+  <div class="hero-topline"><span>INDIA, IN EVERY SENSE.</span><span>FLORIDA, AT EVERY TABLE.</span></div>
+  <div class="hero-canvas">
+    <div class="hero-copy">
+      <p class="eyebrow">WELCOME TO THE 5TH ELEMENT</p>
+      <h1>Tradition.<br>With a little<br><em>fire.</em>
+      <span class="hero-star" aria-hidden="true"></span></h1>
+      <p class="intro">Bold Indian flavours. A generous welcome.<br>A whole world of stories on your plate.</p>
+      <div class="hero-actions">
+        <a class="button gold" href="#locations">Find your table <span>↗</span></a>
+        <a class="text-link" href="#weekly">Meet the favourites →</a>
       </div>
-      <p class="intro-copy">Three distinct expressions of the 5th Element. Select a sample to view its full restaurant experience.</p>
-    </section>
+    </div>
+    <div class="hero-art">
+      <div class="hero-photo">
+        <img src="/assets/images/hero-biryani.webp" alt="Fragrant Indian biryani served with vibrant spices" fetchpriority="high">
+      </div>
+      <div class="spice-photo">
+        <img src="/assets/images/spices.webp" alt="Colourful Indian spices" fetchpriority="high">
+        <span data-min-font-exempt>IT STARTS WITH THE SPICE.</span>
+      </div>
+      <div class="flavour-stamp">
+        <span data-min-font-exempt>FULL OF</span><strong>SOUL</strong>
+        <span data-min-font-exempt>MADE TO SHARE</span>
+      </div>
+      <div class="photo-credit">THE ART OF A REALLY GOOD MEAL.</div>
+    </div>
+  </div>
+  <form class="hero-location" action="https://my5thelement.com/jacksonville/" id="location-form">
+    <label for="restaurant-select"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> YOUR NEXT STOP</label>
+    <select id="restaurant-select" aria-label="Choose your restaurant">
+      <option value="jacksonville/">Baymeadows, Jacksonville</option>
+      <option value="jacksonville-town-center/">Towncenter, Jacksonville</option>
+      <option value="daytona/">Daytona</option>
+      <option value="palm-coast/">Palm Coast</option>
+    </select>
+    <button type="submit">Explore restaurant & order <span>↗</span></button>
+    <a href="#dining" class="scroll-cue">SCROLL TO DISCOVER ↓</a>
+  </form>
+</section>
+<section class="service-strip" aria-label="Restaurant services">
+  <a href="#locations">
+    <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+    Our locations
+    <small>Across Florida</small>
+  </a>
+  <a href="#locations">
+    <svg class="icon" aria-hidden="true"><use href="#icon-dine"/></svg>
+    Dine-in
+    <small>Make yourself at home</small>
+  </a>
+  <a href="#locations">
+    <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>
+    Takeout
+    <small>Freshly packed for you</small>
+  </a>
+  <a href="#locations">
+    <svg class="icon" aria-hidden="true"><use href="#icon-delivery"/></svg>
+    Delivery
+    <small>Check your local restaurant</small>
+  </a>
+  <a href="#celebrations">
+    <svg class="icon" aria-hidden="true"><use href="#icon-feast"/></svg>
+    Catering
+    <small>For every occasion</small>
+  </a>
+</section>
 
-    <nav class="sample-grid" aria-label="Sample experiences">
-      <a class="sample sample-one" href="Sample1/" aria-label="Open the Royal Theme Restaurant sample">
-        <img class="sample-image" src="assets/images/dine.webp" alt="Warmly lit Indian restaurant dining room">
-        <div class="sample-content">
-          <p class="sample-tag"><span>Sample 01</span><span>Royal theme</span></p>
-          <div class="sample-bottom">
-            <h2 class="sample-name">Royal Theme Restaurant</h2>
-            <p class="sample-detail">Ornate arches, glowing lanterns and gracious seating for an elevated evening of Indian hospitality.</p>
-            <span class="sample-action">Explore <b aria-hidden="true">→</b></span>
-          </div>
-        </div>
-      </a>
+<?php require __DIR__ . '/_dining.php'; ?>
+<?php require __DIR__ . '/_weekly.php'; ?>
+<section class="story section" id="our-story">
+  <div class="story-art">
+    <img src="/assets/images/indian-cuisine.webp" alt="A colourful selection of Indian ingredients and spices" loading="lazy">
+    <span class="image-note">Every flavour has a story.</span>
+  </div>
+  <div class="story-copy">
+    <p class="eyebrow">OUR ROOTS, YOUR TABLE</p>
+    <h2>Some stories<br>are told<br><em>in spice.</em></h2>
+    <p>In India, a meal is an invitation. To pause, to share, to feel at home. That spirit is at the heart of 5th Element.</p>
+    <p>Our kitchen brings together the richness of Indian cooking and the lively flavours of Indo-Chinese cuisine. From comforting curries to fragrant biryanis, there is always something to gather around.</p>
+    <a class="text-link dark" href="#cuisines">Discover your next favourite <span>→</span></a>
+  </div>
+</section>
+<?php require __DIR__ . '/_categories.php'; ?>
+<section class="celebrations" id="celebrations">
+  <div class="celebration-photo"><img src="/assets/images/Indian-Catering.webp" alt="A generous Indian catering spread for a celebration" loading="lazy"></div><div class="celebration-copy"><span class="ornament" aria-hidden="true">✧</span><div class="celebration-content"><p class="eyebrow">GATHER BEAUTIFULLY</p><h2>Make it<br>a <em>feast.</em></h2><p>A wedding feast. A family milestone. A lunch that brings the team together. Let us bring the flavours of India to your celebration.</p><ul class="occasion-list"><li>Weddings</li><li>Corporate events</li><li>Private parties</li><li>Family gatherings</li><li>Special events</li></ul><a class="button gold" href="https://my5thelement.com/catering-menu-booking/">Explore catering <span>↗</span></a></div></div></section>
+<?php require __DIR__ . '/_locations.php'; ?>
+<?php require __DIR__ . '/_community.php'; ?>
+</main>
 
-      <a class="sample sample-two" href="Sample2/" aria-label="Open the Contemporary Restaurant sample">
-        <img class="sample-image" src="assets/images/loc-sanford.webp" alt="Contemporary restaurant interior">
-        <div class="sample-content">
-          <p class="sample-tag"><span>Sample 02</span><span>Contemporary</span></p>
-          <div class="sample-bottom">
-            <h2 class="sample-name">Contemporary Restaurant</h2>
-            <p class="sample-detail">A fresh, social dining room with clean lines, open space and an all-day neighbourhood energy.</p>
-            <span class="sample-action">Explore <b aria-hidden="true">→</b></span>
-          </div>
-        </div>
-      </a>
+<?php require __DIR__ . '/footer.php'; ?>
 
-      <a class="sample sample-three" href="Sample3/" aria-label="Open the Royal Banquet Restaurant sample">
-        <img class="sample-image" src="assets/images/catering-bg.webp" alt="An elegantly decorated banquet setting">
-        <div class="sample-content">
-          <p class="sample-tag"><span>Sample 03</span><span>Celebrations</span></p>
-          <div class="sample-bottom">
-            <h2 class="sample-name">Royal Banquet Restaurant</h2>
-            <p class="sample-detail">A dramatic, candlelit setting designed for family milestones, festive gatherings and private celebrations.</p>
-            <span class="sample-action">Explore <b aria-hidden="true">→</b></span>
-          </div>
-        </div>
-      </a>
-    </nav>
-
-    <footer class="footer-note">
-      <span>5th Element Indian Restaurant</span>
-      <span>Choose a sample to continue</span>
-    </footer>
-  </main>
+<script>
+document.querySelector('#location-form').addEventListener('submit', event => { event.preventDefault(); window.location.href = 'https://my5thelement.com/' + document.querySelector('#restaurant-select').value; });
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('#inner-nav');
+function closeMenu() { toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); }
+toggle.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open); });
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeMenu(); toggle.focus(); } });
+const newsletterForm=document.querySelector('#newsletter-form');
+if(newsletterForm)newsletterForm.addEventListener('submit', event => { event.preventDefault(); document.querySelector('#newsletter-status').textContent = 'Thank you! This is a design preview; your email has not been subscribed.'; });
+</script><script src="/assets/js/minimum-font-size.js?v=1" defer></script><script src="/assets/js/sample-2-carousel.js?v=3" defer></script><script src="/assets/js/sample-2-home.js?v=3" defer></script>
 </body>
 </html>

@@ -8,5 +8,5 @@ define('ASSET_URL', '/assets');
 function sample2_url(string $path = ''): string
 {
     $path = ltrim($path, '/');
-    return '/Sample2/' . $path;
+    return '/' . $path;
 }
