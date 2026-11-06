@@ -1,8 +1,8 @@
 <section class="section weekly" id="weekly">
     <div class="section-heading">
         <div>
-            <p class="eyebrow">THIS WEEK ON THE MENU</p>
-            <h2>Dishes of <em>the week.</em></h2>
+            <p class="eyebrow lotus-eyebrow">WEEKLY SPECIALS</p>
+            <h2>Our Menu</h2>
         </div>
         <p>From the first bite to a sweet finish.<br>A little inspiration for your next visit.</p>
     </div>

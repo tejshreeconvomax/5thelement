@@ -13,7 +13,7 @@
   if (originals.length < 2) return null;
 
   let clones = [];
-  if (!reducedMotion.matches) {
+  if (!reducedMotion.matches && !track.matches('.blog-track')) {
    clones = originals.map(item => {
     const clone = item.cloneNode(true);
     clone.dataset.carouselClone = 'true';
@@ -124,7 +124,8 @@
    const elapsed = Math.min(48, time - state.lastTime);
    if (
     !state.interacting &&
-    !(mobileViewport.matches && state.track.matches('.blog-track, .review-track')) &&
+    !state.track.matches('.blog-track') &&
+    !(mobileViewport.matches && state.track.matches('.review-track')) &&
     time >= state.pauseUntil &&
     document.visibilityState === 'visible' &&
     state.track.scrollWidth > state.track.clientWidth

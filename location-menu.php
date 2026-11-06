@@ -2,10 +2,10 @@
 <section class="menu-hero menu-proclamation">
   <div class="menu-hero-copy">
     <a class="back-link" href="<?= h(sample2_url('catering.php')) ?>">← Catering services</a>
-    <p class="eyebrow">JACKSONVILLE · CATERING</p>
-    <h1>Your guest list.<br><em>Our grand menu.</em></h1>
+    <p class="eyebrow">JACKSONVILLE CATERING</p>
+    <h1>Catering Menu</h1>
     <p>Choose your dishes, explore tray sizes, and build a menu enquiry for your next celebration.</p>
-    <div class="button-row"><a href="#catering-menu" class="btn gold">Explore the menu <?= icon('feast') ?></a><a href="#enquiry" class="btn outline">Ask for a quote <?= icon('arrow') ?></a></div>
+    <div class="button-row"><a href="#catering-menu" class="btn gold">View Menu</a><a href="#enquiry" class="btn outline">Get Quote</a></div>
   </div>
   <div class="menu-hero-stage">
     <span class="menu-hero-script">A feast, composed<br>for your occasion.</span>
@@ -21,8 +21,8 @@
 <section class="page-section menu-section" id="catering-menu">
   <div class="section-title">
     <div>
-      <p class="eyebrow">BUILD YOUR CELEBRATION MENU</p>
-      <h2>Something for<br><em>every guest.</em></h2>
+      <p class="eyebrow">CATERING MENU</p>
+      <h2>Our Menu</h2>
     </div>
     <p>Indicative prices from the project’s catering menu.<br>Final pricing and availability are confirmed by our team.</p>
   </div>
@@ -61,14 +61,14 @@
         <p><?= h($item['name']) ?> — <?= $item['options'] ? h('$'.$item['options'][0]['price']) . ' and up' : h($item['simple'].' '.$item['unit']) ?></p>
         <?php endforeach; endforeach; ?>
       </noscript>
-      <button class="btn outline" type="button" id="load-more">Show more dishes <?= icon('plus') ?></button>
+      <button class="btn outline" type="button" id="load-more">Show More</button>
     </div>
   </div>
 </section>
 <section class="quote-section page-section" id="your-menu">
   <div>
     <p class="eyebrow">YOUR MENU ENQUIRY</p>
-    <h2>The beginnings<br>of <em>a wonderful feast.</em></h2>
+    <h2>Catering Enquiry</h2>
     <p>Add dishes from the menu to discuss with our catering team. Quantities represent trays or units; minimum orders shown in dish names still apply.</p>
     <p class="fine-print">This is an enquiry list, not a checkout. Indicative food totals exclude taxes, delivery, staffing, and optional event services.</p>
   </div>
@@ -77,7 +77,7 @@
       <p>Your enquiry list is empty. Add a dish to get started.</p>
     </div>
     <div class="quote-total"><span>Indicative food total</span><strong id="quote-total">$0.00</strong></div>
-    <a href="#enquiry" class="btn gold">Discuss this menu <?= icon('arrow') ?></a>
+    <a href="#enquiry" class="btn gold">Request Quote</a>
     <p id="quote-status" role="status" class="fine-print"></p>
   </div>
 </section>
@@ -102,6 +102,7 @@
   </div>
 </section> -->
 <section class="menu-assurance">
+  <img class="menu-assurance-host" src="/assets/images/menu-assurance-host.png" alt="" aria-hidden="true" loading="lazy">
   <p class="eyebrow">A MENU MADE PERSONAL</p>
   <h2>From a family gathering<br>to <em>a magnificent wedding.</em></h2>
   <p>Share your dietary preferences, service needs, and favourite flavours. We’ll help you shape the celebration.</p>

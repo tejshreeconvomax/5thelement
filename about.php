@@ -8,8 +8,8 @@ require __DIR__ . '/_inner-head.php';
 ?>
 <section class="about-hero">
   <div class="about-hero-copy">
-    <p class="eyebrow">INDIAN ROOTS · FLORIDA SOUL</p>
-    <h1>Made for the<br><em>shared table.</em></h1>
+    <p class="eyebrow">ABOUT 5TH ELEMENT</p>
+    <h1>Our Story</h1>
     <p>5th Element brings the generosity, colour, and comfort of Indian hospitality to every meal, whether you join us for lunch or gather your whole guest list.</p>
     <a class="btn gold" href="<?= h(sample2_url('jacksonville.php')) ?>">Visit our table <?= icon('arrow') ?></a>
   </div>
@@ -18,11 +18,11 @@ require __DIR__ . '/_inner-head.php';
 
 <section class="about-story page-section">
   <div class="about-story-photo ornamental-photo"><img src="/assets/images/spices.webp" alt="A colourful assortment of Indian spices" loading="lazy"></div>
-  <div class="about-story-copy"><p class="eyebrow">OUR STORY</p><h2>Tradition, with<br><em>a little fire.</em></h2><p>Our kitchens take their cue from the recipes and rituals that make Indian food feel like home: fragrant spice, slow-simmered sauces, warm bread, and plates passed across the table.</p><p>We pair those roots with the easy warmth of Florida. The result is a place to linger over a buffet, celebrate a milestone, or pick up a favourite for the people waiting at home.</p><div class="about-story-note"><span>INDIAN ROOTS</span><b>Generous food.<br>Open-hearted welcome.</b></div><a class="quiet-link" href="<?= h(sample2_url('catering.php')) ?>">Celebrate with us →</a></div>
+  <div class="about-story-copy"><p class="eyebrow">OUR STORY</p><h2>Our Story</h2><p>Our kitchens take their cue from the recipes and rituals that make Indian food feel like home: fragrant spice, slow-simmered sauces, warm bread, and plates passed across the table.</p><p>We pair those roots with the easy warmth of Florida. The result is a place to linger over a buffet, celebrate a milestone, or pick up a favourite for the people waiting at home.</p><div class="about-story-note"><span>INDIAN ROOTS</span><b>Generous food.<br>Open-hearted welcome.</b></div><a class="quiet-link" href="<?= h(sample2_url('catering.php')) ?>">Celebrate with us →</a></div>
 </section>
 
 <section class="about-values page-section">
-  <div class="section-title"><div><p class="eyebrow">WHAT GUIDES US</p><h2>Every welcome<br><em>means something.</em></h2></div><p>From the first greeting to the last shared bite,<br>we make room for people to feel at home.</p></div>
+  <div class="section-title"><div><p class="eyebrow">WHAT GUIDES US</p><h2>Our Values</h2></div><p>From the first greeting to the last shared bite,<br>we make room for people to feel at home.</p></div>
   <div class="about-value-grid">
     <article><span><?= icon('feast') ?></span><p class="eyebrow">01 · GENEROSITY</p><h3>More to share.</h3><p>Food is at its best when there is enough for one more plate, one more story, and one more person at the table.</p></article>
     <article><span><?= icon('spark') ?></span><p class="eyebrow">02 · CRAFT</p><h3>Flavour with feeling.</h3><p>We build depth through time-honoured techniques, thoughtful ingredients, and a little joyful curiosity.</p></article>
@@ -30,5 +30,5 @@ require __DIR__ . '/_inner-head.php';
   </div>
 </section>
 
-<section class="about-invitation"><span class="rosette" aria-hidden="true"></span><p class="eyebrow">THE FIFTH ELEMENT</p><h2>The moment a meal becomes<br><em>a memory.</em></h2><p>That is the part we are here for.</p><a class="btn outline" href="<?= h(sample2_url('contact.php')) ?>">Start a conversation <?= icon('arrow') ?></a></section>
+<section class="about-invitation"><span class="rosette" aria-hidden="true"></span><p class="eyebrow">THE FIFTH ELEMENT</p><h2>Our Restaurant</h2><p>That is the part we are here for.</p><a class="btn outline" href="<?= h(sample2_url('contact.php')) ?>">Start a conversation <?= icon('arrow') ?></a></section>
 <?php require __DIR__ . '/_inner-foot.php'; ?>

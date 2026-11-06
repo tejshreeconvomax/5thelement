@@ -1,6 +1,6 @@
 <?php
-$testimonialEyebrow = $testimonialEyebrow ?? 'WHAT OUR GUESTS SAY';
-$testimonialTitle = $testimonialTitle ?? 'Stories from <em>the table.</em>';
+$testimonialEyebrow = $testimonialEyebrow ?? 'GUEST FEEDBACK';
+$testimonialTitle = $testimonialTitle ?? 'Customer Reviews';
 $testimonialNote = $testimonialNote ?? 'Sample reviews carried over from Sample 1 for this design preview.';
 $reviews = [
     ['The food is always fresh, full of flavour and the service is excellent. The biryani and butter chicken never miss.','Priya S.','Baymeadows, Jacksonville'],
@@ -14,7 +14,7 @@ $reviewEscape = static fn($value) => htmlspecialchars((string)$value, ENT_QUOTES
 ?>
 <section class="section reviews shared-testimonials" id="testimonials-section">
   <div class="section-heading">
-    <div><p class="eyebrow"><?= $reviewEscape($testimonialEyebrow) ?></p><h2><?= $testimonialTitle ?></h2></div>
+    <div><p class="eyebrow lotus-eyebrow"><?= $reviewEscape($testimonialEyebrow) ?></p><h2><?= $testimonialTitle ?></h2></div>
     <div class="slider-controls">
       <button type="button" data-slide="reviews-track" data-direction="-1" aria-label="Previous reviews">←</button>
       <button type="button" data-slide="reviews-track" data-direction="1" aria-label="Next reviews">→</button>

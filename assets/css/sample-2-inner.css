@@ -22,19 +22,18 @@
   pointer-events: none;
 }
 
-/* Keep the full-bleed footer ornament inside the page width at every viewport. */
+/* Keep the footer ornament pinned to the viewport edges at every viewport. */
 .site-footer {
   position: relative;
   overflow-x: clip;
-  padding-bottom: 76px;
 }
 .site-footer .footer-gold-border {
   position: absolute;
-  right: 0;
+  left: 50%;
   bottom: 0;
-  left: 0;
-  width: auto;
+  width: 100vw;
   margin: 0;
+  transform: translateX(-50%);
 }
 * {
   box-sizing: border-box;
@@ -205,6 +204,7 @@ button:disabled {
 .nav-toggle {
   display: none;
 }
+.button,
 .btn {
   display: inline-flex;
   align-items: center;
@@ -645,7 +645,8 @@ button:disabled {
   margin-top: 12px;
 }
 .site-footer {
-  padding: 65px 7% 25px;
+  /* Reserve the ornament's exact height so it never covers the footer base. */
+  padding: 65px 7% 56px;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
   gap: 45px;
@@ -5911,5 +5912,153 @@ body.cart-open {
     .service-grid
     .service-scene-card:is(:hover, :focus-within, .is-explored) {
     transform: translateY(-4px);
+  }
+}
+
+/* Shared CTA treatment: the supplied ornamental artwork is vertically cropped into each button. */
+.button,
+.btn {
+  background-color: transparent !important;
+  background-image: url('/assets/images/button-bg.png') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: calc(100% + 6px) 118px !important;
+  border-color: transparent !important;
+  color: var(--deep) !important;
+  text-shadow: 0 1px #fff5;
+  gap: 0;
+  white-space: nowrap;
+}
+.button > svg,
+.btn > svg,
+.button > span[aria-hidden],
+.btn > span[aria-hidden] {
+  display: none !important;
+}
+.catering-page .hero-invitation-content .btn {
+  white-space: nowrap;
+}
+.button:hover,
+.btn:hover,
+.btn.gold:hover,
+.btn.outline:hover {
+  background-color: transparent !important;
+  background-image: url('/assets/images/button-bg.png') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: calc(100% + 6px) 118px !important;
+  color: var(--deep) !important;
+  filter: brightness(1.07);
+}
+
+/* Contact form keeps its original restrained gold submit treatment. */
+.contact-form > .btn.gold {
+  background-color: transparent !important;
+  background-image: linear-gradient(110deg, #bd9550, #e3cd99, #c6a15b) !important;
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  border-color: var(--gold) !important;
+  color: var(--deep) !important;
+  text-shadow: none;
+}
+.contact-form > .btn.gold:hover {
+  background-color: var(--ivory) !important;
+  background-image: none !important;
+  filter: none;
+}
+
+/* Catering enquiry forms keep the original restrained gold submit treatment. */
+.catering-page .event-form > .btn.gold,
+.menu-page .event-form > .btn.gold {
+  background-color: transparent !important;
+  background-image: linear-gradient(110deg, #bd9550, #e3cd99, #c6a15b) !important;
+  background-position: 0 0 !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  border-color: var(--gold) !important;
+  color: var(--deep) !important;
+  text-shadow: none;
+}
+.catering-page .event-form > .btn.gold:hover,
+.menu-page .event-form > .btn.gold:hover {
+  background-color: var(--ivory) !important;
+  background-image: none !important;
+  filter: none;
+}
+
+/* A single restrained floral transition for the Catering Locations page. */
+.catering-page .catering-locations {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.catering-page .catering-locations::before {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 50%;
+  width: min(620px, 58vw);
+  height: 110px;
+  background: url('/assets/images/gold-lotus-flourish.png') center 58% / 620px auto no-repeat;
+  opacity: 0.13;
+  pointer-events: none;
+  content: "";
+  transform: translateX(-50%);
+}
+.catering-page .catering-locations > * {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .catering-page .catering-locations::before {
+    width: 360px;
+    height: 72px;
+    background-size: 390px auto;
+    opacity: 0.1;
+  }
+}
+/* End of inner page ornament rules. */
+
+/* The lotus divider is deliberately opt-in for the selected section labels. */
+.lotus-eyebrow {
+  width: fit-content;
+  padding-top: clamp(27px, 2.7vw, 42px);
+  background: url('/assets/images/gold-lotus-divider-cropped.png') center top / clamp(122px, 12vw, 188px) auto no-repeat;
+}
+@media (max-width: 700px) {
+  .lotus-eyebrow {
+    padding-top: 29px;
+    background-size: 130px auto;
+  }
+}
+
+/* Catering menu: a welcoming server supports the personal-menu message. */
+.menu-page .menu-assurance {
+  overflow: hidden;
+  isolation: isolate;
+}
+.menu-page .menu-assurance > :not(.menu-assurance-host) {
+  position: relative;
+  z-index: 1;
+}
+.menu-page .menu-assurance-host {
+  position: absolute;
+  z-index: 0;
+  left: clamp(18px, 6vw, 110px);
+  bottom: -34px;
+  width: clamp(155px, 18vw, 280px);
+  height: auto;
+  opacity: 0.78;
+  filter: saturate(0.86) contrast(0.94) drop-shadow(0 16px 18px #260b155e);
+  pointer-events: none;
+}
+@media (max-width: 700px) {
+  .menu-page .menu-assurance-host {
+    left: auto;
+    right: -28px;
+    bottom: -18px;
+    width: 145px;
+    opacity: 0.25;
   }
 }

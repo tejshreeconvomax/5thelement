@@ -1,9 +1,9 @@
 <section class="section categories" id="cuisines">
     <div class="category-intro">
-        <p class="eyebrow">THE MANY MOODS OF INDIA</p>
-        <h2>Pick a craving.<br><em>Meet its match.</em></h2>
+        <p class="eyebrow lotus-eyebrow">EXPLORE OUR MENU</p>
+        <h2>Menu Categories</h2>
         <p>From the heat of the tandoor to the comfort of a slow-cooked curry. Explore the kitchen, one flavour at a time.</p>
-        <a class="button" href="#locations">Find your local menu ↗</a>
+        <a class="button" href="#locations">View Menu</a>
     </div>
     <div class="category-explorer">
         <div class="category-stage">

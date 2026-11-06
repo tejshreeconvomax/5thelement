@@ -2,11 +2,11 @@
 <section class="location-hero">
     <div class="location-hero-copy">
         <p class="eyebrow">BAYMEADOWS · JACKSONVILLE</p>
-        <h1>Your neighbourhood.<br><em>A world of flavour.</em></h1>
+        <h1>Jacksonville Restaurant</h1>
         <p>Biryanis, curries, warm breads, and something sweet. Find your taste of India in the heart of Baymeadows.</p>
         <div class="button-row">
-            <a href="#" class="btn gold">Menu & online ordering <?= icon('bag') ?></a>
-            <a href="tel:9044488265" class="btn outline">Call for a table <?= icon('phone') ?></a>
+            <a href="#" class="btn gold">Order Online</a>
+            <a href="tel:9044488265" class="btn outline">Call Restaurant</a>
         </div>
         <div class="address-tag"><?= icon('pin') ?><span>9551 Baymeadows Rd · Units 10 & 11<br>Jacksonville, FL 32256</span></div>
     </div>
@@ -18,8 +18,8 @@
 
 <section class="page-section local-services">
     <div class="section-title"><div>
-        <p class="eyebrow">HOW WE WELCOME YOU</p>
-        <h2>Your table.<br><em>Your way.</em></h2>
+        <p class="eyebrow">RESTAURANT SERVICES</p>
+        <h2>Our Services</h2>
         </div>
         <p>A leisurely lunch, an evening gathering,<br>or your favourites to go.</p>
     </div>
@@ -40,15 +40,15 @@
 <section class="buffet-section">
     <div class="buffet-information">
         <span class="buffet-ornament rosette" aria-hidden="true"></span>
-        <p class="eyebrow">A LITTLE OF EVERYTHING YOU LOVE</p>
-        <h2>The lunch<br><em>buffet ritual.</em></h2>
+        <p class="eyebrow">DAILY BUFFET</p>
+        <h2>Lunch Buffet</h2>
         <p>Discover a variety of Indian dishes, with vegetarian and non-vegetarian choices and a sweet finish.</p>
         <div class="buffet-times"><div>
             <?= icon('clock') ?><span>MONDAY — FRIDAY<strong>11 AM – 2:30 PM</strong></span>
         </div>
         <div><?= icon('clock') ?><span>SATURDAY — SUNDAY<strong>11 AM – 3 PM</strong></span></div>
         </div>
-    <a href="#" class="btn gold">Buffet menu <?= icon('arrow') ?></a>
+    <a href="#" class="btn gold">View Buffet</a>
     </div>
     <div class="buffet-collage">
         <img src="/assets/images/Indian-food.webp" alt="An assortment of Indian dishes for lunch" loading="lazy">
@@ -59,8 +59,8 @@
 <section class="page-section gallery-section">
     <div class="section-title">
         <div>
-            <p class="eyebrow">MAKE YOURSELF AT HOME</p>
-            <h2>A place to pause.<br><em>A table to share.</em></h2>
+            <p class="eyebrow">RESTAURANT PHOTOS</p>
+            <h2>Our Restaurant</h2>
         </div>
         <p>Take a closer look at our restaurant and cuisine.</p>
     </div>
@@ -85,8 +85,8 @@
 
 <section class="visit-section page-section" id="visit">
     <div class="visit-card" id="enquiry">
-        <p class="eyebrow">A WARM WELCOME AWAITS</p>
-        <h2>Visit <em>Baymeadows.</em></h2>
+        <p class="eyebrow">BAYMEADOWS · JACKSONVILLE</p>
+        <h2>Visit Us</h2>
         <p class="street"><?= icon('pin') ?> 9551 Baymeadows Rd, Units 10 & 11<br>Jacksonville, FL 32256</p>
         <div class="visit-phones">
             <a href="tel:9044488265">(904) 448-8265</a>
@@ -99,7 +99,7 @@
             <div><dt>Sunday</dt><dd>11 AM – 9:20 PM</dd></div>
         </dl>
         <p class="fine-print">Call the restaurant for holiday hours and reservations.</p>
-        <a class="btn gold" href="https://www.google.com/maps/search/?api=1&query=9551%20Baymeadows%20Rd%20Jacksonville%20FL%2032256">Get directions <?= icon('arrow') ?></a>
+        <a class="btn gold" href="https://www.google.com/maps/search/?api=1&query=9551%20Baymeadows%20Rd%20Jacksonville%20FL%2032256">Directions</a>
     </div>
     <div class="visit-illustration">
         <div class="visit-palace-photo">
@@ -109,7 +109,7 @@
             <span class="rosette" aria-hidden="true"></span>
             <p class="eyebrow">INDIAN ROOTS · FLORIDA SOUL</p>
             <p class="visit-quote">The best journeys<br>end at <em>the table.</em></p>
-            <a href="<?= h(sample2_url('location-menu.php')) ?>" class="btn outline">Plan a catered celebration <?= icon('feast') ?></a>
+            <a href="<?= h(sample2_url('location-menu.php')) ?>" class="btn outline">Catering Menu</a>
         </div>
     </div>
 </section>
