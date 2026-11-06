@@ -11,7 +11,7 @@
         <div class="address-tag"><?= icon('pin') ?><span>9551 Baymeadows Rd · Units 10 & 11<br>Jacksonville, FL 32256</span></div>
     </div>
     <div class="location-hero-photo">
-        <img src="/assets/images/dine.webp" alt="An Indian dining room with warm lanterns and heritage details" fetchpriority="high">
+        <img src="/assets/images/jacksonville-bay-meadows.webp" alt="Baymeadows restaurant" fetchpriority="high">
         <span class="location-seal">AT HOME<br><em>in India.</em><br>HERE IN FLORIDA</span>
     </div>
 </section>
@@ -65,7 +65,7 @@
         <p>Take a closer look at our restaurant and cuisine.</p>
     </div>
     <div class="photo-gallery local-gallery">
-        <?php foreach ([['loc-jacksonville.webp','Indian dining room inspiration'],['dine.webp','A warm dining experience'],['dish-biryani.webp','Biryani prepared with aromatic spices']] as [$image,$alt]): ?>
+        <?php foreach ([['jacksonville-bay-meadows.webp','Baymeadows restaurant'],['dine.webp','A warm dining experience'],['dish-biryani.webp','Biryani prepared with aromatic spices']] as [$image,$alt]): ?>
             <button type="button" data-gallery="/assets/images/<?= h($image) ?>" data-caption="<?= h($alt) ?>" aria-label="Enlarge: <?= h($alt) ?>">
                 <img src="/assets/images/<?= h($image) ?>" alt="<?= h($alt) ?>" loading="lazy">
                 <span><?= icon('plus') ?></span>

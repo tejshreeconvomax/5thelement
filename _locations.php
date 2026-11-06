@@ -8,7 +8,7 @@
     </div>
     <div class="restaurant-directory">
         <div class="restaurant-visual">
-            <img id="restaurant-photo" src="/assets/images/loc-jacksonville.webp" alt="Explore our Florida restaurants" loading="lazy">
+            <img id="restaurant-photo" src="/assets/images/jacksonville-bay-meadows.webp" alt="Baymeadows restaurant" loading="lazy">
             <div>
                 <span>YOUR NEXT GATHERING STARTS HERE</span>
                 <p id="restaurant-caption">Baymeadows · Jacksonville</p>

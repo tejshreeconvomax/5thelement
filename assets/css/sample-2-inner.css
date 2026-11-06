@@ -6062,3 +6062,407 @@ body.cart-open {
     opacity: 0.25;
   }
 }
+
+/* About Us: the supplied gold peacocks frame the story in place of the generic SVG flourish. */
+.about-page .about-story::before,
+.about-page .about-story::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: clamp(-136px, -7vw, -68px);
+  width: auto;
+  height: clamp(300px, 31vw, 510px);
+  aspect-ratio: 1377 / 1578;
+  background: url('/assets/images/about-peacock-gold.png') center / contain no-repeat;
+  opacity: 0.4;
+  -webkit-mask-image: radial-gradient(ellipse 86% 88% at 64% 52%, #000 0 56%, transparent 100%);
+  mask-image: radial-gradient(ellipse 86% 88% at 64% 52%, #000 0 56%, transparent 100%);
+  pointer-events: none;
+}
+.about-page .about-story::before {
+  z-index: 2;
+  left: clamp(-94px, -4vw, -42px);
+  transform: scaleX(-1);
+}
+.about-page .about-story::after {
+  right: clamp(-94px, -4vw, -42px);
+}
+.about-page .about-story > * {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .about-page .about-story::before,
+  .about-page .about-story::after {
+    bottom: -96px;
+    width: auto;
+    height: 270px;
+    opacity: 0.29;
+  }
+  .about-page .about-story::before {
+    left: -55px;
+  }
+  .about-page .about-story::after {
+    right: -55px;
+  }
+}
+
+/* Keep the paired peacock story panel compact without changing its composition. */
+.about-page .about-story {
+  padding-block: 70px;
+}
+.about-page .about-story-photo {
+  height: 420px;
+}
+/* Our Restaurant: use the supplied elephant as a dark antique-gold backdrop. */
+.about-page .about-invitation::after {
+  top: auto;
+  z-index: 0;
+  right: clamp(-58px, -2vw, -18px);
+  bottom: -130px;
+  width: clamp(250px, 23vw, 390px);
+  height: clamp(330px, 32vw, 540px);
+  background: url('/assets/images/about-elephant-gold.png') center / contain no-repeat;
+  opacity: 0.68;
+  filter: brightness(0.52) saturate(0.9) contrast(1.18) drop-shadow(0 16px 20px #081d183d);
+}
+@media (max-width: 700px) {
+  .about-page .about-story {
+    padding-block: 52px;
+  }
+  .about-page .about-story-photo {
+    height: 290px;
+  }
+  .about-page .about-invitation::after {
+    right: -46px;
+    bottom: -96px;
+    width: 195px;
+    height: 290px;
+    opacity: 0.5;
+  }
+}
+
+/* What Guides Us: replace the pale circular ring with the supplied gold mandala. */
+.about-page .about-values::after {
+  top: 34px;
+  right: clamp(-90px, -4vw, -42px);
+  width: clamp(220px, 23vw, 350px);
+  height: clamp(220px, 23vw, 350px);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: url('/assets/images/luxury-mandala-design-free-png.webp') center / contain no-repeat;
+  opacity: 0.16;
+  z-index: 0;
+}
+.about-page .about-values > * {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .about-page .about-values::after {
+    top: 18px;
+    right: -68px;
+    width: 190px;
+    height: 190px;
+    opacity: 0.11;
+  }
+}
+
+/* About hero: the supplied half-mandala replaces the small rosette in the copy panel. */
+.about-page .about-hero-copy::after {
+  right: 4%;
+  bottom: -58px;
+  width: 330px;
+  height: 158px;
+  background: url('/assets/images/about-hero-half-mandala.webp') center -74px / 368px auto no-repeat;
+  opacity: 0.68;
+  filter: drop-shadow(0 5px 7px #32101a66);
+}
+@media (max-width: 700px) {
+  .about-page .about-hero-copy::after {
+    right: 3%;
+    bottom: -42px;
+    width: 230px;
+    height: 108px;
+    background-size: 256px auto;
+    background-position: center -51px;
+    opacity: 0.56;
+  }
+}
+
+/* Restaurant Hours: retain the supplied kitchen team without the former ornament. */
+.contact-page .contact-hours::after {
+  content: none;
+  background: none;
+}
+.contact-page .contact-hours-chefs {
+  position: absolute;
+  z-index: 0;
+  right: clamp(-76px, -3vw, -28px);
+  bottom: -52px;
+  width: clamp(330px, 27vw, 470px);
+  height: clamp(210px, 17vw, 290px);
+  object-fit: cover;
+  object-position: center 68%;
+  opacity: 0.56;
+  filter: sepia(0.18) saturate(0.76) contrast(0.9) drop-shadow(0 14px 18px #08251e66);
+  pointer-events: none;
+}
+@media (max-width: 700px) {
+  .contact-page .contact-hours-chefs {
+    right: -56px;
+    bottom: -38px;
+    width: 270px;
+    height: 175px;
+    opacity: 0.24;
+  }
+}
+
+/* Contact Hero: replace the companion concentric circle with a gold mandala. */
+.contact-page .contact-hero::after {
+  right: 24%;
+  top: -68px;
+  width: 315px;
+  height: 315px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: url('/assets/images/luxury-mandala-design-free-png.webp') center / contain no-repeat;
+  opacity: 0.22;
+  z-index: 0;
+  pointer-events: none;
+}
+@media (max-width: 700px) {
+  .contact-page .contact-hero::after {
+    right: -58px;
+    top: -38px;
+    width: 205px;
+    height: 205px;
+    opacity: 0.15;
+  }
+}
+
+/* Keep the hours CTA directly beneath the opening-time list. */
+.contact-page .contact-hours {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  column-gap: 8%;
+  row-gap: 24px;
+}
+.contact-page .contact-hours .btn {
+  grid-column: 2;
+  justify-self: start;
+  margin-top: 0;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-hours {
+    grid-template-columns: 1fr;
+  }
+  .contact-page .contact-hours .btn {
+    grid-column: 1;
+    width: 100%;
+  }
+}
+
+/* Keep the shared navigation compact before its desktop links begin to wrap. */
+html {
+  scroll-padding-top: 112px;
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding-block: 18px;
+  }
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .site-header > .btn {
+    display: none;
+  }
+  .site-header nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .site-header nav.is-open {
+    display: flex;
+  }
+  .site-header nav a {
+    padding: 12px 0;
+    border-top: 1px solid #c6a15b30;
+  }
+}
+
+/* About: keep the hero artwork and Values content clear at compact widths. */
+@media (max-width: 900px) {
+  .about-page .about-hero-copy::after {
+    display: none;
+  }
+
+  .about-page .about-value-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  .about-page .about-value-grid article {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page .about-hero-image::after,
+  .about-page .about-hero-script,
+  .about-page .about-hero-mark {
+    display: none;
+  }
+
+  .about-page .about-hero-image figcaption {
+    right: 10%;
+    bottom: 58px;
+    max-width: calc(100% - 42px);
+    line-height: 1.35;
+    text-align: center;
+  }
+}
+
+/* Catering: make compact layouts useful without crowding the approved desktop treatment. */
+.branch-choice-media {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .catering-page .catering-hero {
+    min-height: 560px;
+    padding: 28px 5%;
+  }
+
+  .catering-page .hero-invitation {
+    width: 100%;
+    min-height: 0;
+    padding: 48px 24px 42px;
+    background: linear-gradient(145deg, #7b3342ed, #581d29f2);
+    border: 1px solid #c6a15b95;
+    box-shadow: 0 14px 28px #32101a80;
+  }
+
+  .catering-page .hero-invitation::before,
+  .catering-page .hero-invitation::after,
+  .catering-page .hero-side-note {
+    display: none;
+  }
+
+  .catering-page .hero-invitation-content {
+    width: min(100%, 330px);
+  }
+
+  .catering-page .hero-invitation-content h1 {
+    font-size: clamp(32px, 9vw, 38px);
+  }
+
+  .catering-page .hero-invitation-content .btn {
+    background-color: var(--gold) !important;
+    background-image: none !important;
+    border-color: #e5ce9b;
+    color: var(--ink);
+  }
+
+  .catering-page .craft-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .catering-page .craft-section > div:last-child {
+    min-width: 0;
+  }
+
+  .catering-page .craft-composition {
+    height: 340px;
+    max-width: 100%;
+  }
+
+  .catering-page .craft-photo {
+    height: 100%;
+  }
+
+  .catering-page .craft-detail {
+    right: 12px;
+    bottom: 12px;
+    width: 44%;
+    height: 142px;
+    transform: none;
+  }
+
+  .catering-page .craft-caption {
+    right: 18px;
+    bottom: 20px;
+    left: 18px;
+    width: auto;
+    padding: 8px 10px;
+    text-align: center;
+    background: #581d29d9;
+  }
+}
+
+@media (max-width: 767px) {
+  .catering-page .branch-stage {
+    display: none;
+  }
+
+  .catering-page .branch-choices {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 4px 2px 18px;
+  }
+
+  .catering-page .branch-choices > .branch-choice {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) 32px;
+    grid-template-rows: 180px auto;
+    flex: 0 0 min(84vw, 360px);
+    gap: 0 14px;
+    overflow: hidden;
+    padding: 0;
+    transform: none;
+  }
+
+  .catering-page .branch-choice-media {
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    overflow: hidden;
+  }
+
+  .catering-page .branch-choice-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .catering-page .branch-choice .branch-pin {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    width: 48px;
+    height: 56px;
+    margin-left: 16px;
+  }
+
+  .catering-page .branch-choice > div {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 18px 0;
+  }
+
+  .catering-page .branch-choice .branch-arrow {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    margin: 0 16px 0 0;
+  }
+}

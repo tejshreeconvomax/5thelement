@@ -5236,3 +5236,78 @@ body{font-size:16px}
     opacity: 0.16;
   }
 }
+
+/* End of homepage cultural accents. */
+
+/* Keep the shared navigation compact before its desktop links begin to wrap. */
+html {
+  scroll-padding-top: 112px;
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  .home-page .site-header {
+    flex-wrap: wrap;
+    padding-block: 18px;
+  }
+  .home-page .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .home-page .site-header .header-order {
+    display: none;
+  }
+  .home-page .site-header nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .home-page .site-header nav.is-open {
+    display: flex;
+  }
+  .home-page .site-header nav a {
+    padding: 12px 0;
+    border-top: 1px solid #ffffff20;
+  }
+}
+
+/* Phone refinements: preserve the composition without stacking decorative content over copy. */
+@media (max-width: 900px) {
+  .home-page .weekly::after {
+    top: auto;
+    right: -28px;
+    bottom: 14px;
+    width: 200px;
+    opacity: 0.16;
+  }
+}
+@media (max-width: 520px) {
+  .home-page .restaurant-list a {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "region region"
+      "name action";
+    column-gap: 12px;
+    row-gap: 4px;
+    padding: 18px 0;
+  }
+  .home-page .restaurant-list a > span:first-child {
+    grid-area: region;
+  }
+  .home-page .restaurant-list h3 {
+    grid-area: name;
+    font-size: clamp(24px, 7vw, 28px);
+    line-height: 1.05;
+  }
+  .home-page .restaurant-action {
+    grid-area: action;
+    align-self: center;
+    white-space: nowrap;
+  }
+  .home-page .flavour-stamp,
+  .home-page .spice-photo {
+    display: none;
+  }
+  .home-page .celebration-copy {
+    display: none;
+  }
+}
