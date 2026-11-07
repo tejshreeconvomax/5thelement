@@ -6,6 +6,7 @@
 $cartLocationId = $cartLocationId ?? 'jacksonville';
 $cartLocationName = $cartLocationName ?? 'Jacksonville Catering';
 $cartImage = $cartImage ?? '/assets/images/catering.webp';
+$cartCheckoutUrl = sample2_url('checkout.php') . '?location=' . rawurlencode($cartLocationId);
 ?>
 <section class="location-cart" data-location-cart data-location-id="<?= h($cartLocationId) ?>" data-location-name="<?= h($cartLocationName) ?>" data-default-image="<?= h($cartImage) ?>" aria-label="<?= h($cartLocationName) ?> cart">
   <div class="cart-confirmation" data-cart-confirmation role="dialog" aria-modal="false" aria-labelledby="cart-confirmation-title" hidden>
@@ -37,7 +38,7 @@ $cartImage = $cartImage ?? '/assets/images/catering.webp';
     <div class="cart-items" data-cart-items aria-live="polite"></div>
     <footer class="cart-drawer-footer">
       <div class="cart-totals"><span>Subtotal</span><strong data-cart-subtotal>$0.00</strong><span>Total</span><strong data-cart-total>$0.00</strong></div>
-      <a class="btn gold cart-checkout" data-cart-checkout href="<?= h(sample2_url('checkout.php?location='.$cartLocationId)) ?>">Checkout <span aria-hidden="true">↗</span></a>
+      <a class="btn gold cart-checkout" data-cart-checkout href="<?= h($cartCheckoutUrl) ?>" aria-label="Continue to checkout">Checkout <span aria-hidden="true">↗</span></a>
       <p>Taxes, delivery, and service charges are confirmed with your event quote.</p>
     </footer>
   </aside>
