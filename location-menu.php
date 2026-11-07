@@ -19,6 +19,7 @@
   <a href="mailto:caterings@my5thelement.com"><?= icon('mail') ?> caterings@my5thelement.com</a>
 </div>
 <section class="page-section menu-section" id="catering-menu">
+  <img class="menu-section-anna" src="/assets/images/menu-assurance-host.png" alt="" aria-hidden="true" loading="lazy">
   <div class="section-title">
     <div>
       <p class="eyebrow">CATERING MENU</p>
@@ -38,6 +39,18 @@
       <label class="search-label" for="dish-search">Find a dish</label>
       <div class="search-box"><?= icon('search') ?><input id="dish-search" type="search" placeholder="Search the full menu…"></div>
       <p class="eyebrow">MENU CATEGORIES</p>
+      <div class="menu-category-dropdown" data-category-dropdown>
+        <span class="menu-category-dropdown__label">Select Menu Category</span>
+        <details class="menu-category-dropdown__control">
+          <summary><span data-category-current>All dishes</span><span aria-hidden="true">⌄</span></summary>
+          <div class="menu-category-dropdown__list" role="listbox" aria-label="Select Menu Category">
+            <button type="button" data-category="all" aria-pressed="true" role="option">All dishes</button>
+          <?php foreach($menuData as $i=>$category): ?>
+            <button type="button" data-category="<?= $i ?>" aria-pressed="false" role="option"><?= h($category['label']) ?></button>
+          <?php endforeach; ?>
+          </div>
+        </details>
+      </div>
       <div class="menu-categories" aria-label="Catering categories">
         <button type="button" data-category="all" aria-pressed="true">All dishes <span><?= array_sum(array_map(fn($c)=>count($c['items']),$menuData)) ?></span></button>
         <?php foreach($menuData as $i=>$category): ?>
@@ -70,7 +83,7 @@
     <p class="eyebrow">YOUR MENU ENQUIRY</p>
     <h2>Catering Enquiry</h2>
     <p>Add dishes from the menu to discuss with our catering team. Quantities represent trays or units; minimum orders shown in dish names still apply.</p>
-    <p class="fine-print">This is an enquiry list, not a checkout. Indicative food totals exclude taxes, delivery, staffing, and optional event services.</p>
+    <p class="fine-print">Food totals are indicative. Taxes, delivery, staffing, and optional event services are confirmed with your final quote.</p>
   </div>
   <div class="quote-card">
     <div id="quote-items">
@@ -102,7 +115,7 @@
   </div>
 </section> -->
 <section class="menu-assurance">
-  <img class="menu-assurance-host" src="/assets/images/menu-assurance-host.png" alt="" aria-hidden="true" loading="lazy">
+  <img class="menu-assurance-host" src="/assets/images/menu-assurance-family-feast.webp" alt="" aria-hidden="true" loading="lazy">
   <p class="eyebrow">A MENU MADE PERSONAL</p>
   <h2>From a family gathering<br>to <em>a magnificent wedding.</em></h2>
   <p>Share your dietary preferences, service needs, and favourite flavours. We’ll help you shape the celebration.</p>

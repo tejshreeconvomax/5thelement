@@ -12,7 +12,6 @@
     </div>
     <div class="location-hero-photo">
         <img src="/assets/images/jacksonville-bay-meadows.webp" alt="Baymeadows restaurant" fetchpriority="high">
-        <span class="location-seal">AT HOME<br><em>in India.</em><br>HERE IN FLORIDA</span>
     </div>
 </section>
 

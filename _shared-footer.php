@@ -5,3 +5,65 @@
   <div class="footer-base"><span>© <?= date('Y') ?> 5th Element Indian Restaurant</span><span>CRAFTED WITH INDIAN HOSPITALITY</span></div>
   <div class="footer-gold-border" aria-hidden="true"></div>
 </footer>
+<div class="app-download-widget" data-app-download-widget>
+  <aside class="app-download-popup" id="app-download-popup" data-app-download-popup role="dialog" aria-modal="false" aria-labelledby="app-download-message" aria-hidden="true" hidden>
+    <button class="app-download-popup__close" type="button" data-app-download-close aria-label="Close app offer">×</button>
+    <span class="app-download-popup__eyebrow" aria-hidden="true">5TH ELEMENT</span>
+    <p id="app-download-message">Download App for Exclusive Offers!</p>
+  </aside>
+  <button class="app-download-trigger" type="button" data-app-download-open aria-haspopup="dialog" aria-controls="app-download-popup" aria-expanded="false">
+    <img class="app-download-trigger__play-logo" src="/assets/images/google-play-logo.svg" alt="" aria-hidden="true">
+    <span class="sr-only">Download App</span>
+  </button>
+</div>
+<script>
+(() => {
+  const widget = document.querySelector('[data-app-download-widget]');
+  if (!widget) return;
+
+  const trigger = widget.querySelector('[data-app-download-open]');
+  const popup = widget.querySelector('[data-app-download-popup]');
+  const closeButton = widget.querySelector('[data-app-download-close]');
+  const sessionKey = '5th-element-app-download-offer-shown';
+  let closeTimer;
+
+  const openPopup = () => {
+    window.clearTimeout(closeTimer);
+    popup.hidden = false;
+    popup.setAttribute('aria-hidden', 'false');
+    trigger.setAttribute('aria-expanded', 'true');
+    window.requestAnimationFrame(() => popup.classList.add('is-visible'));
+  };
+
+  const closePopup = () => {
+    popup.classList.remove('is-visible');
+    popup.setAttribute('aria-hidden', 'true');
+    trigger.setAttribute('aria-expanded', 'false');
+    closeTimer = window.setTimeout(() => {
+      if (!popup.classList.contains('is-visible')) popup.hidden = true;
+    }, 240);
+  };
+
+  trigger.addEventListener('click', openPopup);
+  closeButton.addEventListener('click', closePopup);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !popup.hidden) {
+      closePopup();
+      trigger.focus();
+    }
+  });
+
+  try {
+    if (!window.sessionStorage.getItem(sessionKey)) {
+      window.setTimeout(() => {
+        if (!window.sessionStorage.getItem(sessionKey)) {
+          window.sessionStorage.setItem(sessionKey, '1');
+          openPopup();
+        }
+      }, 30000);
+    }
+  } catch (error) {
+    window.setTimeout(openPopup, 30000);
+  }
+})();
+</script>
