@@ -1,4 +1,8 @@
-<?php $title='Jacksonville Catering Menu'; $description='Explore Jacksonville catering dishes, tray sizes and indicative pricing. Prepare a menu enquiry for your wedding, party or corporate event.'; $pageClass='menu-page'; require __DIR__.'/_inner-head.php'; $menuData=json_decode(file_get_contents(__DIR__ . '/catering/jacksonville-menu.json'),true,512,JSON_THROW_ON_ERROR); ?>
+<?php $title = 'Jacksonville Catering Menu';
+$description = 'Explore Jacksonville catering dishes, tray sizes and indicative pricing. Prepare a menu enquiry for your wedding, party or corporate event.';
+$pageClass = 'menu-page';
+require __DIR__ . '/_inner-head.php';
+$menuData = json_decode(file_get_contents(__DIR__ . '/catering/jacksonville-menu.json'), true, 512, JSON_THROW_ON_ERROR); ?>
 <section class="menu-hero menu-proclamation">
   <div class="menu-hero-copy">
     <a class="back-link" href="<?= h(sample2_url('catering.php')) ?>">← Catering services</a>
@@ -45,18 +49,18 @@
           <summary><span data-category-current>All dishes</span><span aria-hidden="true">⌄</span></summary>
           <div class="menu-category-dropdown__list" role="listbox" aria-label="Select Menu Category">
             <button type="button" data-category="all" aria-pressed="true" role="option">All dishes</button>
-          <?php foreach($menuData as $i=>$category): ?>
-            <button type="button" data-category="<?= $i ?>" aria-pressed="false" role="option"><?= h($category['label']) ?></button>
-          <?php endforeach; ?>
+            <?php foreach ($menuData as $i => $category): ?>
+              <button type="button" data-category="<?= $i ?>" aria-pressed="false" role="option"><?= h($category['label']) ?></button>
+            <?php endforeach; ?>
           </div>
         </details>
       </div>
       <div class="menu-categories" aria-label="Catering categories">
-        <button type="button" data-category="all" aria-pressed="true">All dishes <span><?= array_sum(array_map(fn($c)=>count($c['items']),$menuData)) ?></span></button>
-        <?php foreach($menuData as $i=>$category): ?>
-          <button type="button" data-category="<?= $i ?>" aria-pressed="false"><?= h($category['label']) ?> 
-          <span><?= count($category['items']) ?></span>
-        </button>
+        <button type="button" data-category="all" aria-pressed="true">All dishes <span><?= array_sum(array_map(fn($c) => count($c['items']), $menuData)) ?></span></button>
+        <?php foreach ($menuData as $i => $category): ?>
+          <button type="button" data-category="<?= $i ?>" aria-pressed="false"><?= h($category['label']) ?>
+            <span><?= count($category['items']) ?></span>
+          </button>
         <?php endforeach; ?>
       </div>
     </aside>
@@ -68,11 +72,12 @@
       <div id="dish-results" class="dish-results"></div>
       <noscript>
         <p>Enable JavaScript to filter dishes and build an enquiry. You can still browse the full menu below.</p>
-        <?php foreach($menuData as $category): ?>
-        <h3><?= h($category['label']) ?></h3>
-        <?php foreach($category['items'] as $item): ?>
-        <p><?= h($item['name']) ?> — <?= $item['options'] ? h('$'.$item['options'][0]['price']) . ' and up' : h($item['simple'].' '.$item['unit']) ?></p>
-        <?php endforeach; endforeach; ?>
+        <?php foreach ($menuData as $category): ?>
+          <h3><?= h($category['label']) ?></h3>
+          <?php foreach ($category['items'] as $item): ?>
+            <p><?= h($item['name']) ?> — <?= $item['options'] ? h('$' . $item['options'][0]['price']) . ' and up' : h($item['simple'] . ' ' . $item['unit']) ?></p>
+        <?php endforeach;
+        endforeach; ?>
       </noscript>
       <button class="btn outline" type="button" id="load-more">Show More</button>
     </div>
@@ -103,7 +108,7 @@
     <p>Ask for an event-specific quote for these services.</p>
   </div>
   <div class="extras-grid">
-    <?php foreach ([['feast','Live food stations','Chaat, dosa, and tandoor stations. Chef and station charges may apply.'],['dine','Buffet setup & service','Discuss staffing, refill service, and service duration.'],['spark','Presentation & equipment','Ask about copper chafing dishes and event presentation.'],['truck','Delivery','Delivery charges depend on your venue and distance.']] as $index => [$ic,$name,$copy]): ?>
+    <?php foreach ([['feast', 'Live food stations', 'Chaat, dosa, and tandoor stations. Chef and station charges may apply.'], ['dine', 'Buffet setup & service', 'Discuss staffing, refill service, and service duration.'], ['spark', 'Presentation & equipment', 'Ask about copper chafing dishes and event presentation.'], ['truck', 'Delivery', 'Delivery charges depend on your venue and distance.']] as $index => [$ic, $name, $copy]): ?>
     <article class="extra-panel" data-extra-panel>
       <span class="extra-index">0<?= $index + 1 ?></span>
       <div class="extra-emblem"><?= icon($ic) ?></div>
@@ -121,6 +126,14 @@
   <p>Share your dietary preferences, service needs, and favourite flavours. We’ll help you shape the celebration.</p>
 </section>
 <script id="catering-data" type="application/json" data-cart-location-id="jacksonville">
-  <?= json_encode($menuData,JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT) ?>
+  <?= json_encode($menuData, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>
 </script>
-<?php $cartLocationId='jacksonville'; $cartLocationName='Jacksonville Catering'; $cartImage='/assets/images/catering.webp'; require __DIR__.'/_location-cart.php'; unset($cartLocationId,$cartLocationName,$cartImage); $enquiryClass='menu-enquiry-section'; require __DIR__.'/_enquiry.php'; unset($enquiryClass); require __DIR__.'/_inner-foot.php'; ?>
+<?php $cartLocationId = 'jacksonville';
+$cartLocationName = 'Jacksonville Catering';
+$cartImage = '/assets/images/catering.webp';
+require __DIR__ . '/_location-cart.php';
+unset($cartLocationId, $cartLocationName, $cartImage);
+$enquiryClass = 'menu-enquiry-section';
+require __DIR__ . '/_enquiry.php';
+unset($enquiryClass);
+require __DIR__ . '/_inner-foot.php'; ?>

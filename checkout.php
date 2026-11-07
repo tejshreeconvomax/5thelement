@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 $requestedLocation = strtolower((string) ($_GET['location'] ?? 'jacksonville'));
@@ -11,18 +12,60 @@ $pageClass = 'checkout-page';
 require __DIR__ . '/_inner-head.php';
 ?>
 <section class="checkout-shell page-section" data-checkout-page data-location-id="<?= h($checkoutLocationId) ?>" data-location-name="<?= h($checkoutLocationName) ?>">
-  <header class="checkout-heading"><p class="eyebrow">YOUR ORDER</p><h1>Checkout</h1><p>Review your selections and share the details needed to confirm your order.</p></header>
-  <div class="checkout-empty" data-checkout-empty hidden><h2>Your cart is empty</h2><p>Add dishes from the catering menu before continuing to checkout.</p><a class="btn gold" href="<?= h(sample2_url('location-menu.php')) ?>">Browse the menu <span aria-hidden="true">↗</span></a></div>
+  <header class="checkout-heading">
+    <p class="eyebrow">YOUR ORDER</p>
+    <h1>Checkout</h1>
+    <p>Review your selections and share the details needed to confirm your order.</p>
+  </header>
+  <div class="checkout-empty" data-checkout-empty hidden>
+    <h2>Your cart is empty</h2>
+    <p>Add dishes from the catering menu before continuing to checkout.</p><a class="btn gold" href="<?= h(sample2_url('location-menu.php')) ?>">Browse the menu <span aria-hidden="true">↗</span></a>
+  </div>
   <div class="checkout-layout" data-checkout-layout>
     <form class="checkout-form" data-checkout-form novalidate>
-      <div class="checkout-form-intro"><p class="eyebrow">ORDER DETAILS</p><p>All fields marked required are needed to submit your order request.</p></div>
-      <fieldset class="checkout-card"><legend>Customer details</legend><div class="checkout-fields checkout-fields--two"><label>Full name <span aria-hidden="true">*</span><input name="name" type="text" autocomplete="name" required></label><label>Phone number <span aria-hidden="true">*</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label></div><label>Email address <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required></label></fieldset>
-      <fieldset class="checkout-card"><legend>Delivery details</legend><div class="checkout-choice-row" role="radiogroup" aria-label="Fulfilment method"><label><input type="radio" name="fulfilment" value="pickup" checked> Pick up at restaurant</label><label><input type="radio" name="fulfilment" value="delivery"> Delivery</label></div><div class="checkout-delivery-fields" data-delivery-fields hidden><label>Street address <span aria-hidden="true">*</span><input name="address" type="text" autocomplete="street-address" data-delivery-required></label><div class="checkout-fields checkout-fields--three"><label>City <span aria-hidden="true">*</span><input name="city" type="text" autocomplete="address-level2" data-delivery-required></label><label>State <span aria-hidden="true">*</span><input name="state" type="text" autocomplete="address-level1" data-delivery-required></label><label>ZIP code <span aria-hidden="true">*</span><input name="zip" type="text" autocomplete="postal-code" inputmode="numeric" data-delivery-required></label></div></div></fieldset>
-      <fieldset class="checkout-card"><legend>Payment</legend><p class="checkout-card-note">No payment is captured until your order and final quote are confirmed.</p><div class="checkout-choice-row" role="radiogroup" aria-label="Payment method"><label><input type="radio" name="payment" value="card" checked> Card on confirmation</label><label><input type="radio" name="payment" value="pickup"> Pay at pickup</label></div><div class="checkout-card-fields" data-card-fields><label>Name on card <span aria-hidden="true">*</span><input name="card-name" type="text" autocomplete="cc-name" data-card-required></label><label>Card number <span aria-hidden="true">*</span><input name="card-number" type="text" autocomplete="cc-number" inputmode="numeric" maxlength="23" data-card-number data-card-required></label><div class="checkout-fields checkout-fields--two"><label>Expiry (MM/YY) <span aria-hidden="true">*</span><input name="card-expiry" type="text" autocomplete="cc-exp" inputmode="numeric" placeholder="MM/YY" maxlength="5" data-card-expiry data-card-required></label><label>Security code <span aria-hidden="true">*</span><input name="card-cvc" type="text" autocomplete="cc-csc" inputmode="numeric" maxlength="4" data-card-cvc data-card-required></label></div></div></fieldset>
-      <div class="checkout-form-actions"><p class="checkout-validation" data-checkout-validation role="alert" aria-live="polite"></p><button class="btn gold" type="submit">Submit order <span aria-hidden="true">↗</span></button></div>
+      <div class="checkout-form-intro">
+        <p class="eyebrow">ORDER DETAILS</p>
+        <p>All fields marked required are needed to submit your order request.</p>
+      </div>
+      <fieldset class="checkout-card">
+        <legend>Customer details</legend>
+        <div class="checkout-fields checkout-fields--two"><label>Full name <span aria-hidden="true">*</span><input name="name" type="text" autocomplete="name" required></label><label>Phone number <span aria-hidden="true">*</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label></div><label>Email address <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required></label>
+      </fieldset>
+      <fieldset class="checkout-card">
+        <legend>Delivery details</legend>
+        <div class="checkout-choice-row" role="radiogroup" aria-label="Fulfilment method"><label><input type="radio" name="fulfilment" value="pickup" checked> Pick up at restaurant</label><label><input type="radio" name="fulfilment" value="delivery"> Delivery</label></div>
+        <div class="checkout-delivery-fields" data-delivery-fields hidden><label>Street address <span aria-hidden="true">*</span><input name="address" type="text" autocomplete="street-address" data-delivery-required></label>
+          <div class="checkout-fields checkout-fields--three"><label>City <span aria-hidden="true">*</span><input name="city" type="text" autocomplete="address-level2" data-delivery-required></label><label>State <span aria-hidden="true">*</span><input name="state" type="text" autocomplete="address-level1" data-delivery-required></label><label>ZIP code <span aria-hidden="true">*</span><input name="zip" type="text" autocomplete="postal-code" inputmode="numeric" data-delivery-required></label></div>
+        </div>
+      </fieldset>
+      <fieldset class="checkout-card">
+        <legend>Payment</legend>
+        <p class="checkout-card-note">No payment is captured until your order and final quote are confirmed.</p>
+        <div class="checkout-choice-row" role="radiogroup" aria-label="Payment method"><label><input type="radio" name="payment" value="card" checked> Card on confirmation</label><label><input type="radio" name="payment" value="pickup"> Pay at pickup</label></div>
+        <div class="checkout-card-fields" data-card-fields><label>Name on card <span aria-hidden="true">*</span><input name="card-name" type="text" autocomplete="cc-name" data-card-required></label><label>Card number <span aria-hidden="true">*</span><input name="card-number" type="text" autocomplete="cc-number" inputmode="numeric" maxlength="23" data-card-number data-card-required></label>
+          <div class="checkout-fields checkout-fields--two"><label>Expiry (MM/YY) <span aria-hidden="true">*</span><input name="card-expiry" type="text" autocomplete="cc-exp" inputmode="numeric" placeholder="MM/YY" maxlength="5" data-card-expiry data-card-required></label><label>Security code <span aria-hidden="true">*</span><input name="card-cvc" type="text" autocomplete="cc-csc" inputmode="numeric" maxlength="4" data-card-cvc data-card-required></label></div>
+        </div>
+      </fieldset>
+      <div class="checkout-form-actions">
+        <p class="checkout-validation" data-checkout-validation role="alert" aria-live="polite"></p><button class="btn gold" type="submit">Submit order <span aria-hidden="true">↗</span></button>
+      </div>
     </form>
-    <aside class="checkout-summary" aria-labelledby="checkout-summary-title"><div class="checkout-summary-heading"><p class="eyebrow">ORDER SUMMARY</p><h2 id="checkout-summary-title">Your selections</h2><p data-checkout-location><?= h($checkoutLocationName) ?></p></div><div class="checkout-summary-items" data-checkout-items></div><div class="checkout-summary-total"><span>Subtotal</span><strong data-checkout-subtotal>$0.00</strong><span>Total</span><strong data-checkout-total>$0.00</strong></div><p class="checkout-summary-note">Taxes, delivery, staffing, and service charges are confirmed with your final quote.</p><a class="checkout-back-link" href="<?= h(sample2_url('location-menu.php')) ?>">← Continue shopping</a></aside>
+    <aside class="checkout-summary" aria-labelledby="checkout-summary-title">
+      <div class="checkout-summary-heading">
+        <p class="eyebrow">ORDER SUMMARY</p>
+        <h2 id="checkout-summary-title">Your selections</h2>
+        <p data-checkout-location><?= h($checkoutLocationName) ?></p>
+      </div>
+      <div class="checkout-summary-items" data-checkout-items></div>
+      <div class="checkout-summary-total"><span>Subtotal</span><strong data-checkout-subtotal>$0.00</strong><span>Total</span><strong data-checkout-total>$0.00</strong></div>
+      <p class="checkout-summary-note">Taxes, delivery, staffing, and service charges are confirmed with your final quote.</p><a class="checkout-back-link" href="<?= h(sample2_url('location-menu.php')) ?>">← Continue shopping</a>
+    </aside>
   </div>
-  <section class="checkout-confirmation" data-checkout-confirmation hidden aria-live="polite" tabindex="-1"><p class="eyebrow">ORDER REQUEST RECEIVED</p><h2>Thank you, <span data-confirmation-name></span>.</h2><p>Your order reference is <strong data-confirmation-reference></strong>. Our catering team will confirm availability, final pricing, and payment details shortly.</p><div class="checkout-confirmation-details" data-confirmation-details></div><a class="btn gold" href="<?= h(sample2_url('location-menu.php')) ?>">Return to the menu <span aria-hidden="true">↗</span></a></section>
+  <section class="checkout-confirmation" data-checkout-confirmation hidden aria-live="polite" tabindex="-1">
+    <p class="eyebrow">ORDER REQUEST RECEIVED</p>
+    <h2>Thank you, <span data-confirmation-name></span>.</h2>
+    <p>Your order reference is <strong data-confirmation-reference></strong>. Our catering team will confirm availability, final pricing, and payment details shortly.</p>
+    <div class="checkout-confirmation-details" data-confirmation-details></div><a class="btn gold" href="<?= h(sample2_url('location-menu.php')) ?>">Return to the menu <span aria-hidden="true">↗</span></a>
+  </section>
 </section>
 <?php require __DIR__ . '/_inner-foot.php'; ?>
