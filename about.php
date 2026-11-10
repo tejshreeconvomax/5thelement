@@ -9,8 +9,8 @@ require __DIR__ . '/layouts/inner-page-head.php';
 <section class="about-hero">
   <div class="about-hero-copy">
     <p class="eyebrow">ABOUT 5TH ELEMENT</p>
-    <h1>Our Story</h1>
-    <p>5th Element brings the generosity, colour, and comfort of Indian hospitality to every meal, whether you join us for lunch or gather your whole guest list.</p>
+    <h1>A Place to Gather</h1>
+    <p>At 5th Element, every visit is an opportunity to share good food, easy conversation, and time together.</p>
     <a class="btn gold" href="<?= h(sample2_url('jacksonville.php')) ?>">Visit our table <?= icon('arrow') ?></a>
   </div>
   <figure class="about-hero-image"><img src="/assets/images/dine.webp" alt="A warm 5th Element dining table prepared for guests" fetchpriority="high"><figcaption>HOSPITALITY, WITH A ROYAL HEART</figcaption><span class="about-hero-script">Every table<br>has a story.</span><span class="about-hero-mark" aria-hidden="true">5<sup>th</sup></span></figure>
@@ -18,7 +18,7 @@ require __DIR__ . '/layouts/inner-page-head.php';
 
 <section class="about-story page-section">
   <div class="about-story-photo ornamental-photo"><img src="/assets/images/spices.webp" alt="A colourful assortment of Indian spices" loading="lazy"></div>
-  <div class="about-story-copy"><p class="eyebrow">OUR STORY</p><h2>Our Story</h2><p>Our kitchens take their cue from the recipes and rituals that make Indian food feel like home: fragrant spice, slow-simmered sauces, warm bread, and plates passed across the table.</p><p>We pair those roots with the easy warmth of Florida. The result is a place to linger over a buffet, celebrate a milestone, or pick up a favourite for the people waiting at home.</p><div class="about-story-note"><span>INDIAN ROOTS</span><b>Generous food.<br>Open-hearted welcome.</b></div><a class="quiet-link" href="<?= h(sample2_url('catering.php')) ?>">Celebrate with us →</a></div>
+  <div class="about-story-copy"><p class="eyebrow">OUR APPROACH</p><h2>Good food, shared well.</h2><p>We create a welcoming setting for everyday meals, relaxed catch-ups, and occasions worth celebrating.</p><p>Whether you dine in, pick up, or plan a gathering, our team is here to make the experience simple, generous, and enjoyable.</p><div class="about-story-note"><span>OUR APPROACH</span><b>Warm welcome.<br>Thoughtful service.</b></div><a class="quiet-link" href="<?= h(sample2_url('catering.php')) ?>">Celebrate with us →</a></div>
 </section>
 
 <section class="about-values page-section">

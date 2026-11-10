@@ -4611,13 +4611,22 @@ body {
   object-fit: contain;
   object-position: left center;
 }
+
+/* Keep the shared desktop header compact across inner pages. */
+.site-header {
+  padding-block: 12px;
+}
+.site-header .brand-logo {
+  width: 156px;
+  height: 56px;
+}
 @media (max-width: 520px) {
   .site-header .wordmark.brand {
     padding: 0;
   }
   .site-header .brand-logo {
-    width: 144px;
-    height: 58px;
+    width: 132px;
+    height: 48px;
   }
   .site-footer .brand-logo {
     width: 145px;

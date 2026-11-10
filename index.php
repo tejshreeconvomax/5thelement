@@ -57,15 +57,15 @@
       <a href="#dining" data-section-link="dining"><svg aria-hidden="true">
           <use href="#icon-dine" />
         </svg><span data-min-font-exempt>Dining</span></a>
-      <a href="#takeout" data-section-link="takeout"><svg aria-hidden="true">
-          <use href="#icon-bag" />
-        </svg><span data-min-font-exempt>Takeout</span></a>
       <a href="#cuisines" data-section-link="cuisines"><svg aria-hidden="true">
           <use href="#icon-order" />
         </svg><span data-min-font-exempt>Menu</span></a>
       <a href="#locations" data-section-link="locations"><svg aria-hidden="true">
           <use href="#icon-pin" />
         </svg><span data-min-font-exempt>Locations</span></a>
+      <a href="#takeout" data-section-link="takeout"><svg aria-hidden="true">
+          <use href="#icon-bag" />
+        </svg><span data-min-font-exempt>Takeout</span></a>
       <a href="#weekly" data-section-link="weekly"><svg aria-hidden="true">
           <use href="#icon-feast" />
         </svg><span data-min-font-exempt>Weekly Menu</span></a>
@@ -84,12 +84,14 @@
     </div>
   </nav>
   <main id="main">
-    <section class="hero" id="home">
+    <section class="hero home-feast-hero" id="home">
+      <span class="hero-mandala home-feast-hero__mandala" aria-hidden="true"></span>
       <div class="hero-topline"><span>INDIA, IN EVERY SENSE.</span><span>FLORIDA, AT EVERY TABLE.</span></div>
       <div class="hero-canvas">
         <div class="hero-copy">
+          <span class="hero-lotus home-feast-hero__lotus" aria-hidden="true"></span>
           <p class="eyebrow">5TH ELEMENT INDIAN RESTAURANT</p>
-          <h1>Indian Restaurant<br>&amp; <em>Catering</em>
+          <h1>Indian<br>Restaurant<br>&amp; <em>Catering</em>
             <span class="hero-star" aria-hidden="true"></span>
           </h1>
           <p class="intro">Bold Indian flavours. A generous welcome.<br>A whole world of stories on your plate.</p>
@@ -105,10 +107,6 @@
           <div class="spice-photo">
             <img src="/assets/images/spices.webp" alt="Colourful Indian spices" fetchpriority="high">
             <span data-min-font-exempt>IT STARTS WITH THE SPICE.</span>
-          </div>
-          <div class="flavour-stamp">
-            <span data-min-font-exempt>FULL OF</span><strong>SOUL</strong>
-            <span data-min-font-exempt>MADE TO SHARE</span>
           </div>
           <div class="photo-credit">THE ART OF A REALLY GOOD MEAL.</div>
         </div>

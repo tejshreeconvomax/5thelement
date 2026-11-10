@@ -1799,7 +1799,6 @@ footer {
     animation-duration: 50s;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -3485,6 +3484,312 @@ footer > * {
   background: #c5a460;
   color: var(--deep);
 }
+
+/* Homepage hero: a ceremonial, gold-lit feast using the site's own photography and ornaments. */
+.home-page .hero {
+  isolation: isolate;
+  min-height: 790px;
+  padding: 0 clamp(5%, 7vw, 10%);
+  background:
+    linear-gradient(90deg, #20070b 0%, #4c1422ee 43%, #26080eb8 72%, #160508dc 100%),
+    url("/assets/images/catering.webp") center / cover;
+}
+.home-page .hero::before {
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(90deg, #21080db3, transparent 55%);
+  opacity: 1;
+}
+.home-page .hero::after {
+  z-index: -1;
+  inset: 18px;
+  border-color: #e1b75b70;
+}
+.home-page .hero-mandala {
+  position: absolute;
+  z-index: -1;
+  top: 74px;
+  left: clamp(-125px, -5vw, -48px);
+  width: clamp(250px, 27vw, 440px);
+  height: clamp(250px, 27vw, 440px);
+  background: url("/assets/images/luxury-mandala-design-free-png.webp") center / contain no-repeat;
+  filter: sepia(0.3) saturate(1.1);
+  opacity: 0.22;
+  pointer-events: none;
+}
+.home-page .hero-topline {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1360px);
+  margin: 0 auto;
+  padding: 27px 0 0;
+  border: 0;
+  color: #f0cb77;
+  font-size: 9px;
+  letter-spacing: 0.23em;
+}
+.home-page .hero-canvas {
+  z-index: 1;
+  width: min(100%, 1360px);
+  min-height: 625px;
+  margin: 0 auto;
+  padding: clamp(66px, 7vw, 112px) 0 72px;
+  grid-template-columns: minmax(0, 0.87fr) minmax(440px, 1.13fr);
+  gap: clamp(18px, 4vw, 72px);
+}
+.home-page .hero-copy {
+  align-self: center;
+  max-width: 620px;
+}
+.home-page .hero-lotus {
+  display: block;
+  width: min(100%, 360px);
+  height: 58px;
+  margin: 0 0 23px;
+  background: url("/assets/images/gold-lotus-divider-cropped.png") left center / contain no-repeat;
+}
+.home-page .hero .eyebrow {
+  margin-bottom: 18px;
+  color: #f1ca72;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+}
+.home-page .hero h1 {
+  max-width: 670px;
+  margin-bottom: 23px;
+  color: #fff6e3;
+  font-size: clamp(58px, 5.5vw, 94px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  text-shadow: 0 5px 20px #1905099c;
+}
+.home-page .hero h1 em {
+  color: #eac05e;
+  font-size: 1.18em;
+  font-style: italic;
+  line-height: 0.85;
+}
+.home-page .hero-star {
+  display: none;
+}
+.home-page .intro {
+  max-width: 490px;
+  margin-bottom: 31px;
+  color: #f2dfb8;
+  font-size: clamp(14px, 1.1vw, 17px);
+  line-height: 1.75;
+  text-shadow: 0 2px 10px #19050980;
+}
+.home-page .hero-actions {
+  gap: 17px;
+}
+.home-page .hero-actions .button {
+  min-width: 152px;
+}
+.home-page .hero-actions .text-link {
+  color: #f9df9d;
+  font-size: 12px;
+  text-decoration-color: #e7bb5d;
+}
+.home-page .hero-art {
+  min-height: 575px;
+  margin: -22px 0 -60px;
+}
+.home-page .hero-photo {
+  inset: 0 clamp(-80px, -5vw, -25px) 0 clamp(-40px, -2vw, -10px);
+  overflow: hidden;
+  border: 1px solid #e0b76285;
+  border-radius: 0;
+  background: #26090c;
+  box-shadow: 0 30px 55px #130306a8;
+  transform: none;
+}
+.home-page .hero-photo::after {
+  inset: 0;
+  margin: 0;
+  border: 0;
+  background: linear-gradient(90deg, #3d0c18b5 0%, transparent 38%), linear-gradient(0deg, #21050958, transparent 42%);
+}
+.home-page .hero-photo img {
+  object-position: 53% center;
+  transform: scale(1.06);
+  filter: saturate(1.12) contrast(1.04) brightness(0.92);
+}
+.home-page .hero-art:hover .hero-photo img {
+  transform: scale(1.09);
+  filter: saturate(1.16) contrast(1.06) brightness(0.98);
+}
+.home-page .spice-photo {
+  z-index: 3;
+  bottom: 22px;
+  left: clamp(-32px, -2vw, -12px);
+  width: clamp(135px, 13vw, 190px);
+  height: clamp(145px, 14vw, 205px);
+  overflow: hidden;
+  border: 2px solid #d9ad51;
+  background: #32101a;
+  box-shadow: 0 14px 28px #130306a0;
+  transform: none;
+}
+.home-page .spice-photo img {
+  mask: none;
+  filter: saturate(0.9) contrast(1.06);
+}
+.home-page .spice-photo span {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px 6px;
+  background: #34101ad9;
+  color: #f4d889;
+  font-size: 7px;
+}
+.home-page .flavour-stamp {
+  z-index: 3;
+  top: 24px;
+  right: clamp(-15px, -1vw, -2px);
+  width: 118px;
+  height: 118px;
+  border: 1px solid #dfb456;
+  border-radius: 50%;
+  background: #3b111ad9 url("/assets/images/luxury-mandala-design-free-png.webp") center / 115% no-repeat;
+  box-shadow: 0 12px 26px #17030693;
+  color: #f7d77b;
+}
+.home-page .flavour-stamp strong {
+  color: #f6d275;
+  font-size: 27px;
+}
+.home-page .photo-credit {
+  right: 0;
+  bottom: 16px;
+  color: #f3ce77;
+  font-size: 8px;
+  letter-spacing: 0.18em;
+}
+.home-page .hero-location {
+  z-index: 3;
+  width: min(100%, 1360px);
+  margin: 0 auto;
+  padding: 20px 26px;
+  border: 1px solid #dcb45e8a;
+  background: #260b13dc;
+  box-shadow: 0 16px 30px #12030680;
+  color: #f8e5b2;
+  backdrop-filter: blur(5px);
+}
+.home-page .hero-location label .icon,
+.home-page .hero-location button {
+  color: #f0c865;
+}
+.home-page .hero-location select {
+  color: #fff3d8;
+  border-color: #e2b75b80;
+}
+.home-page .hero-location option {
+  background: #32101a;
+  color: #fff3d8;
+}
+.home-page .scroll-cue {
+  color: #efd493;
+}
+@media (max-width: 980px) {
+  .home-page .hero {
+    min-height: 0;
+    padding-inline: 6%;
+  }
+  .home-page .hero-canvas {
+    min-height: 0;
+    padding-top: 74px;
+    grid-template-columns: minmax(0, 0.9fr) minmax(330px, 1fr);
+  }
+  .home-page .hero-art {
+    min-height: 490px;
+  }
+  .home-page .hero-photo {
+    inset-inline: -20px;
+  }
+  .home-page .flavour-stamp {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 720px) {
+  .home-page .hero {
+    padding-inline: 5%;
+  }
+  .home-page .hero-topline {
+    padding-top: 19px;
+    font-size: 7px;
+    letter-spacing: 0.12em;
+  }
+  .home-page .hero-canvas {
+    display: block;
+    padding: 54px 0 24px;
+  }
+  .home-page .hero-copy {
+    max-width: 590px;
+  }
+  .home-page .hero-lotus {
+    width: min(100%, 300px);
+    height: 48px;
+    margin-bottom: 18px;
+  }
+  .home-page .hero h1 {
+    font-size: clamp(52px, 14vw, 76px);
+  }
+  .home-page .hero-art {
+    min-height: 390px;
+    margin: 38px 0 0;
+  }
+  .home-page .hero-photo {
+    inset: 0;
+  }
+  .home-page .spice-photo {
+    left: 12px;
+    bottom: 12px;
+    width: 130px;
+    height: 150px;
+  }
+  .home-page .flavour-stamp {
+    top: 14px;
+    right: 12px;
+    width: 94px;
+    height: 94px;
+  }
+  .home-page .photo-credit {
+    right: 12px;
+    bottom: 10px;
+    font-size: 7px;
+  }
+  .home-page .hero-location {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding: 17px;
+  }
+  .home-page .hero-location select {
+    width: 100%;
+  }
+  .home-page .scroll-cue {
+    display: none;
+  }
+  .home-page .hero-mandala {
+    top: 88px;
+    left: -92px;
+    width: 255px;
+    height: 255px;
+    opacity: 0.15;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .hero-photo img,
+  .home-page .hero-art:hover .hero-photo img {
+    transform: none;
+  }
+}
 @media (max-width: 800px) {
   .story {
     grid-template-columns: 1fr 1fr;
@@ -4751,7 +5056,8 @@ body{font-size:16px}
   will-change: transform;
 }
 .home-page {
-  padding-bottom: var(--homepage-section-nav-height, 78px);
+  --homepage-section-nav-height: 56px;
+  padding-bottom: var(--homepage-section-nav-height, 56px);
 }
 .home-page.section-nav-footer-visible {
   padding-bottom: 0;
@@ -4771,18 +5077,18 @@ body{font-size:16px}
 }
 .homepage-section-nav a {
   position: relative;
-  display: grid;
+  display: flex;
   min-width: 0;
-  min-height: 78px;
-  padding: 12px 10px 11px;
-  place-items: center;
-  align-content: center;
-  gap: 7px;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
   color: #4c4742;
   border-right: 1px solid #c6a15b3d;
-  font: 500 11px/1 var(--body);
+  font: 500 13px/1 var(--body);
   letter-spacing: -0.1px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   transition: color 180ms ease, background-color 180ms ease;
 }
@@ -4790,8 +5096,9 @@ body{font-size:16px}
   border-right: 0;
 }
 .homepage-section-nav a svg {
-  width: 22px;
-  height: 22px;
+  flex: 0 0 auto;
+  width: 25px;
+  height: 25px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.6;
@@ -4824,7 +5131,7 @@ body{font-size:16px}
 .homepage-section-nav a:hover svg,
 .homepage-section-nav a:focus-visible svg,
 .homepage-section-nav a.is-active svg {
-  transform: translateY(-1px);
+  transform: translateX(-1px);
 }
 .homepage-section-nav a.is-active::after {
   transform: scaleX(1);
@@ -5085,9 +5392,10 @@ body{font-size:16px}
     min-width: max-content;
   }
   .homepage-section-nav a {
-    flex: 0 0 108px;
-    min-height: 72px;
-    padding-inline: 8px;
+    flex: 0 0 auto;
+    min-width: 124px;
+    min-height: 56px;
+    padding-inline: 12px;
   }
   .homepage-section-nav a::after {
     right: 14px;
@@ -5292,7 +5600,7 @@ body{font-size:16px}
   }
 }
 
-/* Explore Our Menu: a restrained palace silhouette replaces the former SVG motif. */
+/* Explore Our Menu: the supplied Mahal illustration reads as a warm, gilded architectural ornament. */
 .home-page .categories {
   isolation: isolate;
   overflow: hidden;
@@ -5301,16 +5609,13 @@ body{font-size:16px}
   content: "";
   position: absolute;
   z-index: 0;
-  left: clamp(-120px, -5vw, -44px);
-  bottom: clamp(-82px, -5vw, -28px);
-  width: min(42vw, 540px);
-  aspect-ratio: 576 / 322;
-  background: url('/assets/images/menu-palace.jpg') center bottom / cover no-repeat;
-  opacity: 0.16;
-  filter: grayscale(1) sepia(0.78) saturate(0.55) hue-rotate(315deg) brightness(0.76) contrast(0.82);
-  mix-blend-mode: screen;
-  -webkit-mask-image: radial-gradient(ellipse 92% 82% at 22% 72%, #000 0 49%, rgba(0, 0, 0, 0.72) 67%, transparent 100%);
-  mask-image: radial-gradient(ellipse 92% 82% at 22% 72%, #000 0 49%, rgba(0, 0, 0, 0.72) 67%, transparent 100%);
+  left: clamp(-96px, -4vw, -36px);
+  bottom: clamp(-150px, -8vw, -96px);
+  width: min(47vw, 620px);
+  aspect-ratio: 800 / 437;
+  background: url('/assets/images/mahal-indian-architecture.png') center bottom / contain no-repeat;
+  opacity: 0.58;
+  filter: sepia(0.2) saturate(1.18) brightness(1.15) contrast(1.04) drop-shadow(0 0 10px #f2c35b66);
   pointer-events: none;
 }
 .home-page .categories > * {
@@ -5323,11 +5628,11 @@ body{font-size:16px}
 }
 @media (max-width: 700px) {
   .home-page .categories::after {
-    top: 24px;
-    bottom: auto;
-    left: -98px;
+    top: auto;
+    bottom: -12px;
+    left: -52px;
     width: 330px;
-    opacity: 0.09;
+    opacity: 0.42;
   }
 }
 
@@ -5547,4 +5852,401 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .app-download-trigger,
   .app-download-popup { transition: none; }
+}
+
+/* Keep the homepage feast photography rectangular and cinematic, not label-masked. */
+.home-page .hero-photo,
+.home-page .hero-photo img,
+.home-page .spice-photo,
+.home-page .spice-photo img {
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+.home-page .hero-photo::after {
+  background: linear-gradient(90deg, #3d0c18b5 0%, transparent 38%), linear-gradient(0deg, #21050958, transparent 42%);
+}
+.home-page .flavour-stamp::after {
+  background-image: none;
+}
+
+/* Homepage-only feast composition: namespaced so no other section inherits it. */
+.home-page .home-feast-hero {
+  isolation: isolate;
+  min-height: 780px;
+  padding: 0 clamp(5%, 7vw, 10%);
+  background:
+    radial-gradient(circle at 69% 27%, #a33b1d42 0 13%, transparent 35%),
+    linear-gradient(90deg, #26050d 0%, #610f22 44%, #2d070d 100%);
+}
+.home-page .home-feast-hero::before {
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(90deg, #21040aad 0%, #5d1020bb 43%, transparent 73%);
+  opacity: 1;
+}
+.home-page .home-feast-hero::after {
+  z-index: 0;
+  inset: 18px;
+  border-color: #dcb55b70;
+}
+.home-page .home-feast-hero__mandala {
+  z-index: 0;
+  top: -105px;
+  left: clamp(-145px, -7vw, -62px);
+  width: clamp(315px, 29vw, 510px);
+  height: clamp(315px, 29vw, 510px);
+  background-image: url("/assets/images/luxury-mandala-design-free-png.webp");
+  filter: sepia(0.55) saturate(1.18);
+  opacity: 0.3;
+}
+.home-page .home-feast-hero .hero-topline {
+  z-index: 2;
+  padding-top: 23px;
+  color: #e5bd62;
+  font-size: 8px;
+  letter-spacing: 0.22em;
+}
+.home-page .home-feast-hero .hero-canvas {
+  z-index: 1;
+  min-height: 630px;
+  padding: clamp(58px, 6.2vw, 96px) 0 64px;
+  grid-template-columns: minmax(0, 0.98fr) minmax(490px, 1.02fr);
+  gap: clamp(14px, 3vw, 52px);
+}
+.home-page .home-feast-hero .hero-copy {
+  z-index: 2;
+  max-width: 605px;
+  align-self: start;
+}
+.home-page .home-feast-hero__lotus {
+  width: min(100%, 435px);
+  height: 54px;
+  margin-bottom: 18px;
+  background-position: center;
+}
+.home-page .home-feast-hero .eyebrow {
+  margin-bottom: 20px;
+  color: #f2c963;
+  font-size: 11px;
+  letter-spacing: 0.27em;
+}
+.home-page .home-feast-hero h1 {
+  max-width: 640px;
+  margin-bottom: 24px;
+  color: #fff7e7;
+  font-size: clamp(62px, 5.75vw, 102px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+  text-shadow: 0 5px 18px #22020a9c;
+}
+.home-page .home-feast-hero h1 em {
+  color: #f0c553;
+  font-size: 1.16em;
+  line-height: 0.76;
+}
+.home-page .home-feast-hero .intro {
+  max-width: 465px;
+  margin-bottom: 31px;
+  color: #f6e2b5;
+  font-size: clamp(14px, 1.05vw, 17px);
+  line-height: 1.72;
+}
+.home-page .home-feast-hero .hero-actions {
+  gap: 24px;
+}
+.home-page .home-feast-hero .hero-actions .button {
+  min-width: 166px;
+}
+.home-page .home-feast-hero .hero-actions .text-link {
+  color: #f6df9e;
+  font-size: 13px;
+  text-decoration-color: #e7ba56;
+}
+.home-page .home-feast-hero .hero-art {
+  z-index: 1;
+  min-height: 560px;
+  margin: -68px 0 -64px;
+}
+.home-page .home-feast-hero .hero-photo {
+  inset: 0 clamp(-120px, -7vw, -34px) 0 clamp(-54px, -3vw, -14px);
+  border: 0;
+  background: #22050a;
+  box-shadow: 0 28px 60px #190207a6;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 14%, #000 100%);
+}
+.home-page .home-feast-hero .hero-photo::after {
+  background: linear-gradient(90deg, #5c0e208f 0%, transparent 34%), linear-gradient(0deg, #24050a75, transparent 35%);
+}
+.home-page .home-feast-hero .hero-photo img {
+  object-position: 53% 53%;
+  transform: scale(1.08);
+  filter: saturate(1.14) contrast(1.04) brightness(0.93);
+}
+.home-page .home-feast-hero .hero-art:hover .hero-photo img {
+  transform: scale(1.11);
+}
+.home-page .home-feast-hero .spice-photo {
+  z-index: 3;
+  bottom: -34px;
+  left: clamp(-74px, -5vw, -25px);
+  width: clamp(150px, 14vw, 210px);
+  height: clamp(180px, 17vw, 238px);
+  border: 2px solid #e0b956;
+  box-shadow: 0 16px 32px #1a0309b5;
+}
+.home-page .home-feast-hero .spice-photo span {
+  padding: 10px 7px;
+  background: #420c17e8;
+  color: #f9db83;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+.home-page .home-feast-hero .flavour-stamp {
+  z-index: 3;
+  top: 22px;
+  right: clamp(-17px, -1.1vw, -2px);
+  width: 112px;
+  height: 112px;
+  background-color: #46101bdf;
+  box-shadow: 0 12px 26px #18030894;
+}
+.home-page .home-feast-hero .photo-credit {
+  z-index: 3;
+  right: -8px;
+  bottom: 14px;
+  color: #f3ce76;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+}
+.home-page .home-feast-hero__gold-arc {
+  position: absolute;
+  z-index: 1;
+  bottom: 32px;
+  left: -8%;
+  width: 72%;
+  height: 110px;
+  border-top: 8px solid #edc253;
+  border-radius: 50%;
+  box-shadow: 0 -2px 8px #f3c65c55;
+  opacity: 0.95;
+  pointer-events: none;
+  transform: rotate(3deg);
+}
+.home-page .home-feast-hero .hero-location {
+  z-index: 4;
+  width: min(100%, 1360px);
+  margin: 0 auto;
+  padding: 17px 26px;
+  border-color: #e2b85e8c;
+  background: #2a0712e8;
+  box-shadow: 0 16px 30px #15020590;
+  color: #f9e7b8;
+}
+.home-page .home-feast-hero .hero-location label .icon,
+.home-page .home-feast-hero .hero-location button {
+  color: #f2c95d;
+}
+.home-page .home-feast-hero .hero-location select {
+  border-color: #e4bb6270;
+  color: #fff5df;
+}
+.home-page .home-feast-hero .scroll-cue {
+  color: #f2d58f;
+}
+
+/* A lower-profile shared header leaves more room for the hero without changing navigation behavior. */
+.home-page .site-header {
+  padding-block: 12px;
+}
+.home-page .site-header .brand-logo {
+  width: 156px;
+  height: 56px;
+}
+@media (max-width: 520px) {
+  .home-page .site-header {
+    padding-block: 10px;
+  }
+  .home-page .site-header .brand-logo {
+    width: 132px;
+    height: 48px;
+  }
+}
+
+/* Keep the hero's key actions above the persistent section dock on compact desktops. */
+@media (min-width: 761px) and (max-width: 1400px) {
+  .home-page .home-feast-hero .hero-canvas {
+    padding-top: clamp(8px, 1vw, 20px);
+  }
+  .home-page .home-feast-hero h1 {
+    font-size: clamp(56px, 5vw, 94px);
+  }
+  .home-page .home-feast-hero .intro {
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 1050px) {
+  .home-page .home-feast-hero {
+    min-height: 0;
+  }
+  .home-page .home-feast-hero .hero-canvas {
+    grid-template-columns: minmax(0, 0.92fr) minmax(370px, 1fr);
+  }
+  .home-page .home-feast-hero .hero-art {
+    min-height: 490px;
+  }
+  .home-page .home-feast-hero .hero-photo {
+    inset-inline: -34px;
+  }
+}
+@media (max-width: 900px) {
+  .home-page .home-feast-hero {
+    padding-inline: 5%;
+  }
+  .home-page .home-feast-hero .hero-topline {
+    padding-top: 18px;
+    font-size: 7px;
+    letter-spacing: 0.13em;
+  }
+  .home-page .home-feast-hero .hero-canvas {
+    display: block;
+    min-height: 0;
+    padding: 48px 0 26px;
+  }
+  .home-page .home-feast-hero__lotus {
+    width: min(100%, 335px);
+    height: 45px;
+  }
+  .home-page .home-feast-hero h1 {
+    font-size: clamp(56px, 15vw, 82px);
+  }
+  .home-page .home-feast-hero .hero-art {
+    min-height: 405px;
+    margin: 40px 0 0;
+  }
+  .home-page .home-feast-hero .hero-photo {
+    inset: 0;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .home-page .home-feast-hero .spice-photo {
+    bottom: 14px;
+    left: 12px;
+    width: 132px;
+    height: 158px;
+  }
+  .home-page .home-feast-hero .flavour-stamp {
+    top: 14px;
+    right: 12px;
+    width: 92px;
+    height: 92px;
+  }
+  .home-page .home-feast-hero .photo-credit {
+    right: 12px;
+    bottom: 12px;
+    font-size: 7px;
+  }
+  .home-page .home-feast-hero__gold-arc {
+    bottom: 76px;
+    width: 115%;
+    height: 55px;
+    border-top-width: 5px;
+  }
+  .home-page .home-feast-hero .hero-location {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 17px;
+  }
+  .home-page .home-feast-hero .hero-location select {
+    width: 100%;
+  }
+  .home-page .home-feast-hero .scroll-cue {
+    display: none;
+  }
+}
+
+/* Full-bleed location directory: its details sit at the section's visual centre. */
+.home-page .locations {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  min-height: max(680px, calc(100svh - var(--homepage-header-height, 112px)));
+  margin: 0;
+  padding: 64px clamp(28px, 8vw, 150px);
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(90deg, #fff9ec 0%, #fffdf7 53%, #f7eedc 100%);
+}
+.home-page .locations::after {
+  z-index: 0;
+  top: 64px;
+  right: clamp(64px, 7vw, 130px);
+  bottom: auto;
+  left: auto;
+  width: clamp(400px, 24vw, 460px);
+  height: auto;
+  aspect-ratio: 800 / 500;
+  background: url('/assets/images/indian-architecture-palace.png') center bottom / contain no-repeat;
+  opacity: 0.52;
+  filter: sepia(0.2) saturate(1.1) brightness(1.04) contrast(1.04);
+}
+.home-page .locations > .section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: min(100%, 1400px);
+  min-height: 260px;
+  margin: 0 auto clamp(42px, 4vw, 66px);
+  text-align: left;
+}
+.home-page .locations > .section-heading > p {
+  max-width: none;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.home-page .locations > .restaurant-directory {
+  width: min(100%, 1400px);
+  margin-inline: auto;
+}
+@media (max-width: 1100px) {
+  .home-page .locations {
+    min-height: 0;
+  }
+  .home-page .locations > .section-heading {
+    min-height: 196px;
+    margin-bottom: 42px;
+  }
+  .home-page .locations::after {
+    top: 56px;
+    width: 360px;
+  }
+  .home-page .locations > .section-heading > p {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .home-page .locations {
+    padding-block: 68px;
+  }
+  .home-page .locations > .section-heading {
+    min-height: 0;
+  }
+  .home-page .locations::after {
+    display: block;
+    top: auto;
+    right: -72px;
+    bottom: -20px;
+    width: 330px;
+    opacity: 0.28;
+  }
 }
