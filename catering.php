@@ -1,14 +1,14 @@
 <?php $title = 'Catering Services';
 $description = 'Indian and Indo-Chinese catering for weddings, corporate events and family celebrations across Florida.';
 $pageClass = 'catering-page';
-require __DIR__ . '/_inner-head.php'; ?>
+require __DIR__ . '/layouts/inner-page-head.php'; ?>
 <section class="catering-hero">
     <div class="hero-background"><img src="/assets/images/event-wedding.webp" alt="An elegant celebration ready for Indian catering" fetchpriority="high"></div>
     <div class="hero-invitation">
         <div class="hero-invitation-content">
             <p class="eyebrow">5TH ELEMENT CATERING</p>
             <h1>Catering Services</h1>
-            <p>Indian roots. Exceptional hospitality. A menu made for the moments you’ll remember.</p><a class="btn gold" href="#enquiry">Plan Event</a><a class="quiet-link" href="<?= h(sample2_url('location-menu.php')) ?>">Explore Jacksonville catering →</a>
+            <p>Indian roots. Exceptional hospitality. A menu made for the moments you’ll remember.</p><a class="btn gold" href="#enquiry">Plan Event</a><a class="quiet-link" href="<?= h(sample2_url('catering/jacksonville/')) ?>">Explore Jacksonville catering →</a>
         </div>
     </div><span class="hero-side-note">WEDDINGS · CORPORATE · FAMILY CELEBRATIONS</span>
 </section>
@@ -53,7 +53,7 @@ require __DIR__ . '/_inner-head.php'; ?>
         </div>
     </div>
 </section>
-<?php require __DIR__ . '/_catering-branches.php'; ?>
+<?php require __DIR__ . '/sections/catering/branches.php'; ?>
 <section class="page-section gallery-section">
     <div class="section-title">
         <div>
@@ -64,6 +64,6 @@ require __DIR__ . '/_inner-head.php'; ?>
     </div>
     <div class="photo-gallery"><?php foreach ([['catering.webp', 'A generous Indian buffet'], ['event-corporate.webp', 'A catered corporate occasion'], ['ig2.webp', 'Indian dishes prepared to share'], ['event-festive.webp', 'A festive catering celebration']] as [$image, $alt]): ?><button type="button" data-gallery="/assets/images/<?= h($image) ?>" data-caption="<?= h($alt) ?>" aria-label="Enlarge: <?= h($alt) ?>"><img src="/assets/images/<?= h($image) ?>" alt="<?= h($alt) ?>" loading="lazy"><span><?= icon('plus') ?></span></button><?php endforeach; ?></div>
 </section>
-<?php require __DIR__ . '/_host-reviews.php';
-require __DIR__ . '/_enquiry.php';
-require __DIR__ . '/_inner-foot.php'; ?>
+<?php require __DIR__ . '/components/reviews/testimonials.php';
+require __DIR__ . '/sections/catering/enquiry-form.php';
+require __DIR__ . '/layouts/inner-page-foot.php'; ?>

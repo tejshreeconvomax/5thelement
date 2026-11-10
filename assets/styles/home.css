@@ -7,9 +7,9 @@
   --cream: #eee1c6;
   --ink: #3e2524;
   --muted: #7b6858;
-  --body: "DM Sans", Arial, sans-serif;
-  --display: "Cinzel", Arial, sans-serif;
-  --accent: "Cormorant Garamond", Georgia, serif;
+  --body: "Libre Franklin", Arial, sans-serif;
+  --display: "Antic Didone", Georgia, serif;
+  --accent: "Antic Didone", Georgia, serif;
 }
 * {
   box-sizing: border-box;
@@ -1867,8 +1867,8 @@ footer {
   --cream: #eee1c6;
   --ink: #3e2524;
   --muted: #7b6858;
-  --display: "Cinzel", Georgia, serif;
-  --accent: "Cormorant Garamond", Georgia, serif;
+  --display: "Antic Didone", Georgia, serif;
+  --accent: "Antic Didone", Georgia, serif;
 }
 .icon-definitions {
   position: absolute;
@@ -3465,6 +3465,26 @@ footer > * {
     font-size: 28px;
   }
 }
+
+/* Restaurant selector: warm saffron surface with deep-maroon, readable controls. */
+.hero-location {
+  background: #c5a460;
+  color: var(--deep);
+  border-color: #32101a66;
+}
+.hero-location label .icon,
+.hero-location select,
+.hero-location button,
+.scroll-cue {
+  color: var(--deep);
+}
+.hero-location select {
+  border-color: #32101a80;
+}
+.hero-location option {
+  background: #c5a460;
+  color: var(--deep);
+}
 @media (max-width: 800px) {
   .story {
     grid-template-columns: 1fr 1fr;
@@ -4554,6 +4574,79 @@ body{font-size:16px}
   .home-page .journal .section-heading { padding-inline: 6%; }
   .home-page .journal .blog-track { padding-inline: 6%; }
 }
+
+/* Main navigation groups keep related pages together without changing their routes. */
+.home-page .site-header nav {
+  align-items: center;
+}
+.home-page .site-header .nav-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.home-page .site-header .nav-group__label {
+  padding: 7px 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  white-space: nowrap;
+}
+.home-page .site-header .nav-submenu {
+  position: absolute;
+  z-index: 50;
+  top: 100%;
+  left: -16px;
+  display: grid;
+  min-width: max-content;
+  padding: 8px 16px 12px;
+  border-top: 2px solid var(--saffron);
+  background: var(--paper);
+  box-shadow: 0 10px 22px #32101a24;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-5px);
+  visibility: hidden;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+}
+.home-page .site-header .nav-submenu a {
+  padding: 7px 0;
+  border: 0;
+  white-space: nowrap;
+}
+.home-page .site-header .nav-group:is(:hover, :focus-within) .nav-submenu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+  visibility: visible;
+}
+@media (max-width: 1100px) {
+  .home-page .site-header .nav-group {
+    display: block;
+  }
+  .home-page .site-header .nav-group__label {
+    display: block;
+    padding: 12px 0;
+    border-top: 1px solid #c6a15b30;
+  }
+  .home-page .site-header .nav-submenu {
+    position: static;
+    display: grid;
+    min-width: 0;
+    margin-left: 16px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+    visibility: visible;
+  }
+  .home-page .site-header .nav-submenu a {
+    padding: 10px 0;
+    color: var(--emerald);
+  }
+}
 @media (max-width: 620px) {
   .home-page .journal { padding-block: 58px 65px; }
   .home-page .journal .section-heading { margin-bottom: 38px; padding-inline: 6%; }
@@ -5067,7 +5160,10 @@ body{font-size:16px}
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: calc(100% + 6px) 118px !important;
-  border-color: transparent !important;
+  /* The artwork supplies the CTA edge; a CSS border creates a second rectangle. */
+  border: 0 !important;
+  border-radius: 999px;
+  box-shadow: none !important;
   color: var(--deep) !important;
   text-shadow: 0 1px #fff5;
   gap: 0;
@@ -5087,7 +5183,29 @@ body{font-size:16px}
   background-repeat: no-repeat !important;
   background-size: calc(100% + 6px) 118px !important;
   color: var(--deep) !important;
+  box-shadow: none !important;
+  transform: none;
   filter: brightness(1.07);
+}
+
+/* Keep CTA feedback ornamental rather than a rectangular halo. */
+.button:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--emerald);
+  outline-offset: 4px;
+  box-shadow: none !important;
+}
+.button:active,
+.btn:active {
+  filter: brightness(0.96);
+  transform: scale(0.98);
+}
+@media (hover: hover) and (pointer: fine) {
+  .button:hover,
+  .btn:hover {
+    box-shadow: none !important;
+    transform: translateY(-2px);
+  }
 }
 
 /* Subtle Indian ornament layer: placed behind content so the existing layouts remain unchanged. */

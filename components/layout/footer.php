@@ -3,7 +3,7 @@
     <p>Rooted in tradition.<br><em>Remembered around the table.</em></p>
   </div>
   <div>
-    <p class="eyebrow">EXPLORE</p><a href="<?= h(sample2_url()) ?>">Home</a><a href="<?= h(sample2_url('catering.php')) ?>">Catering services</a><a href="<?= h(sample2_url('jacksonville.php')) ?>">Jacksonville restaurant</a><a href="<?= h(sample2_url('location-menu.php')) ?>">Jacksonville catering</a><a href="<?= h(sample2_url('about.php')) ?>">About us</a><a href="<?= h(sample2_url('contact.php')) ?>">Contact us</a>
+    <p class="eyebrow">EXPLORE</p><a href="<?= h(sample2_url()) ?>">Home</a><a href="<?= h(sample2_url('catering.php')) ?>">Catering services</a><a href="<?= h(sample2_url('jacksonville.php')) ?>">Jacksonville restaurant</a><a href="<?= h(sample2_url('catering/jacksonville/')) ?>">Jacksonville catering</a><a href="<?= h(sample2_url('about.php')) ?>">About us</a><a href="<?= h(sample2_url('contact.php')) ?>">Contact us</a>
   </div>
   <div>
     <p class="eyebrow">A PERSONAL WELCOME</p><a href="tel:9044488265">Baymeadows · (904) 448-8265</a><a href="tel:5102995378">Catering · (510) 299-5378</a><a href="mailto:caterings@my5thelement.com">caterings@my5thelement.com</a><a href="<?= h(sample2_url('catering.php')) ?>">Baymeadows · Towncenter · Daytona · Palm Coast</a>

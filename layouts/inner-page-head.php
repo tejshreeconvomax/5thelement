@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/functions.php';
-require_once __DIR__ . '/includes/common-components.php';
+require_once __DIR__ . '/../includes/functions.php';
 $sampleBase = sample2_url();
 ?>
 <!doctype html>
@@ -13,15 +12,15 @@ $sampleBase = sample2_url();
     <meta name="description" content="<?= h($description) ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= asset_url('css/sample-2-inner.css?v=59') ?>">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?= asset_url('styles/inner.css?v=1') ?>">
 </head>
 
 <body class="<?= h($pageClass) ?>"><a class="skip-link" href="#main">Skip to content</a><?php if ($pageClass === 'checkout-page') {
                                                                                             $headerCta = 'Catering menu';
-                                                                                            $headerTarget = sample2_url('location-menu.php');
+                                                                                            $headerTarget = sample2_url('catering/jacksonville/');
                                                                                         } else {
                                                                                             $headerCta = $pageClass === 'location-page' ? 'Plan your visit' : 'Plan your event';
                                                                                         }
-                                                                                        require __DIR__ . '/header.php';
+                                                                                        require __DIR__ . '/../components/layout/header.php';
                                                                                         unset($headerCta, $headerTarget); ?><main id="main">

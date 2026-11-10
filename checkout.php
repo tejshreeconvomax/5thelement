@@ -9,7 +9,7 @@ $checkoutLocationName = $locationNames[$checkoutLocationId] ?? '5th Element Cate
 $title = 'Checkout';
 $description = 'Review your catering selections and submit your order request.';
 $pageClass = 'checkout-page';
-require __DIR__ . '/_inner-head.php';
+require __DIR__ . '/layouts/inner-page-head.php';
 ?>
 <section class="checkout-shell page-section" data-checkout-page data-location-id="<?= h($checkoutLocationId) ?>" data-location-name="<?= h($checkoutLocationName) ?>">
   <header class="checkout-heading">
@@ -19,7 +19,7 @@ require __DIR__ . '/_inner-head.php';
   </header>
   <div class="checkout-empty" data-checkout-empty hidden>
     <h2>Your cart is empty</h2>
-    <p>Add dishes from the catering menu before continuing to checkout.</p><a class="btn gold" href="<?= h(sample2_url('location-menu.php')) ?>">Browse the menu <span aria-hidden="true">↗</span></a>
+    <p>Add dishes from the catering menu before continuing to checkout.</p><a class="btn gold" href="<?= h(sample2_url('catering/jacksonville/')) ?>">Browse the menu <span aria-hidden="true">↗</span></a>
   </div>
   <div class="checkout-layout" data-checkout-layout>
     <form class="checkout-form" data-checkout-form novalidate>
@@ -58,14 +58,14 @@ require __DIR__ . '/_inner-head.php';
       </div>
       <div class="checkout-summary-items" data-checkout-items></div>
       <div class="checkout-summary-total"><span>Subtotal</span><strong data-checkout-subtotal>$0.00</strong><span>Total</span><strong data-checkout-total>$0.00</strong></div>
-      <p class="checkout-summary-note">Taxes, delivery, staffing, and service charges are confirmed with your final quote.</p><a class="checkout-back-link" href="<?= h(sample2_url('location-menu.php')) ?>">← Continue shopping</a>
+      <p class="checkout-summary-note">Taxes, delivery, staffing, and service charges are confirmed with your final quote.</p><a class="checkout-back-link" href="<?= h(sample2_url('catering/jacksonville/')) ?>">← Continue shopping</a>
     </aside>
   </div>
   <section class="checkout-confirmation" data-checkout-confirmation hidden aria-live="polite" tabindex="-1">
     <p class="eyebrow">ORDER REQUEST RECEIVED</p>
     <h2>Thank you, <span data-confirmation-name></span>.</h2>
     <p>Your order reference is <strong data-confirmation-reference></strong>. Our catering team will confirm availability, final pricing, and payment details shortly.</p>
-    <div class="checkout-confirmation-details" data-confirmation-details></div><a class="btn gold" href="<?= h(sample2_url('location-menu.php')) ?>">Return to the menu <span aria-hidden="true">↗</span></a>
+    <div class="checkout-confirmation-details" data-confirmation-details></div><a class="btn gold" href="<?= h(sample2_url('catering/jacksonville/')) ?>">Return to the menu <span aria-hidden="true">↗</span></a>
   </section>
 </section>
-<?php require __DIR__ . '/_inner-foot.php'; ?>
+<?php require __DIR__ . '/layouts/inner-page-foot.php'; ?>

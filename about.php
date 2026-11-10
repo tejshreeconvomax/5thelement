@@ -4,7 +4,7 @@ $description = 'Learn about the Indian roots, generous hospitality, and shared-t
 $pageClass = 'about-page';
 $headerCta = 'Get in touch';
 $headerTarget = 'contact.php';
-require __DIR__ . '/_inner-head.php';
+require __DIR__ . '/layouts/inner-page-head.php';
 ?>
 <section class="about-hero">
   <div class="about-hero-copy">
@@ -31,4 +31,4 @@ require __DIR__ . '/_inner-head.php';
 </section>
 
 <section class="about-invitation"><span class="rosette" aria-hidden="true"></span><p class="eyebrow">THE FIFTH ELEMENT</p><h2>Our Restaurant</h2><p>That is the part we are here for.</p><a class="btn outline" href="<?= h(sample2_url('contact.php')) ?>">Start a conversation <?= icon('arrow') ?></a></section>
-<?php require __DIR__ . '/_inner-foot.php'; ?>
+<?php require __DIR__ . '/layouts/inner-page-foot.php'; ?>

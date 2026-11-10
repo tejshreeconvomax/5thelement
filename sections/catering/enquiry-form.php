@@ -17,7 +17,7 @@
                     <option>Family gathering</option>
                     <option>Festival</option>
                     <option>Other occasion</option>
-                </select></label><label class="wide">Tell us about your event<textarea name="details" rows="4" placeholder="Venue, favourite dishes, dietary needs…" required></textarea></label></div><button class="btn gold" type="submit">Prepare enquiry email <?= icon('arrow') ?></button>
+                </select></label><label class="wide">Tell us about your event<textarea name="details" rows="4" placeholder="Venue, favourite dishes, dietary needs…" required></textarea></label></div><button class="btn gold" type="submit">Submit enquiry <?= icon('arrow') ?></button>
         <p class="form-help">Opens an email draft for you to review and send. No booking or payment is made.</p>
         <p class="form-status" role="status"></p>
     </form>

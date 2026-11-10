@@ -1,6 +1,6 @@
-<?php $title='Baymeadows, Jacksonville'; $description='Visit 5th Element at 9551 Baymeadows Road, Jacksonville for Indian cuisine, lunch buffet, takeout, delivery and catering.'; $pageClass='location-page'; require __DIR__.'/_inner-head.php'; ?>
-<section class="location-hero">
-    <div class="location-hero-copy">
+<?php $title='Baymeadows, Jacksonville'; $description='Visit 5th Element at 9551 Baymeadows Road, Jacksonville for Indian cuisine, lunch buffet, takeout, delivery and catering.'; $pageClass='location-page'; require __DIR__.'/layouts/inner-page-head.php'; ?>
+<section class="contact-hero">
+    <div class="contact-hero-copy">
         <p class="eyebrow">BAYMEADOWS · JACKSONVILLE</p>
         <h1>Jacksonville Restaurant</h1>
         <p>Biryanis, curries, warm breads, and something sweet. Find your taste of India in the heart of Baymeadows.</p>
@@ -10,9 +10,9 @@
         </div>
         <div class="address-tag"><?= icon('pin') ?><span>9551 Baymeadows Rd · Units 10 & 11<br>Jacksonville, FL 32256</span></div>
     </div>
-    <div class="location-hero-photo">
-        <img src="/assets/images/jacksonville-bay-meadows.webp" alt="Baymeadows restaurant" fetchpriority="high">
-    </div>
+    <aside class="contact-hero-card"><img src="/assets/images/jacksonville-bay-meadows.webp" alt="Baymeadows 5th Element restaurant" fetchpriority="high">
+        <div><span>BAYMEADOWS · JACKSONVILLE</span><strong>Good food.<br>Warm company.</strong><a href="tel:9044488265">Call the restaurant <b aria-hidden="true">↗</b></a></div>
+    </aside><span class="contact-hero-seal" aria-hidden="true">A WARM<br><em>welcome</em><br>AWAITS</span>
 </section>
 
 <section class="page-section local-services">
@@ -80,7 +80,7 @@
         <a href="#" class="btn outline">App Store <?= icon('arrow') ?></a>
     </div>
 </section> -->
-<?php require __DIR__.'/_testimonials.php'; ?>
+<?php require __DIR__.'/components/reviews/testimonials.php'; ?>
 
 <section class="visit-section page-section" id="visit">
     <div class="visit-card" id="enquiry">
@@ -108,9 +108,9 @@
             <span class="rosette" aria-hidden="true"></span>
             <p class="eyebrow">INDIAN ROOTS · FLORIDA SOUL</p>
             <p class="visit-quote">The best journeys<br>end at <em>the table.</em></p>
-            <a href="<?= h(sample2_url('location-menu.php')) ?>" class="btn outline">Catering Menu</a>
+            <a href="<?= h(sample2_url('catering/jacksonville/')) ?>" class="btn outline">Catering Menu</a>
         </div>
     </div>
 </section>
 
-<?php require __DIR__.'/_inner-foot.php'; ?>
+<?php require __DIR__.'/layouts/inner-page-foot.php'; ?>

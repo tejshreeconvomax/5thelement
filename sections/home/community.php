@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/_testimonials.php'; ?>
+<?php require __DIR__ . '/../../components/reviews/testimonials.php'; ?>
 <section class="section journal" id="blogs">
     <div class="section-heading">
         <div>

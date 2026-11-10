@@ -1,5 +1,4 @@
-<?php require_once __DIR__ . '/includes/functions.php';
-require_once __DIR__ . '/includes/common-components.php'; ?>
+<?php require_once __DIR__ . '/includes/functions.php'; ?>
 <!doctype html>
 <html lang="en">
 
@@ -10,8 +9,8 @@ require_once __DIR__ . '/includes/common-components.php'; ?>
   <meta name="description" content="Discover Indian cuisine and warm hospitality at 5th Element in Florida. Explore our dishes, find your restaurant, or plan a catered celebration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/sample-2-home.css?v=65">
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/home.css?v=1">
 </head>
 
 <body class="home-page">
@@ -48,7 +47,7 @@ require_once __DIR__ . '/includes/common-components.php'; ?>
   <?php $pageClass = 'home-page';
   $headerCta = 'Find a table';
   $headerTarget = '#locations';
-  require __DIR__ . '/header.php';
+  require __DIR__ . '/components/layout/header.php';
   unset($headerCta, $headerTarget); ?>
   <nav class="homepage-section-nav" aria-label="Homepage sections" data-section-nav>
     <div class="homepage-section-nav__track">
@@ -166,9 +165,9 @@ require_once __DIR__ . '/includes/common-components.php'; ?>
       </a>
     </section>
 
-    <?php require __DIR__ . '/_dining.php'; ?>
-    <?php require __DIR__ . '/_categories.php'; ?>
-    <?php require __DIR__ . '/_locations.php'; ?>
+    <?php require __DIR__ . '/sections/home/dining-options.php'; ?>
+    <?php require __DIR__ . '/sections/home/category-showcase.php'; ?>
+    <?php require __DIR__ . '/sections/home/restaurant-locations.php'; ?>
     <section class="takeout-banner" id="takeout" aria-label="Takeout">
       <div class="takeout-banner__content">
         <p class="takeout-banner__eyebrow" data-min-font-exempt>Takeout</p>
@@ -191,7 +190,7 @@ require_once __DIR__ . '/includes/common-components.php'; ?>
         </div>
       </div>
     </section>
-    <?php require __DIR__ . '/_weekly.php'; ?>
+    <?php require __DIR__ . '/sections/home/weekly-specials.php'; ?>
     <section class="story section" id="our-story">
       <div class="story-art">
         <img src="/assets/images/indian-cuisine.webp" alt="A colourful selection of Indian ingredients and spices" loading="lazy">
@@ -222,10 +221,10 @@ require_once __DIR__ . '/includes/common-components.php'; ?>
         <li>Special events</li>
       </ul>
     </section>
-    <?php require __DIR__ . '/_community.php'; ?>
+    <?php require __DIR__ . '/sections/home/community.php'; ?>
   </main>
 
-  <?php require __DIR__ . '/footer.php'; ?>
+  <?php require __DIR__ . '/components/layout/footer.php'; ?>
 
   <script>
     document.querySelector('#location-form').addEventListener('submit', event => {
@@ -257,9 +256,9 @@ require_once __DIR__ . '/includes/common-components.php'; ?>
       document.querySelector('#newsletter-status').textContent = 'Thank you! This is a design preview; your email has not been subscribed.';
     });
   </script>
-  <script src="/assets/js/minimum-font-size.js?v=1" defer></script>
-  <script src="/assets/js/sample-2-carousel.js?v=5" defer></script>
-  <script src="/assets/js/sample-2-home.js?v=5" defer></script>
+  <script src="/assets/scripts/minimum-font-size.js?v=1" defer></script>
+  <script src="/assets/scripts/carousel.js?v=1" defer></script>
+  <script src="/assets/scripts/home.js?v=1" defer></script>
 </body>
 
 </html>
