@@ -112,7 +112,7 @@
           <div class="photo-credit">THE ART OF A REALLY GOOD MEAL.</div>
         </div>
       </div>
-      <form class="hero-location" action="https://my5thelement.com/jacksonville/" id="location-form">
+      <form class="hero-location" action="/jacksonville.php" id="location-form">
         <label for="restaurant-select"><svg class="icon" aria-hidden="true">
             <use href="#icon-pin" />
           </svg> YOUR NEXT STOP</label>
@@ -209,7 +209,7 @@
         <div class="celebration-content">
           <p class="eyebrow">FOR EVERY OCCASION</p>
           <h2>Catering Services</h2>
-          <p>A wedding feast. A family milestone. A lunch that brings the team together. Let us bring the flavours of India to your celebration.</p><a class="button gold" href="https://my5thelement.com/catering-menu-booking/">View Catering</a>
+          <p>A wedding feast. A family milestone. A lunch that brings the team together. Let us bring the flavours of India to your celebration.</p><a class="button gold" href="/catering.php">View Catering</a>
         </div>
       </div>
       <ul class="occasion-list feast-occasion-tags" aria-label="Celebration types">

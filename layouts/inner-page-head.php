@@ -13,13 +13,13 @@ $sampleBase = sample2_url();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= asset_url('styles/inner.css?v=3') ?>">
+    <link rel="stylesheet" href="<?= asset_url('styles/inner.css?v=11') ?>">
     <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 
 <body class="<?= h($pageClass) ?>"><a class="skip-link" href="#main">Skip to content</a><?php if ($pageClass === 'checkout-page') {
-                                                                                            $headerCta = 'Catering menu';
-                                                                                            $headerTarget = sample2_url('catering/jacksonville/');
+                                                                                            $headerCta = 'Find a table';
+                                                                                            $headerTarget = sample2_url() . '#locations';
                                                                                         } else {
                                                                                             $headerCta = $pageClass === 'location-page' ? 'Plan your visit' : 'Plan your event';
                                                                                         }

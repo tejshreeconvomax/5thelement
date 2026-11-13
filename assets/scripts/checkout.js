@@ -45,6 +45,7 @@
     itemsNode.replaceChildren();
     items.forEach(item => {
       const row = document.createElement('article'); row.className = 'checkout-line-item';
+      const image = document.createElement('img'); image.src = item.image || '/assets/images/catering.webp'; image.alt = ''; image.loading = 'lazy';
       const copy = document.createElement('div');
       copy.append(text('h3', item.name), text('p', `${item.label || 'Per item'}${item.people ? ` · ${item.people}` : ''}`));
       const controls = document.createElement('div'); controls.className = 'checkout-quantity';
@@ -52,7 +53,7 @@
       const quantity = text('span', String(item.quantity)); quantity.setAttribute('aria-label', `${item.quantity} ${item.quantity === 1 ? 'item' : 'items'}`);
       const increase = text('button', '+'); increase.type = 'button'; increase.setAttribute('aria-label', `Increase ${item.name}`); increase.addEventListener('click', () => changeQuantity(item.key, item.quantity + 1));
       controls.append(decrease, quantity, increase);
-      row.append(copy, controls, text('strong', money(item.price * item.quantity)));
+      row.append(image, copy, controls, text('strong', money(item.price * item.quantity)));
       itemsNode.append(row);
     });
     subtotalNode.textContent = money(total());

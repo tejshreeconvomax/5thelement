@@ -5,7 +5,7 @@
         <h1>Jacksonville Restaurant</h1>
         <p>Biryanis, curries, warm breads, and something sweet. Find your taste of India in the heart of Baymeadows.</p>
         <div class="button-row">
-            <a href="#" class="btn gold">Order Online</a>
+            <a href="<?= h(sample2_url('catering/jacksonville/')) ?>" class="btn gold">Order Online</a>
             <a href="tel:9044488265" class="btn outline">Call Restaurant</a>
         </div>
         <div class="address-tag"><?= icon('pin') ?><span>9551 Baymeadows Rd · Units 10 & 11<br>Jacksonville, FL 32256</span></div>
@@ -23,7 +23,7 @@
         <p>A leisurely lunch, an evening gathering,<br>or your favourites to go.</p>
     </div>
     <div class="service-grid">
-        <?php foreach ([['dine','Dine in','Settle into our dining room for freshly prepared Indian flavours.','#visit','Plan your visit'],['truck','Delivery','Enjoy your favourites at home through available delivery partners.','#','Explore delivery'],['bag','Takeout','Call ahead and pick up a meal for your own table.','tel:9044488265','Call for takeout'],['feast','Catering','Bring Indian food to your next celebration with flexible catering trays.','catering.php','Explore catering']] as [$ic,$name,$copy,$url,$label]): ?>
+        <?php foreach ([['dine','Dine in','Settle into our dining room for freshly prepared Indian flavours.','#visit','Plan your visit'],['truck','Delivery','Enjoy your favourites at home through available delivery partners.','#visit','Explore delivery'],['bag','Takeout','Call ahead and pick up a meal for your own table.','tel:9044488265','Call for takeout'],['feast','Catering','Bring Indian food to your next celebration with flexible catering trays.','catering.php','Explore catering']] as [$ic,$name,$copy,$url,$label]): ?>
             <article class="service-scene-card" data-service-card><div class="service-illustration">
                 <?php $scene=["dine"=>"dining","truck"=>"takeout","bag"=>"catering","feast"=>"banquet"][$ic]; echo file_get_contents(__DIR__."/assets/svg/service-".$scene.".svg"); ?>
                 </div>
@@ -36,7 +36,7 @@
     </div>
 </section>
 
-<section class="buffet-section">
+<section class="buffet-section" id="buffet">
     <div class="buffet-information">
         <span class="buffet-ornament rosette" aria-hidden="true"></span>
         <p class="eyebrow">DAILY BUFFET</p>
@@ -47,7 +47,7 @@
         </div>
         <div><?= icon('clock') ?><span>SATURDAY — SUNDAY<strong>11 AM – 3 PM</strong></span></div>
         </div>
-    <a href="#" class="btn gold">View Buffet</a>
+    <a href="#buffet" class="btn gold">View Buffet</a>
     </div>
     <div class="buffet-collage">
         <img src="/assets/images/Indian-food.webp" alt="An assortment of Indian dishes for lunch" loading="lazy">
