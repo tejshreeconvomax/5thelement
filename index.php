@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/home.css?v=1">
+  <link rel="stylesheet" href="/assets/styles/home.css?v=2">
+  <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 
 <body class="home-page">
@@ -91,10 +92,10 @@
         <div class="hero-copy">
           <span class="hero-lotus home-feast-hero__lotus" aria-hidden="true"></span>
           <p class="eyebrow">5TH ELEMENT INDIAN RESTAURANT</p>
-          <h1>Indian<br>Restaurant<br>&amp; <em>Catering</em>
+          <h1>Indian<br>Restaurant &amp; <em>Catering</em>
             <span class="hero-star" aria-hidden="true"></span>
           </h1>
-          <p class="intro">Bold Indian flavours. A generous welcome.<br>A whole world of stories on your plate.</p>
+          <p class="intro">Bold Indian flavours. A generous welcome. A whole world of stories on your plate.</p>
           <div class="hero-actions">
             <a class="button gold" href="#locations">Find a Table</a>
             <a class="text-link" href="#weekly">Meet the favourites →</a>
@@ -212,11 +213,11 @@
         </div>
       </div>
       <ul class="occasion-list feast-occasion-tags" aria-label="Celebration types">
-        <li>Weddings</li>
-        <li>Corporate events</li>
-        <li>Private parties</li>
-        <li>Family gatherings</li>
-        <li>Special events</li>
+        <li data-min-font-exempt>Weddings</li>
+        <li data-min-font-exempt>Corporate events</li>
+        <li data-min-font-exempt>Private parties</li>
+        <li data-min-font-exempt>Family gatherings</li>
+        <li data-min-font-exempt>Special events</li>
       </ul>
     </section>
     <?php require __DIR__ . '/sections/home/community.php'; ?>
@@ -255,6 +256,7 @@
     });
   </script>
   <script src="/assets/scripts/minimum-font-size.js?v=1" defer></script>
+  <script src="/assets/scripts/site-loader.js?v=1" defer></script>
   <script src="/assets/scripts/carousel.js?v=1" defer></script>
   <script src="/assets/scripts/home.js?v=1" defer></script>
 </body>

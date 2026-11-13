@@ -5609,7 +5609,7 @@ body{font-size:16px}
   content: "";
   position: absolute;
   z-index: 0;
-  left: clamp(-96px, -4vw, -36px);
+  left: clamp(-96px, 3vw, -36px);
   bottom: clamp(-150px, -8vw, -96px);
   width: min(47vw, 620px);
   aspect-ratio: 800 / 437;
@@ -5910,7 +5910,7 @@ html {
   z-index: 1;
   min-height: 630px;
   padding: clamp(58px, 6.2vw, 96px) 0 64px;
-  grid-template-columns: minmax(0, 0.98fr) minmax(490px, 1.02fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
   gap: clamp(14px, 3vw, 52px);
 }
 .home-page .home-feast-hero .hero-copy {
@@ -5922,7 +5922,7 @@ html {
   width: min(100%, 435px);
   height: 54px;
   margin-bottom: 18px;
-  background-position: center;
+  background-position: left center;
 }
 .home-page .home-feast-hero .eyebrow {
   margin-bottom: 20px;
@@ -5931,10 +5931,10 @@ html {
   letter-spacing: 0.27em;
 }
 .home-page .home-feast-hero h1 {
-  max-width: 640px;
+  max-width: 760px;
   margin-bottom: 24px;
   color: #fff7e7;
-  font-size: clamp(62px, 5.75vw, 102px);
+  font-size: clamp(50px, 4.25vw, 72px);
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 0.9;
@@ -5946,7 +5946,7 @@ html {
   line-height: 0.76;
 }
 .home-page .home-feast-hero .intro {
-  max-width: 465px;
+  max-width: 620px;
   margin-bottom: 31px;
   color: #f6e2b5;
   font-size: clamp(14px, 1.05vw, 17px);
@@ -5954,6 +5954,7 @@ html {
 }
 .home-page .home-feast-hero .hero-actions {
   gap: 24px;
+  flex-wrap: nowrap;
 }
 .home-page .home-feast-hero .hero-actions .button {
   min-width: 166px;
@@ -6075,15 +6076,33 @@ html {
 }
 
 /* Keep the hero's key actions above the persistent section dock on compact desktops. */
-@media (min-width: 761px) and (max-width: 1400px) {
+@media (min-width: 1101px) and (max-width: 1400px) {
   .home-page .home-feast-hero .hero-canvas {
     padding-top: clamp(8px, 1vw, 20px);
   }
   .home-page .home-feast-hero h1 {
-    font-size: clamp(56px, 5vw, 94px);
+    font-size: clamp(52px, 4.25vw, 72px);
   }
   .home-page .home-feast-hero .intro {
     margin-bottom: 17px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .home-page .home-feast-hero .hero-canvas {
+    display: block;
+    min-height: 0;
+    padding: 42px 0 34px;
+  }
+  .home-page .home-feast-hero h1 {
+    font-size: clamp(54px, 6.2vw, 68px);
+  }
+  .home-page .home-feast-hero .hero-art {
+    min-height: 410px;
+    margin: 34px 0 0;
+  }
+  .home-page .home-feast-hero .hero-photo {
+    inset: 0;
   }
 }
 @media (max-width: 1050px) {
@@ -6249,4 +6268,183 @@ html {
     width: 330px;
     opacity: 0.28;
   }
+}
+
+/* Responsive safeguards for the homepage feast hero. */
+@media (min-width: 601px) and (max-width: 900px) {
+  .home-page .home-feast-hero .hero-canvas {
+    padding: 42px 0 34px;
+  }
+  .home-page .home-feast-hero h1 {
+    font-size: clamp(52px, 8.5vw, 66px);
+  }
+  .home-page .home-feast-hero .hero-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px 24px;
+  }
+  .home-page .home-feast-hero .hero-art {
+    min-height: 370px;
+    margin-top: 32px;
+  }
+  .home-page .home-feast-hero .spice-photo {
+    width: 126px;
+    height: 148px;
+  }
+}
+@media (max-width: 600px) {
+  .home-page .home-feast-hero::after,
+  .home-page .home-feast-hero .hero-topline {
+    display: none;
+  }
+  .home-page .home-feast-hero .hero-canvas {
+    padding: 34px 0 24px;
+  }
+  .home-page .home-feast-hero h1 {
+    font-size: clamp(30px, 9vw, 36px);
+    line-height: 0.92;
+  }
+  .home-page .home-feast-hero h1 em {
+    font-size: 1em;
+  }
+  .home-page .home-feast-hero .intro {
+    margin-bottom: 24px;
+  }
+  .home-page .home-feast-hero .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 24px;
+  }
+  .home-page .home-feast-hero .hero-actions .text-link {
+    white-space: nowrap;
+  }
+  .home-page .home-feast-hero .hero-art {
+    min-height: 360px;
+    margin-top: 30px;
+  }
+  .home-page .home-feast-hero .spice-photo {
+    width: 118px;
+    height: 140px;
+  }
+}
+@media (max-width: 380px) {
+  .home-page .home-feast-hero .intro {
+    max-width: calc(100% - 58px);
+  }
+}
+
+/* Shared page loader and static brand marks. */
+.site-loader {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: #360c17;
+  opacity: 0;
+  transition: opacity 280ms ease;
+}
+html.has-site-loader .site-loader {
+  display: grid;
+  opacity: 1;
+}
+.site-loader.is-leaving {
+  opacity: 0;
+  pointer-events: none;
+}
+.site-loader__mandala {
+  width: clamp(88px, 12vw, 138px);
+  aspect-ratio: 1;
+  background: url('/assets/svg/royal-rosette.svg') center / contain no-repeat;
+  filter: drop-shadow(0 0 12px #e5bb55a6);
+  animation: site-loader-mandala 2.8s linear infinite;
+}
+@keyframes site-loader-mandala {
+  to { transform: rotate(360deg); }
+}
+.home-page .site-header .wordmark,
+.home-page .site-header .wordmark:hover,
+.home-page .site-footer .wordmark,
+.home-page .site-footer .wordmark:hover,
+.home-page .site-header .brand-logo,
+.home-page .site-footer .brand-logo {
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  filter: none !important;
+}
+
+/* Keep every celebration type static, with no carousel or horizontal scrolling. */
+.home-page .feast-occasion-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: min(49%, 720px);
+  max-width: min(720px, calc(100% - clamp(56px, 10vw, 180px)));
+  overflow: visible;
+  white-space: normal;
+}
+.home-page .feast-occasion-tags li {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+@media (max-width: 800px) {
+  .home-page .feast-occasion-tags {
+    width: min(85%, 720px);
+    max-width: min(85%, 720px);
+  }
+}
+@media (max-width: 520px) {
+  .home-page .celebrations {
+    min-height: 640px;
+    padding: 18px 3% 94px;
+  }
+  .home-page .celebration-copy {
+    min-height: 510px;
+  }
+  .home-page .celebration-content {
+    width: min(82%, 390px);
+    transform: none;
+  }
+  .home-page .celebration-content .eyebrow {
+    margin-bottom: 8px;
+  }
+  .home-page .celebration-content h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .home-page .celebration-content > p:not(.eyebrow) {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .home-page .celebration-content .button {
+    min-height: 44px;
+    padding-block: 9px;
+  }
+  .home-page .feast-occasion-tags {
+    right: 50%;
+    bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    max-width: 96%;
+    justify-content: center;
+    gap: 7px 6px;
+    transform: translateX(50%);
+  }
+  .home-page .feast-occasion-tags li {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+  .home-page .feast-occasion-tags li:nth-child(1) { order: 1; }
+  .home-page .feast-occasion-tags li:nth-child(3) { order: 2; }
+  .home-page .feast-occasion-tags li:nth-child(5) { order: 3; }
+  .home-page .feast-occasion-tags li:nth-child(2) { order: 4; }
+  .home-page .feast-occasion-tags li:nth-child(4) { order: 5; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-loader__mandala { animation-duration: 12s; }
 }
