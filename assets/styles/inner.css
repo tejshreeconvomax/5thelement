@@ -12,6 +12,7 @@
   --body: "Libre Franklin", Arial, sans-serif;
 }
 
+
 /* Transparent supplied artwork, positioned so only the gold band is visible. */
 .site-footer .footer-gold-border {
   grid-column: 1 / -1;
@@ -4403,10 +4404,37 @@ html.has-site-loader .site-loader {
 }
 @media (max-width: 700px) {
   .menu-page .dish-results {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
   .menu-page .menu-dish {
-    padding: 23px;
+    min-width: 0;
+    padding: 15px 12px;
+  }
+  .menu-page .menu-dish h3 {
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 1.08;
+  }
+  .menu-page .menu-dish select {
+    padding: 8px 6px;
+  }
+  .menu-page .dish-buy-row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .menu-page .dish-price {
+    font-size: 22px;
+  }
+  .menu-page .dish-quantity-controls {
+    width: 100%;
+    grid-template-columns: 30px minmax(24px, 1fr) 30px;
+  }
+  .menu-page .dish-quantity-controls button {
+    width: 30px;
+    min-height: 30px;
   }
 }
 
@@ -7855,5 +7883,22 @@ html {
   .checkout-page .checkout-summary-note,
   .checkout-page .checkout-back-link {
     margin-inline: 18px;
+  }
+}
+
+/* Product cards stay a compact two-column grid on phones; they are not a horizontal slider. */
+@media (max-width: 767px) {
+  .menu-page .dish-results {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    overflow: visible;
+    padding: 0;
+    scroll-snap-type: none;
+  }
+  .menu-page .dish-results > .menu-dish {
+    flex: initial;
+    width: auto;
+    scroll-snap-align: none;
   }
 }
