@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/home.css?v=3">
+  <link rel="stylesheet" href="/assets/styles/home.css?v=9">
   <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 
@@ -87,29 +87,27 @@
   <main id="main">
     <section class="hero home-feast-hero" id="home">
       <span class="hero-mandala home-feast-hero__mandala" aria-hidden="true"></span>
-      <div class="hero-topline"><span>INDIA, IN EVERY SENSE.</span><span>FLORIDA, AT EVERY TABLE.</span></div>
+      <div class="hero-topline"><span>Served fresh across Florida.</span></div>
       <div class="hero-canvas">
         <div class="hero-copy">
-          <span class="hero-lotus home-feast-hero__lotus" aria-hidden="true"></span>
           <p class="eyebrow">5TH ELEMENT INDIAN RESTAURANT</p>
           <h1>Indian<br>Restaurant &amp; <em>Catering</em>
             <span class="hero-star" aria-hidden="true"></span>
           </h1>
-          <p class="intro">Bold Indian flavours. A generous welcome. A whole world of stories on your plate.</p>
+          <p class="intro">Authentic Indian flavors, Impeccable Service, Exceptional Catering <br/> Dine in, Takeout, Delivery</p>
           <div class="hero-actions">
             <a class="button gold" href="#locations">Find a Table</a>
-            <a class="text-link" href="#weekly">Meet the favourites →</a>
+            <a class="text-link" href="#weekly">Meet the favorites →</a>
           </div>
         </div>
         <div class="hero-art">
           <div class="hero-photo">
-            <img src="/assets/images/hero-biryani.webp" alt="Fragrant Indian biryani served with vibrant spices" fetchpriority="high">
+            <img src="/assets/images/hero-chicken-biryani.webp" alt="Fragrant chicken biryani served in a traditional clay pot" fetchpriority="high">
           </div>
           <div class="spice-photo">
             <img src="/assets/images/spices.webp" alt="Colourful Indian spices" fetchpriority="high">
             <span data-min-font-exempt>IT STARTS WITH THE SPICE.</span>
           </div>
-          <div class="photo-credit">THE ART OF A REALLY GOOD MEAL.</div>
         </div>
       </div>
       <form class="hero-location" action="/jacksonville.php" id="location-form">

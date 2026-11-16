@@ -6644,16 +6644,38 @@ body.cart-open {
   height: 420px;
 }
 /* Our Restaurant: use the supplied elephant as a dark antique-gold backdrop. */
+.about-page .about-invitation {
+  min-height: 445px;
+  padding: 70px 7% 78px;
+  background: #216550;
+  border-block: 1px solid #c6a15b;
+}
 .about-page .about-invitation::after {
-  top: auto;
+  display: none;
+}
+.about-page .about-invitation::before {
+  display: none;
+}
+.about-page .about-invitation-elephant {
+  position: absolute;
   z-index: 0;
-  right: clamp(-58px, -2vw, -18px);
-  bottom: -130px;
-  width: clamp(250px, 23vw, 390px);
-  height: clamp(330px, 32vw, 540px);
+  bottom: -38px;
+  width: clamp(175px, 18vw, 300px);
+  height: clamp(250px, 28vw, 420px);
+  pointer-events: none;
   background: url('/assets/images/about-elephant-gold.png') center / contain no-repeat;
-  opacity: 0.68;
-  filter: brightness(0.52) saturate(0.9) contrast(1.18) drop-shadow(0 16px 20px #081d183d);
+  opacity: 0.52;
+  filter: brightness(0.72) saturate(1.06) contrast(1.12);
+}
+.about-page .about-invitation-elephant--left {
+  left: clamp(-72px, -2vw, -24px);
+  transform: scaleX(-1);
+}
+.about-page .about-invitation-elephant--right {
+  right: clamp(-72px, -2vw, -24px);
+}
+.about-page .about-invitation::after {
+  display: none;
 }
 @media (max-width: 700px) {
   .about-page .about-story {
@@ -6662,12 +6684,21 @@ body.cart-open {
   .about-page .about-story-photo {
     height: 290px;
   }
-  .about-page .about-invitation::after {
-    right: -46px;
-    bottom: -96px;
-    width: 195px;
-    height: 290px;
-    opacity: 0.5;
+  .about-page .about-invitation {
+    min-height: 395px;
+    padding: 58px 7% 64px;
+  }
+  .about-page .about-invitation-elephant {
+    bottom: -64px;
+    width: 150px;
+    height: 230px;
+    opacity: 0.4;
+  }
+  .about-page .about-invitation-elephant--left {
+    left: -58px;
+  }
+  .about-page .about-invitation-elephant--right {
+    right: -58px;
   }
 }
 

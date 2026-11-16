@@ -58,7 +58,7 @@ require __DIR__ . '/layouts/inner-page-head.php';
   </div>
 </section>
 
-<section class="about-invitation"><span class="rosette" aria-hidden="true"></span>
+<section class="about-invitation"><span class="about-invitation-elephant about-invitation-elephant--left" aria-hidden="true"></span><span class="about-invitation-elephant about-invitation-elephant--right" aria-hidden="true"></span><span class="rosette" aria-hidden="true"></span>
   <p class="eyebrow">THE FIFTH ELEMENT</p>
   <h2>Our Restaurant</h2>
   <p>That is the part we are here for.</p><a class="btn outline" href="<?= h(sample2_url('contact.php')) ?>">Start a conversation <?= icon('arrow') ?></a>
