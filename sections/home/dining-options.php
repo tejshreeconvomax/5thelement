@@ -1,22 +1,20 @@
 <?php
 $cards = [
-    ['Dine in', 'Pull up a chair. Stay a little longer.', 'dine.webp', '#locations', 'Find your table', 'AT OUR TABLE'],
-    ['Takeout', 'Big flavours. Wherever you call home.', 'order.webp', '#locations', 'Pick up your favourites', 'ON YOUR TERMS'],
-    ['Order online', 'Your next craving is a few clicks away.', 'dish-biryani.webp', '#locations', 'Choose your restaurant', 'STRAIGHT TO YOU'],
-    ['Catering', 'Make the gathering as memorable as the food.', 'catering.webp', '#celebrations', 'Plan something special', 'FOR YOUR PEOPLE'],
+    ['Dine in', 'We bring Indian heritage to your table with fresh-cooked curries, tandoor specialties, and fragrant biryani', 'dine.webp', '#locations', 'Book Now'],
+    ['Takeout', 'Your favorites, packed fresh and ready for pickup.', 'order.webp', '#locations', 'Select Location'],
+    ['Order online', 'Your next craving is a few clicks away.', 'dish-biryani.webp', '#locations', 'Choose your restaurant'],
+    ['Catering', 'Weddings, parties, and office lunches, catered fresh. ', 'catering.webp', '#celebrations', 'Explore Catering'],
 ];
 ?>
 <section class="section dining" id="dining">
     <div class="section-heading">
         <div>
-            <p class="eyebrow">WAYS TO ORDER</p>
             <h2>Dining Options</h2>
         </div>
-        <p>One kitchen. Many possibilities.</p>
     </div>
     <div class="experience-panels">
-        <?php foreach ($cards as [$title, $copy, $image, $href, $cta, $label]): ?>
-            <a class="experience-panel" href="<?= $href ?>"><img src="/assets/images/<?= $image ?>" alt="" loading="lazy"><span class="experience-label"><?= $label ?></span>
+        <?php foreach ($cards as [$title, $copy, $image, $href, $cta]): ?>
+            <a class="experience-panel" href="<?= $href ?>"><img src="/assets/images/<?= $image ?>" alt="" loading="lazy">
                 <div><span class="experience-icon" aria-hidden="true"><svg class="icon">
                             <use href="#icon-<?= ["Dine in" => "dine", "Takeout" => "bag", "Order online" => "order", "Catering" => "feast"][$title] ?>" />
                         </svg></span>

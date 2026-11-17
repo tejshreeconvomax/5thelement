@@ -90,14 +90,14 @@
       <div class="hero-topline"><span>Served fresh across Florida.</span></div>
       <div class="hero-canvas">
         <div class="hero-copy">
-          <p class="eyebrow">5TH ELEMENT INDIAN RESTAURANT</p>
+          <p class="eyebrow">Welcome to 5th Element</p>
           <h1>Indian<br>Restaurant &amp; <em>Catering</em>
             <span class="hero-star" aria-hidden="true"></span>
           </h1>
-          <p class="intro">Authentic Indian flavors, Impeccable Service, Exceptional Catering <br/> Dine in, Takeout, Delivery</p>
+          <p class="intro">Authentic Indian flavors, Impeccable Service & Customized Catering Menu <br/>Veg | Non-veg | Vegan </p>
           <div class="hero-actions">
-            <a class="button gold" href="#locations">Find a Table</a>
-            <a class="text-link" href="#weekly">Meet the favorites →</a>
+            <a class="button gold" href="#locations">Book a Table</a>
+            <a class="text-link" href="#weekly">Explore Menu →</a>
           </div>
         </div>
         <div class="hero-art">
@@ -191,13 +191,13 @@
     <section class="story section" id="our-story">
       <div class="story-art">
         <img src="/assets/images/indian-cuisine.webp" alt="A colourful selection of Indian ingredients and spices" loading="lazy">
-        <span class="image-note">Every flavour has a story.</span>
+        <!-- <span class="image-note">Every flavour has a story.</span> -->
       </div>
       <div class="story-copy">
-        <p></p>
-        <h2>Our Story</h2>
-        <p>In India, a meal is an invitation. To pause, to share, to feel at home. That spirit is at the heart of 5th Element.</p>
-        <p>Our kitchen brings together the richness of Indian cooking and the lively flavours of Indo-Chinese cuisine. From comforting curries to fragrant biryanis, there is always something to gather around.</p>
+        <p class="lotus-eyebrow">A Culinary Experience Beyond the Essentials</p>
+        <h2>Discover the Fifth Element</h2>
+        <p>Welcome to 5th Element, where catering meets craftsmanship. We bring you a rich blend of Indian and Indo-Chinese cuisine, inspired by centuries of tradition and served with a modern, flavorful twist. Every dish is thoughtfully prepared using handpicked spices and premium ingredients from around the world—because you deserve nothing less than exceptional.</p>
+        <p>With multiple locations across Florida, 5th Element has become a trusted name for Indian food lovers in the Sunshine State. From intimate gatherings to grand celebrations, we turn every event into a luxurious culinary journey. Bold flavours. Elegant presentation. An experience your guests won&apos;t forget.</p>
         <a class="text-link dark" href="#cuisines">Discover your next favourite <span>→</span></a>
       </div>
     </section>

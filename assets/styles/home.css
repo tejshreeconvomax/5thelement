@@ -5591,7 +5591,7 @@ body{font-size:16px}
 .home-page .lotus-eyebrow {
   width: fit-content;
   padding-top: clamp(27px, 2.7vw, 42px);
-  background: url('/assets/images/gold-lotus-divider-cropped.png') center top / clamp(122px, 12vw, 188px) auto no-repeat;
+  background: url('/assets/images/gold-lotus-divider-cropped.png') left top / clamp(122px, 12vw, 188px) auto no-repeat;
 }
 @media (max-width: 700px) {
   .home-page .lotus-eyebrow {
@@ -5639,16 +5639,16 @@ body{font-size:16px}
 /* Weekly Specials: a quiet Pongal cooking scene sits behind the heading area. */
 .home-page .weekly::after {
   display: block;
-  top: 20px;
+  top: 42px;
   right: clamp(18px, 4vw, 76px);
   bottom: auto;
   left: auto;
   z-index: 0;
-  width: clamp(170px, 18vw, 278px);
+  width: clamp(170px, 18vw, 320px);
   height: auto;
   aspect-ratio: 626 / 351;
   background: url('/assets/images/weekly-pongal.png') center / contain no-repeat;
-  opacity: 0.32;
+  opacity: 0.90;
 }
 @media (max-width: 700px) {
   .home-page .weekly::after {
@@ -5697,10 +5697,10 @@ html {
 @media (max-width: 900px) {
   .home-page .weekly::after {
     top: auto;
-    right: -28px;
+    right: 14px;
     bottom: 14px;
-    width: 200px;
-    opacity: 0.16;
+    width: 330px;
+    opacity: 0.3;
   }
 }
 @media (max-width: 520px) {

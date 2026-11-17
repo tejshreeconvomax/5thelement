@@ -1,7 +1,6 @@
 <section class="section locations" id="locations">
     <div class="section-heading">
         <div>
-            <p class="eyebrow">FIND A RESTAURANT</p>
             <h2>Our Locations</h2>
         </div>
         <p>Find your restaurant.<br>Dine in, take out, or order online.</p>

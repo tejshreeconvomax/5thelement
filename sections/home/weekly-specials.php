@@ -1,10 +1,10 @@
 <section class="section weekly" id="weekly">
     <div class="section-heading">
         <div>
-            <p class="eyebrow lotus-eyebrow">WEEKLY SPECIALS</p>
-            <h2>Our Menu</h2>
+            <!-- <p class="eyebrow lotus-eyebrow">WEEKLY SPECIALS</p> -->
+            <h2>Weekly Specials</h2>
+            <p style="margin-top:25px;">From the first bite to a sweet finish. A little inspiration for your next visit.</p>
         </div>
-        <p>From the first bite to a sweet finish.<br>A little inspiration for your next visit.</p>
     </div>
     <div class="weekly-grid">
         <?php
