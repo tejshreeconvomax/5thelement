@@ -9,7 +9,7 @@ $cards = [
 <section class="section dining" id="dining">
     <div class="section-heading">
         <div>
-            <h2>Dining Options</h2>
+            <h2>Four Ways to Enjoy 5th Element</h2>
         </div>
     </div>
     <div class="experience-panels">

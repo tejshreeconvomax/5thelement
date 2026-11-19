@@ -5074,6 +5074,7 @@ body{font-size:16px}
   display: grid;
   grid-template-columns: repeat(10, minmax(0, 1fr));
   min-width: 100%;
+  background-color: #f0e2c8;
 }
 .homepage-section-nav a {
   position: relative;

@@ -5494,7 +5494,7 @@ body.cart-open {
 }
 .about-story {
   display: grid;
-  grid-template-columns: 0.9fr 1fr;
+  grid-template-columns: 0.7fr 1.2fr;
   align-items: center;
   gap: 10%;
   background: var(--cream);
@@ -5503,7 +5503,7 @@ body.cart-open {
   height: 480px;
 }
 .about-story-copy {
-  max-width: 510px;
+  max-width: 80%;
 }
 .about-story-copy > p:not(.eyebrow) {
   color: var(--muted);

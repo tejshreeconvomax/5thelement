@@ -8,26 +8,28 @@ require __DIR__ . '/layouts/inner-page-head.php';
 ?>
 <section class="about-hero">
   <div class="about-hero-copy">
-    <p class="eyebrow">ABOUT 5TH ELEMENT</p>
-    <h1>A Place to Gather</h1>
-    <p>At 5th Element, every visit is an opportunity to share good food, easy conversation, and time together.</p>
+    <p class="eyebrow">5TH ELEMENT</p>
+    <h1>Experience the Taste of India</h1>
+    <p>Every table has a story, filled with authentic Indian flavors, good conversations, and lasting memories.</p>
     <a class="btn gold" href="<?= h(sample2_url('jacksonville.php')) ?>">Visit our table <?= icon('arrow') ?></a>
   </div>
   <figure class="about-hero-image"><img src="/assets/images/dine.webp" alt="A warm 5th Element dining table prepared for guests" fetchpriority="high">
-    <figcaption>HOSPITALITY, WITH A ROYAL HEART</figcaption>
-    <span class="about-hero-script">Every table<br>has a story.</span>
-    <!-- <span class="about-hero-mark" aria-hidden="true">5<sup>th</sup></span> -->
+    <!-- <figcaption>HOSPITALITY, WITH A ROYAL HEART</figcaption> -->
+    <!-- <span class="about-hero-script">Every table<br>has a story.</span>
+    <span class="about-hero-mark" aria-hidden="true">5<sup>th</sup></span> -->
   </figure>
 </section>
 
 <section class="about-story page-section">
   <div class="about-story-photo ornamental-photo"><img src="/assets/images/spices.webp" alt="A colourful assortment of Indian spices" loading="lazy"></div>
   <div class="about-story-copy">
-    <p class="eyebrow">OUR APPROACH</p>
-    <h2>Good food, shared well.</h2>
-    <p>We create a welcoming setting for everyday meals, relaxed catch-ups, and occasions worth celebrating.</p>
-    <p>Whether you dine in, pick up, or plan a gathering, our team is here to make the experience simple, generous, and enjoyable.</p>
-    <div class="about-story-note"><span>OUR APPROACH</span><b>Warm welcome.<br>Thoughtful service.</b></div><a class="quiet-link" href="<?= h(sample2_url('catering.php')) ?>">Celebrate with us →</a>
+    <p class="eyebrow">The Story behind 5th Element</p>
+    <h2>A Modern Take on Timeless Indian Flavors</h2>
+    <p>At 5th Element, we’re a team of passionate people brought together by one goal — to serve Indian cuisine that’s rich in tradition, yet fresh in approach.</p>
+    <p>Founded by restaurateur Sridhar Sannala, 5th Element is born out of a deep love for India’s diverse food culture. What started as a simple idea has grown into a bold vision: to elevate Indian cuisine and present it with pride on a global table.</p>
+    <p>Our kitchen blends old-world recipes with modern techniques, honoring the classics while introducing creative new dishes. From street-style favorites to refined regional specialties, every plate tells a story.</p>
+    <p>Whether you’re here for a family meal, a business lunch, or a special celebration, 5th Element offers a vibrant dining experience that feels both familiar and exciting. </p>
+    
   </div>
 </section>
 

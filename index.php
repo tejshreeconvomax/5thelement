@@ -137,7 +137,7 @@
           <use href="#icon-dine" />
         </svg>
         Dine-in
-        <small>Make yourself at home</small>
+        <small>A Place to Gather, A Reason to Stay.</small>
       </a>
       <a href="#locations">
         <svg class="icon" aria-hidden="true">
