@@ -1,6 +1,6 @@
 <?php
 $testimonialTitle = $testimonialTitle ?? 'Why Florida Loves 5th Element';
-$testimonialNote = $testimonialNote ?? 'Sample reviews carried over from Sample 1 for this design preview.';
+
 $reviews = [
     ['The food is always fresh, full of flavour and the service is excellent. The biryani and butter chicken never miss.','Priya S.','Baymeadows, Jacksonville'],
     ['Amazing variety, authentic taste and a warm atmosphere. Highly recommend for both dining and catering.','Rahul M.','Towncenter, Jacksonville'],
@@ -21,7 +21,6 @@ $reviewEscape = static fn($value) => htmlspecialchars((string)$value, ENT_QUOTES
       <button type="button" data-slide="reviews-track" data-direction="1" aria-label="Next reviews">→</button>
     </div>
   </div>
-  <?php if ($testimonialNote !== ''): ?><p class="preview-note"><?= $reviewEscape($testimonialNote) ?></p><?php endif; ?>
   <div class="scroll-track review-track" data-auto-scroll id="reviews-track" tabindex="0" aria-label="Guest reviews">
     <?php foreach ($reviews as [$quote, $name, $location]): ?>
       <figure>

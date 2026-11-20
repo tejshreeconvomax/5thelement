@@ -33,30 +33,32 @@ require __DIR__ . '/layouts/inner-page-head.php';
   </div>
 </section>
 
-<section class="about-values page-section">
-  <div class="section-title">
-    <div>
-      <p class="eyebrow">WHAT GUIDES US</p>
-      <h2>Our Values</h2>
-    </div>
-    <p>From the first greeting to the last shared bite,<br>we make room for people to feel at home.</p>
+<section class="about-journey page-section">
+  <div class="journey-heading">
+    <p class="eyebrow">OUR JOURNEY</p>
+    <h2>Our Journey so far..</h2>
   </div>
-  <div class="about-value-grid">
-    <article><span><?= icon('feast') ?></span>
-      <p class="eyebrow">01 · GENEROSITY</p>
-      <h3>More to share.</h3>
-      <p>Food is at its best when there is enough for one more plate, one more story, and one more person at the table.</p>
-    </article>
-    <article><span><?= icon('spark') ?></span>
-      <p class="eyebrow">02 · CRAFT</p>
-      <h3>Flavour with feeling.</h3>
-      <p>We build depth through time-honoured techniques, thoughtful ingredients, and a little joyful curiosity.</p>
-    </article>
-    <article><span><?= icon('dine') ?></span>
-      <p class="eyebrow">03 · BELONGING</p>
-      <h3>Come as you are.</h3>
-      <p>A quick lunch, a family dinner, or a once-in-a-lifetime celebration: every guest deserves a warm welcome.</p>
-    </article>
+  <div class="journey-layout">
+    <figure class="journey-overview"><img src="/assets/images/dine.webp" alt="A warmly lit 5th Element dining room" loading="lazy"></figure>
+    <ol class="journey-timeline">
+      <li class="journey-step"><span class="journey-year">2008</span><div class="journey-marker"><?= icon('spark') ?></div><div class="journey-copy"><h3>The Grand Beginning</h3><p>We opened the first 5th Element in Jacksonville’s Baymeadows, aiming to bring authentic Indian flavors to a wider audience</p></div><img src="/assets/images/spices.webp" alt="An assortment of Indian spices" loading="lazy"></li>
+      <li class="journey-step"><span class="journey-year">2019</span><div class="journey-marker"><?= icon('pin') ?></div><div class="journey-copy"><h3>Sanford, FL</h3><p>By 2019, a new location was established in Sanford, Florida, expanding the brand’s presence in the state.</p></div><img src="/assets/images/dine.webp" alt="A warmly lit restaurant dining room" loading="lazy"></li>
+      <li class="journey-step"><span class="journey-year">2022</span><div class="journey-marker"><?= icon('leaf') ?></div><div class="journey-copy"><h3>Expansion to a few more places</h3><p>The Palm Coast, Pompano &amp; Daytona Beach branches were operational by 2022, serving the South Florida region with their diverse menu.</p></div><img src="/assets/images/palm-coast-fl.webp" alt="Palm Coast, Florida" loading="lazy"></li>
+      <li class="journey-step"><span class="journey-year">2024</span><div class="journey-marker"><?= icon('arrow') ?></div><div class="journey-copy"><h3>The Journey Continues</h3><p>With the growing demand for fresh Indian Cuisine in South Florida, we opened in Delray Beach &amp; new branch in Jacksonville (Town Center).</p></div><img src="/assets/images/town-center.webp" alt="Town Center, Jacksonville" loading="lazy"></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about-amenities">
+  <div class="amenities-panel">
+    <h2>Our Amenities</h2>
+    <p>Each 5th Element location is designed for comfort and convenience. From spacious seating and easy parking to online ordering, third-party delivery, and inclusive menu options like vegan, gluten-free, and Halal—we make every visit smooth, satisfying, and enjoyable. Catering services are also available for events of all sizes.</p>
+    <div class="amenities-list">
+      <article class="amenity-item"><span class="amenity-symbol"><?= icon('wifi') ?></span><h3>WiFi</h3></article>
+      <article class="amenity-item"><span class="amenity-symbol"><?= icon('wheelchair') ?></span><h3>Accessibility-Friendly</h3></article>
+      <article class="amenity-item"><span class="amenity-symbol"><?= icon('music') ?></span><h3>Live Music</h3></article>
+      <article class="amenity-item"><span class="amenity-symbol"><?= icon('car') ?></span><h3>Parking</h3></article>
+    </div>
   </div>
 </section>
 
