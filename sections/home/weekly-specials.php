@@ -3,7 +3,7 @@
         <div>
             <!-- <p class="eyebrow lotus-eyebrow">WEEKLY SPECIALS</p> -->
             <h2>Weekly Specials</h2>
-            <p style="margin-top:25px;">From the first bite to a sweet finish. A little inspiration for your next visit.</p>
+            <p class="weekly-intro">From the first bite to a sweet finish. A little inspiration for your next visit.</p>
         </div>
     </div>
     <div class="weekly-grid">

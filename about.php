@@ -35,7 +35,7 @@ require __DIR__ . '/layouts/inner-page-head.php';
 
 <section class="about-journey page-section">
   <div class="journey-heading">
-    <p class="eyebrow">OUR JOURNEY</p>
+    <!-- <p class="eyebrow">OUR JOURNEY</p> -->
     <h2>Our Journey so far..</h2>
   </div>
   <div class="journey-layout">

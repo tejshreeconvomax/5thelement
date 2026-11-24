@@ -1,0 +1,103 @@
+/* Shared type scale: loaded by both the homepage and every inner page. */
+:root {
+  --font-body: "Libre Franklin", Arial, sans-serif;
+  --font-display: "Antic Didone", Georgia, serif;
+  --body: var(--font-body);
+  --display: var(--font-display);
+  --accent: var(--font-display);
+  --type-body: 16px;
+  --type-control: var(--type-body);
+  --type-eyebrow: var(--type-body);
+  --type-h1: clamp(46px, 5.5vw, 85px);
+  --type-h2: clamp(36px, 4vw, 60px);
+  --type-h3: 30px;
+  --type-h4: 22px;
+  --type-h5: 18px;
+  --type-h6: 16px;
+  --leading-body: 1.8;
+  --leading-heading: 1.15;
+}
+
+body {
+  font: var(--type-body) / var(--leading-body) var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--leading-heading);
+}
+
+body h1 {
+  font-size: var(--type-h1) !important;
+  letter-spacing: -2px;
+  margin-bottom: 26px;
+}
+
+body h2 {
+  font-size: var(--type-h2) !important;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+
+body h3 {
+  font-size: var(--type-h3) !important;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+body h4 { font-size: var(--type-h4) !important; }
+body h5 { font-size: var(--type-h5) !important; }
+body h6 { font-size: var(--type-h6) !important; }
+
+p { margin-bottom: 20px; }
+
+a { font-size: inherit; }
+
+.button,
+.btn {
+  font-size: var(--type-control);
+}
+
+.eyebrow {
+  font-size: var(--type-eyebrow);
+}
+
+nav {
+  font-size: var(--type-control);
+}
+
+/* The readable text floor is 16px across the interface. */
+body * {
+  font-size: max(var(--type-body), 1em) !important;
+}
+
+/* Heading descendants retain their parent heading scale. */
+body :is(h1, h2, h3, h4, h5, h6) * {
+  font-size: inherit !important;
+}
+
+/* Testimonial quotations are intentionally one step above body copy. */
+.shared-testimonials blockquote {
+  font-size: 18px !important;
+}
+
+/* Menu prices remain a prominent display value above the 16px text floor. */
+.dish-price {
+  font: 27px / 1.2 var(--accent) !important;
+}

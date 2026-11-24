@@ -2,8 +2,8 @@
 <section class="contact-hero">
     <div class="contact-hero-copy">
         <p class="eyebrow">BAYMEADOWS · JACKSONVILLE</p>
-        <h1>Jacksonville Restaurant</h1>
-        <p>Biryanis, curries, warm breads, and something sweet. Find your taste of India in the heart of Baymeadows.</p>
+        <h1>Baymeadows’s Favorite Indian Restaurant</h1>
+        <p>Located in the heart of Jacksonville in Baymeadows, we serve a variety of Indian food like Biryanis, Curries, Breads, Desserts, and more. Each meal is made with authentic Indian spices and the freshest Indian ingredients.</p>
         <div class="button-row">
             <a href="<?= h(sample2_url('catering/jacksonville/')) ?>" class="btn gold">Order Online</a>
             <a href="tel:9044488265" class="btn outline">Call Restaurant</a>
@@ -11,7 +11,7 @@
         <div class="address-tag"><?= icon('pin') ?><span>9551 Baymeadows Rd · Units 10 & 11<br>Jacksonville, FL 32256</span></div>
     </div>
     <aside class="contact-hero-card"><img src="/assets/images/jacksonville-bay-meadows.webp" alt="Baymeadows 5th Element restaurant" fetchpriority="high">
-        <div><span>BAYMEADOWS · JACKSONVILLE</span><strong>Good food.<br>Warm company.</strong><a href="tel:9044488265">Call the restaurant <b aria-hidden="true">↗</b></a></div>
+        <div><span>BAYMEADOWS · JACKSONVILLE</span><a href="tel:9044488265">Call the restaurant <b aria-hidden="true">↗</b></a></div>
     </aside><span class="contact-hero-seal" aria-hidden="true">A WARM<br><em>welcome</em><br>AWAITS</span>
 </section>
 
@@ -23,11 +23,10 @@
         <p>A leisurely lunch, an evening gathering,<br>or your favourites to go.</p>
     </div>
     <div class="service-grid">
-        <?php foreach ([['dine','Dine in','Settle into our dining room for freshly prepared Indian flavours.','#visit','Plan your visit'],['truck','Delivery','Enjoy your favourites at home through available delivery partners.','#visit','Explore delivery'],['bag','Takeout','Call ahead and pick up a meal for your own table.','tel:9044488265','Call for takeout'],['feast','Catering','Bring Indian food to your next celebration with flexible catering trays.','catering.php','Explore catering']] as [$ic,$name,$copy,$url,$label]): ?>
+        <?php foreach ([['dine','Dine in','Visit our restaurant for a relaxed dining experience with authentic Indian flavors, served fresh every day.','#visit','Plan your visit'],['truck','Delivery','Live nearby? Order from our kitchen and get your meal delivered via Uber Eats, Grubhub, Postmates, or DoorDash.','#visit','Explore delivery'],['bag','Takeout','Short on time? Call Us or Book Takeout online we’ll have your order ready for quick pickup.','tel:9044488265','Call for takeout'],['feast','Catering','Planning an event? Our catering team offers flexible Indian catering trays for gatherings of all sizes.','catering.php','Explore catering']] as [$ic,$name,$copy,$url,$label]): ?>
             <article class="service-scene-card" data-service-card><div class="service-illustration">
                 <?php $scene=["dine"=>"dining","truck"=>"takeout","bag"=>"catering","feast"=>"banquet"][$ic]; echo file_get_contents(__DIR__."/assets/svg/service-".$scene.".svg"); ?>
                 </div>
-                <button type="button" class="scene-toggle" aria-pressed="false" aria-label="Animate <?= h($name) ?> illustration">Explore the detail <span aria-hidden="true">✧</span></button>
                 <h3><?= h($name) ?></h3>
                 <p><?= h($copy) ?></p>
                 <a class="quiet-link" href="<?= h($url) ?>"><?= h($label) ?> ↗</a>
@@ -41,17 +40,16 @@
         <span class="buffet-ornament rosette" aria-hidden="true"></span>
         <p class="eyebrow">DAILY BUFFET</p>
         <h2>Lunch Buffet</h2>
-        <p>Discover a variety of Indian dishes, with vegetarian and non-vegetarian choices and a sweet finish.</p>
+        <p>A luxurious spread crafted to elevate your dining experience.</p>
         <div class="buffet-times"><div>
             <?= icon('clock') ?><span>MONDAY — FRIDAY<strong>11 AM – 2:30 PM</strong></span>
         </div>
         <div><?= icon('clock') ?><span>SATURDAY — SUNDAY<strong>11 AM – 3 PM</strong></span></div>
         </div>
-    <a href="#buffet" class="btn gold">View Buffet</a>
+    <!-- <a href="#buffet" class="btn gold">View Buffet</a> -->
     </div>
-    <div class="buffet-collage">
-        <img src="/assets/images/Indian-food.webp" alt="An assortment of Indian dishes for lunch" loading="lazy">
-        <img src="/assets/images/week-dessert.webp" alt="Indian sweets to finish the meal" loading="lazy">
+    <div class="buffet-collage" aria-label="Lunch buffet menu">
+        <img class="buffet-menu-pdf" src="/assets/images/bay-23-Nov-menu.png" alt="5th Element Baymeadows lunch buffet menu" loading="lazy">
     </div>
 </section>
 
@@ -59,17 +57,30 @@
     <div class="section-title">
         <div>
             <p class="eyebrow">RESTAURANT PHOTOS</p>
-            <h2>Our Restaurant</h2>
+            <h2>A Look Inside 5th Element</h2>
         </div>
-        <p>Take a closer look at our restaurant and cuisine.</p>
+        <!-- <p>Take a closer look at our restaurant and cuisine.</p> -->
     </div>
-    <div class="photo-gallery local-gallery">
-        <?php foreach ([['jacksonville-bay-meadows.webp','Baymeadows restaurant'],['dine.webp','A warm dining experience'],['dish-biryani.webp','Biryani prepared with aromatic spices']] as [$image,$alt]): ?>
-            <button type="button" data-gallery="/assets/images/<?= h($image) ?>" data-caption="<?= h($alt) ?>" aria-label="Enlarge: <?= h($alt) ?>">
-                <img src="/assets/images/<?= h($image) ?>" alt="<?= h($alt) ?>" loading="lazy">
-                <span><?= icon('plus') ?></span>
-            </button>
-        <?php endforeach; ?>
+    <div class="baymeadows-gallery-shell">
+        <div class="photo-gallery local-gallery baymeadows-carousel scroll-track" data-auto-scroll id="baymeadows-photo-track" tabindex="0" aria-label="Baymeadows restaurant photos">
+            <?php
+            $baymeadowsPhotos = glob(__DIR__ . '/assets/images/baymeadows/*.{avif,webp,jpg,jpeg,png}', GLOB_BRACE) ?: [];
+            sort($baymeadowsPhotos, SORT_NATURAL | SORT_FLAG_CASE);
+            foreach ($baymeadowsPhotos as $index => $photo):
+                $filename = basename($photo);
+                $caption = 'Baymeadows restaurant photo ' . ($index + 1);
+                $photoUrl = '/assets/images/baymeadows/' . rawurlencode($filename);
+            ?>
+                <button type="button" data-gallery="<?= h($photoUrl) ?>" data-caption="<?= h($caption) ?>" aria-label="Enlarge: <?= h($caption) ?>">
+                    <img src="<?= h($photoUrl) ?>" alt="<?= h($caption) ?>" loading="lazy">
+                    <span><?= icon('plus') ?></span>
+                </button>
+            <?php endforeach; ?>
+        </div>
+        <div class="baymeadows-gallery-controls" aria-label="Photo carousel controls">
+            <button type="button" data-slide="baymeadows-photo-track" data-direction="-1" aria-label="Previous restaurant photos">←</button>
+            <button type="button" data-slide="baymeadows-photo-track" data-direction="1" aria-label="Next restaurant photos">→</button>
+        </div>
     </div>
 </section>
 
@@ -86,7 +97,7 @@
     <div class="visit-card" id="enquiry">
         <p class="eyebrow">BAYMEADOWS · JACKSONVILLE</p>
         <h2>Visit Us</h2>
-        <p class="street"><?= icon('pin') ?> 9551 Baymeadows Rd, Units 10 & 11<br>Jacksonville, FL 32256</p>
+        <p class="street"><?= icon('pin') ?> 9551 Baymeadows Rd, Units 10 & 11<br> Jacksonville, FL 32256</p>
         <div class="visit-phones">
             <a href="tel:9044488265">(904) 448-8265</a>
             <a href="tel:9044488266">(904) 448-8266</a>
@@ -98,7 +109,9 @@
             <div><dt>Sunday</dt><dd>11 AM – 9:20 PM</dd></div>
         </dl>
         <p class="fine-print">Call the restaurant for holiday hours and reservations.</p>
-        <a class="btn gold" href="https://www.google.com/maps/search/?api=1&query=9551%20Baymeadows%20Rd%20Jacksonville%20FL%2032256">Directions</a>
+        <div class="visit-map">
+            <iframe src="https://www.google.com/maps?q=5th%20Element%20Indian%20Restaurant%2C%209551%20Baymeadows%20Rd%2C%20Jacksonville%2C%20FL%2032256&output=embed" title="Map to 5th Element Indian Restaurant in Baymeadows, Jacksonville" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
     <div class="visit-illustration">
         <div class="visit-palace-photo">
@@ -107,8 +120,7 @@
         <div class="visit-invitation">
             <span class="rosette" aria-hidden="true"></span>
             <p class="eyebrow">INDIAN ROOTS · FLORIDA SOUL</p>
-            <p class="visit-quote">The best journeys<br>end at <em>the table.</em></p>
-            <a href="<?= h(sample2_url('catering/jacksonville/')) ?>" class="btn outline">Catering Menu</a>
+            <p class="visit-quote">A place to gather.<br>Good food and warm company, shared around <em>the table.</em></p>
         </div>
     </div>
 </section>

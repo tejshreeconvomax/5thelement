@@ -37,7 +37,7 @@ require __DIR__ . '/layouts/inner-page-head.php'; ?>
 <section class="craft-section page-section">
     <div class="craft-composition">
         <div class="craft-photo ornamental-photo"><img src="/assets/images/catering.webp" alt="A colourful Indian catering spread" loading="lazy"></div>
-        <div class="craft-detail"><img src="/assets/images/spices.webp" alt="Indian spices selected for a flavorful celebration" loading="lazy"><span>THE ART IS IN THE DETAILS</span></div><span class="craft-caption">A feast shaped around <em>you.</em></span>
+        <div class="craft-detail"><img src="/assets/images/spices.webp" alt="Indian spices selected for a flavorful celebration" loading="lazy"><span>THE ART IS IN THE DETAILS</span></div>
     </div>
     <div>
         <p class="eyebrow lotus-eyebrow">CATERING DETAILS</p>

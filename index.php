@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/home.css?v=9">
+  <link rel="stylesheet" href="/assets/styles/typography.css?v=5">
+  <link rel="stylesheet" href="/assets/styles/home.css?v=11">
   <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 
@@ -54,34 +55,34 @@
     <div class="homepage-section-nav__track">
       <a class="is-active" href="#home" data-section-link="home" aria-current="true"><svg aria-hidden="true">
           <use href="#icon-lotus" />
-        </svg><span data-min-font-exempt>Home</span></a>
+        </svg><span>Home</span></a>
       <a href="#dining" data-section-link="dining"><svg aria-hidden="true">
           <use href="#icon-dine" />
-        </svg><span data-min-font-exempt>Dining</span></a>
+        </svg><span>Dining</span></a>
       <a href="#cuisines" data-section-link="cuisines"><svg aria-hidden="true">
           <use href="#icon-order" />
-        </svg><span data-min-font-exempt>Menu</span></a>
+        </svg><span>Menu</span></a>
       <a href="#locations" data-section-link="locations"><svg aria-hidden="true">
           <use href="#icon-pin" />
-        </svg><span data-min-font-exempt>Locations</span></a>
+        </svg><span>Locations</span></a>
       <a href="#takeout" data-section-link="takeout"><svg aria-hidden="true">
           <use href="#icon-bag" />
-        </svg><span data-min-font-exempt>Takeout</span></a>
+        </svg><span>Takeout</span></a>
       <a href="#weekly" data-section-link="weekly"><svg aria-hidden="true">
           <use href="#icon-feast" />
-        </svg><span data-min-font-exempt>Weekly Menu</span></a>
+        </svg><span>Weekly Menu</span></a>
       <a href="#our-story" data-section-link="our-story"><svg aria-hidden="true">
           <use href="#icon-lotus" />
-        </svg><span data-min-font-exempt>Our Story</span></a>
+        </svg><span>Our Story</span></a>
       <a href="#celebrations" data-section-link="celebrations"><svg aria-hidden="true">
           <use href="#icon-feast" />
-        </svg><span data-min-font-exempt>Catering</span></a>
+        </svg><span>Catering</span></a>
       <a href="#testimonials-section" data-section-link="testimonials-section"><svg aria-hidden="true" viewBox="0 0 24 24">
           <path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.4l6.3-.9L12 2.8Z" />
-        </svg><span data-min-font-exempt>Reviews</span></a>
+        </svg><span>Reviews</span></a>
       <a href="#blogs" data-section-link="blogs"><svg aria-hidden="true">
           <use href="#icon-order" />
-        </svg><span data-min-font-exempt>Blog</span></a>
+        </svg><span>Blog</span></a>
     </div>
   </nav>
   <main id="main">
@@ -106,7 +107,7 @@
           </div>
           <div class="spice-photo">
             <img src="/assets/images/spices.webp" alt="Colourful Indian spices" fetchpriority="high">
-            <span data-min-font-exempt>IT STARTS WITH THE SPICE.</span>
+            <span>IT STARTS WITH THE SPICE.</span>
           </div>
         </div>
       </div>
@@ -167,16 +168,16 @@
     <?php require __DIR__ . '/sections/home/restaurant-locations.php'; ?>
     <section class="takeout-banner" id="takeout" aria-label="Takeout">
       <div class="takeout-banner__content">
-        <p class="takeout-banner__eyebrow" data-min-font-exempt>Takeout</p>
+        <p class="takeout-banner__eyebrow">Takeout</p>
         <h2>Order Online &amp; Pick Up</h2>
-        <p class="takeout-banner__copy" data-min-font-exempt>Enjoy your favorite Indian dishes<br>from the comfort of your home.</p>
+        <p class="takeout-banner__copy">Enjoy your favorite Indian dishes<br>from the comfort of your home.</p>
         <ul class="takeout-banner__details" aria-label="Takeout options">
           <li><svg aria-hidden="true" viewBox="0 0 24 24">
               <path d="M4 5h16v12H4zM8 19h8M9 9h6M9 13h4" />
-            </svg><span data-min-font-exempt>Order<br>Online</span></li>
+            </svg><span>Order<br>Online</span></li>
           <li><svg aria-hidden="true" viewBox="0 0 24 24">
               <path d="M7 8h10l1 12H6L7 8ZM9 8V6a3 3 0 0 1 6 0v2M9 12h.01M15 12h.01M9 15h.01M15 15h.01" />
-            </svg><span data-min-font-exempt>Pick Up at<br>Restaurant</span></li>
+            </svg><span>Pick Up at<br>Restaurant</span></li>
         </ul>
         <a class="takeout-banner__cta" href="#locations">Order Now</a>
       </div>
@@ -211,11 +212,11 @@
         </div>
       </div>
       <ul class="occasion-list feast-occasion-tags" aria-label="Celebration types">
-        <li data-min-font-exempt>Weddings</li>
-        <li data-min-font-exempt>Corporate events</li>
-        <li data-min-font-exempt>Private parties</li>
-        <li data-min-font-exempt>Family gatherings</li>
-        <li data-min-font-exempt>Special events</li>
+        <li>Weddings</li>
+        <li>Corporate events</li>
+        <li>Private parties</li>
+        <li>Family gatherings</li>
+        <li>Special events</li>
       </ul>
     </section>
     <?php require __DIR__ . '/sections/home/community.php'; ?>
@@ -253,7 +254,6 @@
       document.querySelector('#newsletter-status').textContent = 'Thank you! This is a design preview; your email has not been subscribed.';
     });
   </script>
-  <script src="/assets/scripts/minimum-font-size.js?v=1" defer></script>
   <script src="/assets/scripts/site-loader.js?v=1" defer></script>
   <script src="/assets/scripts/carousel.js?v=1" defer></script>
   <script src="/assets/scripts/home.js?v=1" defer></script>

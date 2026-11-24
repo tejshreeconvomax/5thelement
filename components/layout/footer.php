@@ -1,6 +1,6 @@
 <footer class="site-footer" id="contact">
   <div><a class="wordmark" href="<?= h(sample2_url()) ?>"><img class="brand-logo" src="<?= h(asset_url('images/5th-element-logo-transparent.png')) ?>" alt="5th Element Indian Restaurant" width="160" height="86"></a>
-    <p>Rooted in tradition.<br><em>Remembered around the table.</em></p>
+    <p>Indian flavors.<br><em>A warm welcome, always.</em></p>
   </div>
   <div>
     <p class="eyebrow">EXPLORE</p>
@@ -12,7 +12,14 @@
     <a href="<?= h(sample2_url('contact.php')) ?>">Contact us</a>
   </div>
   <div>
-    <p class="eyebrow">A PERSONAL WELCOME</p><a href="tel:9044488265">Baymeadows · (904) 448-8265</a><a href="tel:5102995378">Catering · (510) 299-5378</a><a href="mailto:caterings@my5thelement.com">caterings@my5thelement.com</a><a href="<?= h(sample2_url('catering.php')) ?>">Baymeadows · Towncenter · Daytona · Palm Coast</a>
+    <p class="eyebrow">A PERSONAL WELCOME</p>
+    <a href="tel:9044488265">Baymeadows · (904) 448-8265</a>
+    <a href="tel:9048934265">Towncenter · (904) 893-4265</a>
+    <a href="tel:3862650726">Daytona Beach · (386) 265-0726</a>
+    <a href="tel:3863020202">Palm Coast · (386) 302-0202</a>
+
+    <a href="tel:5102995378">Catering · (510) 299-5378</a>
+    <a href="mailto:caterings@my5thelement.com">caterings@my5thelement.com</a>
   </div>
   <div class="footer-base"><span>© <?= date('Y') ?> 5th Element Indian Restaurant</span><span>CRAFTED WITH INDIAN HOSPITALITY</span></div>
   <div class="footer-gold-border" aria-hidden="true"></div>
