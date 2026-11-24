@@ -14,7 +14,13 @@
 
   let clones = [];
   if (!reducedMotion.matches && !track.matches('.blog-track')) {
-   clones = originals.map(item => {
+   // Jacksonville shows at most three cards at once. Cloning only those cards
+   // preserves the seamless wrap while avoiding duplicate image decoding for
+   // the entire restaurant gallery.
+   const loopItems = track.matches('.baymeadows-carousel')
+    ? originals.slice(0, Math.min(3, originals.length))
+    : originals;
+   clones = loopItems.map(item => {
     const clone = item.cloneNode(true);
     clone.dataset.carouselClone = 'true';
     clone.setAttribute('aria-hidden', 'true');

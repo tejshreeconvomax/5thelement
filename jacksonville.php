@@ -49,7 +49,7 @@
     <!-- <a href="#buffet" class="btn gold">View Buffet</a> -->
     </div>
     <div class="buffet-collage" aria-label="Lunch buffet menu">
-        <img class="buffet-menu-pdf" src="/assets/images/bay-23-Nov-menu.png" alt="5th Element Baymeadows lunch buffet menu" loading="lazy">
+        <img class="buffet-menu-pdf" src="/assets/images/bay-23-Nov-menu.webp" alt="5th Element Baymeadows lunch buffet menu" width="2246" height="2800" loading="lazy" decoding="async" fetchpriority="low">
     </div>
 </section>
 
