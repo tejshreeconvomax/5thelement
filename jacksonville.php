@@ -64,10 +64,26 @@
     <div class="baymeadows-gallery-shell">
         <div class="photo-gallery local-gallery baymeadows-carousel scroll-track" data-auto-scroll id="baymeadows-photo-track" tabindex="0" aria-label="Baymeadows restaurant photos">
             <?php
-            $baymeadowsPhotos = glob(__DIR__ . '/assets/images/baymeadows/*.{avif,webp,jpg,jpeg,png}', GLOB_BRACE) ?: [];
-            sort($baymeadowsPhotos, SORT_NATURAL | SORT_FLAG_CASE);
-            foreach ($baymeadowsPhotos as $index => $photo):
-                $filename = basename($photo);
+            // Keep this manifest explicit: Wasmer's PHP runtime does not reliably
+            // expand brace-based glob patterns, which left the carousel empty.
+            $baymeadowsPhotos = [
+                'jacksonville-bay-meadows.webp',
+                'TA_6379.webp',
+                'TA_6386.webp',
+                'TA_6408.webp',
+                'TA_6421.webp',
+                'TA_6423.webp',
+                'TA_6430.webp',
+                'TA_6438.webp',
+                'TA_6484.webp',
+                'TA_6500.webp',
+                'TA_6501.webp',
+                'TA_6506.webp',
+                'TA_6519.webp',
+                'TA_6528.webp',
+                'TA_6542.webp',
+            ];
+            foreach ($baymeadowsPhotos as $index => $filename):
                 $caption = 'Baymeadows restaurant photo ' . ($index + 1);
                 $photoUrl = '/assets/images/baymeadows/' . rawurlencode($filename);
             ?>
