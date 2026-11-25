@@ -898,7 +898,7 @@ nav a:hover:after {
   background: var(--cream);
 }
 .restaurant-list a > span:first-child {
-  font-size: var(--type-body);
+  font-size: 16px !important;
   letter-spacing: 1px;
 }
 .restaurant-list h3 {
@@ -3185,7 +3185,6 @@ footer > * {
   font-size: 1.25em;
 }
 .story-copy p:not(.eyebrow) {
-  max-width: 480px;
   color: #64513e;
   font-size: var(--type-body);
 }

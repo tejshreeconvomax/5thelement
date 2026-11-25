@@ -6,9 +6,9 @@ require $projectRoot . '/layouts/inner-page-head.php';
 $menuData = json_decode(file_get_contents($projectRoot . '/data/menus/jacksonville-catering-menu.json'), true, 512, JSON_THROW_ON_ERROR); ?>
 <section class="contact-hero">
   <div class="contact-hero-copy">
-    <p class="eyebrow">JACKSONVILLE CATERING</p>
-    <h1>Catering Menu</h1>
-    <p>Choose your dishes, explore tray sizes, and build a menu enquiry for your next celebration.</p>
+    <p class="eyebrow" style="text-transform: uppercase;">Jacksonville's Highest Rated Catering Service</p>
+    <h1>Make your special occasion unforgettable with authentic Indian cuisine</h1>
+    <p>Make your event extraordinary with our Indian food catering. Whether it’s a wedding, engagement party, or a milestone celebration, we provide a wide range of delicious Indian dishes that are perfect for any special occasion.</p>
     <div class="button-row"><a href="#catering-menu" class="btn gold">View Menu</a><a href="#enquiry" class="btn outline">Get Quote</a></div>
   </div>
   <aside class="contact-hero-card"><img src="/assets/images/catering.webp" alt="A selection of Indian dishes prepared for a catered celebration" fetchpriority="high">

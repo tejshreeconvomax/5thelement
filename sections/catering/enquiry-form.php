@@ -5,7 +5,10 @@
             <p class="eyebrow lotus-eyebrow">PLAN YOUR EVENT</p>
             <h2>Catering Enquiry</h2>
             <p>Tell us where, when, and what you have in mind. We’ll help you put together the menu and service your celebration deserves.</p>
-            <div class="contact-lines"><a href="mailto:caterings@my5thelement.com"><?= icon('mail') ?> caterings@my5thelement.com</a><a href="tel:5102995378"><?= icon('phone') ?> (510) 299-5378</a><a href="tel:9048934265"><?= icon('phone') ?> Jacksonville · (904) 893-4265</a></div>
+            <div class="contact-lines">
+                <a href="mailto:caterings@my5thelement.com"><?= icon('mail') ?> caterings@my5thelement.com</a>
+                <a href="tel:5102995378"><?= icon('phone') ?> (510) 299-5378</a>
+            </div>
         </div>
     </div>
     <form class="event-form" data-email-draft>

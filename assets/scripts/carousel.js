@@ -14,10 +14,9 @@
 
   let clones = [];
   if (!reducedMotion.matches && !track.matches('.blog-track')) {
-   // Jacksonville shows at most three cards at once. Cloning only those cards
-   // preserves the seamless wrap while avoiding duplicate image decoding for
-   // the entire restaurant gallery.
-   const loopItems = track.matches('.baymeadows-carousel')
+   // Photo galleries show at most three cards at once. Clone only those
+   // cards to avoid decoding another full set of photos.
+   const loopItems = track.matches('.baymeadows-carousel, .catering-carousel')
     ? originals.slice(0, Math.min(3, originals.length))
     : originals;
    clones = loopItems.map(item => {

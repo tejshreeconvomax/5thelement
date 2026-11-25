@@ -5,7 +5,7 @@
   --body: var(--font-body);
   --display: var(--font-display);
   --accent: var(--font-display);
-  --type-body: 16px;
+  --type-body: 18px;
   --type-control: var(--type-body);
   --type-eyebrow: var(--type-body);
   --type-h1: clamp(46px, 5.5vw, 85px);

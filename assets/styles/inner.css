@@ -9475,3 +9475,106 @@ html {
     height: 44px;
   }
 }
+
+/* Catering photos use the same filmstrip language as the restaurant gallery. */
+.catering-page .catering-gallery-shell {
+  position: relative;
+}
+.catering-page .catering-carousel {
+  display: flex;
+  gap: 20px;
+  padding: 5px 2px 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-inline: contain;
+  touch-action: pan-x;
+  cursor: grab;
+}
+.catering-page .catering-carousel::-webkit-scrollbar {
+  display: none;
+}
+.catering-page .catering-carousel.is-user-scrolling {
+  cursor: grabbing;
+}
+.catering-page .catering-carousel > button,
+.catering-page .catering-carousel > button:first-child,
+.catering-page .catering-carousel > button:last-child {
+  position: relative;
+  display: block;
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
+  height: clamp(250px, 27vw, 360px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--gold);
+  background: var(--cream);
+  grid-column: auto;
+  grid-row: auto;
+  scroll-snap-align: start;
+}
+.catering-page .catering-carousel > button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.catering-page .catering-carousel > button:hover img,
+.catering-page .catering-carousel > button:focus-visible img {
+  transform: scale(1.05);
+}
+.catering-page .catering-carousel > button > span {
+  right: 13px;
+  bottom: 13px;
+}
+.catering-page .catering-gallery-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 2px;
+}
+.catering-page .catering-gallery-controls button {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  background: var(--emerald);
+  color: var(--ivory);
+  line-height: 1;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+.catering-page .catering-gallery-controls button:hover,
+.catering-page .catering-gallery-controls button:focus-visible {
+  transform: translateY(-3px);
+  background: var(--gold);
+  color: var(--deep);
+}
+@media (max-width: 850px) {
+  .catering-page .catering-carousel > button,
+  .catering-page .catering-carousel > button:first-child,
+  .catering-page .catering-carousel > button:last-child {
+    flex-basis: calc((100% - 20px) / 2);
+    height: clamp(245px, 42vw, 340px);
+  }
+}
+@media (max-width: 560px) {
+  .catering-page .catering-carousel {
+    gap: 14px;
+    padding-bottom: 14px;
+  }
+  .catering-page .catering-carousel > button,
+  .catering-page .catering-carousel > button:first-child,
+  .catering-page .catering-carousel > button:last-child {
+    flex-basis: 86%;
+    height: min(112vw, 380px);
+  }
+  .catering-page .catering-gallery-controls button {
+    width: 44px;
+    height: 44px;
+  }
+}
