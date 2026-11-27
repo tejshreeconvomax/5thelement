@@ -6096,7 +6096,7 @@ html {
 }
 .home-page .home-feast-hero .spice-photo {
   z-index: 3;
-  bottom: -34px;
+  bottom: 25px;
   left: clamp(-74px, -5vw, -25px);
   width: clamp(150px, 14vw, 210px);
   height: clamp(180px, 17vw, 238px);
