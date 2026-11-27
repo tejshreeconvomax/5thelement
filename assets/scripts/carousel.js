@@ -92,6 +92,10 @@
 
  tracks.forEach(initializeTrack);
 
+ document.addEventListener('google-reviews:loaded', () => {
+  document.querySelectorAll('.review-track[data-auto-scroll]').forEach(initializeTrack);
+ });
+
  document.querySelectorAll('[data-slide]').forEach(button => {
   const track = document.getElementById(button.dataset.slide);
   if (!track) return;

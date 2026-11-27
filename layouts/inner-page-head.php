@@ -13,8 +13,9 @@ $sampleBase = sample2_url();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= asset_url('styles/typography.css?v=5') ?>">
-<link rel="stylesheet" href="<?= asset_url('styles/inner.css?v=29') ?>">
+    <link rel="stylesheet" href="<?= asset_url('styles/typography.css?v=6') ?>">
+<link rel="stylesheet" href="<?= asset_url('styles/inner.css?v=35') ?>">
+    <link rel="stylesheet" href="<?= asset_url('styles/google-reviews.css?v=1') ?>">
     <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 

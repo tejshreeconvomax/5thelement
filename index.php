@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/typography.css?v=5">
-  <link rel="stylesheet" href="/assets/styles/home.css?v=11">
+  <link rel="stylesheet" href="/assets/styles/typography.css?v=6">
+  <link rel="stylesheet" href="/assets/styles/home.css?v=12">
+  <link rel="stylesheet" href="/assets/styles/google-reviews.css?v=1">
   <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 
@@ -92,7 +93,7 @@
       <div class="hero-canvas">
         <div class="hero-copy">
           <p class="eyebrow">Welcome to 5th Element</p>
-          <h1>Indian<br>Restaurant &amp; <em>Catering</em>
+          <h1>Indian <br class="hero-title-break">Restaurant &amp; <em>Catering</em>
             <span class="hero-star" aria-hidden="true"></span>
           </h1>
           <p class="intro">Authentic Indian flavors, Impeccable Service & Customized Catering Menu <br/>Veg | Non-veg | Vegan </p>
@@ -255,7 +256,8 @@
     });
   </script>
   <script src="/assets/scripts/site-loader.js?v=1" defer></script>
-  <script src="/assets/scripts/carousel.js?v=1" defer></script>
+  <script src="/assets/scripts/carousel.js?v=4" defer></script>
+  <script src="/assets/scripts/google-reviews.js?v=2" defer></script>
   <script src="/assets/scripts/home.js?v=1" defer></script>
 </body>
 

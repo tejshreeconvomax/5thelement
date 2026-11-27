@@ -22,3 +22,8 @@ php -S 127.0.0.1:8181 -t .
 ```
 
 Then open `http://127.0.0.1:8181/`.
+
+## Google Reviews
+
+See [Google Reviews setup](docs/google-reviews.md) for Business Profile API
+access, Wasmer secrets, location IDs, cache storage, and verification steps.

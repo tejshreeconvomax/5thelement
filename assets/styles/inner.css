@@ -5348,6 +5348,7 @@ body.cart-open {
     margin-inline: 20px;
   }
 }
+
 @media (max-width: 520px) {
   .floating-cart {
     right: 14px;
@@ -6134,6 +6135,13 @@ body.cart-open {
   }
 }
 
+/* The invitation seal is a desktop-only hero accent on location pages. */
+@media (max-width: 900px) {
+  .location-page .contact-hero-seal {
+    display: none;
+  }
+}
+
 /* Complete the contact-page hero with a dedicated Jacksonville invitation card. */
 .contact-hero {
   display: grid;
@@ -6145,7 +6153,7 @@ body.cart-open {
 .contact-hero-copy {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 90%;
 }
 .contact-hero-card {
   position: relative;
@@ -6263,6 +6271,7 @@ body.cart-open {
     font-size: 21px;
   }
 }
+
 .catering-page .hero-background {
   overflow: hidden;
 }
@@ -9576,5 +9585,73 @@ html {
   .catering-page .catering-gallery-controls button {
     width: 44px;
     height: 44px;
+  }
+}
+
+/* Stack the catering hero at tablet widths so its image and copy use the full container. */
+@media (min-width: 621px) and (max-width: 900px) {
+  .menu-page .contact-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 34px;
+    min-height: 0;
+    padding: 52px 8% 64px;
+  }
+  .menu-page .contact-hero-card {
+    order: -1;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    transform: none;
+  }
+  .menu-page .contact-hero-card img {
+    width: 100%;
+    height: clamp(240px, 38vw, 330px);
+  }
+  .menu-page .contact-hero-copy {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+  .menu-page .contact-hero-copy > p:not(.eyebrow) {
+    max-width: none;
+  }
+}
+
+/* Keep the contact-page hero uncluttered on tablet and mobile. */
+@media (max-width: 900px) {
+  .contact-page .contact-hero-seal {
+    display: none;
+  }
+}
+
+/* Keep mobile catering location cards from letting image intrinsic height distort their content row. */
+@media (max-width: 767px) {
+  .catering-page .branch-choice-media {
+    min-height: 0;
+    height: 180px;
+  }
+  .catering-page .branch-choice-media img {
+    display: block;
+    min-height: 0;
+    height: 100%;
+  }
+  .catering-page .branch-choice > div {
+    min-width: 0;
+    padding: 14px 0;
+  }
+  .catering-page .branch-choice small {
+    line-height: 1.2;
+  }
+  .catering-page .branch-choice h3 {
+    margin: 4px 0;
+    line-height: 1.1;
+  }
+  .catering-page .branch-choice p {
+    line-height: 1.3;
+  }
+  .catering-page .branch-choices > .branch-choice {
+    column-gap: 24px;
   }
 }

@@ -107,7 +107,7 @@
         <a href="#" class="btn outline">App Store <?= icon('arrow') ?></a>
     </div>
 </section> -->
-<?php require __DIR__.'/components/reviews/testimonials.php'; ?>
+<?php $reviewLocation = 'baymeadows'; require __DIR__.'/components/reviews/testimonials.php'; ?>
 
 <section class="visit-section page-section" id="visit">
     <div class="visit-card" id="enquiry">

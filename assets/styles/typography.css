@@ -101,3 +101,18 @@ body :is(h1, h2, h3, h4, h5, h6) * {
 .dish-price {
   font: 27px / 1.2 var(--accent) !important;
 }
+
+/* Mobile interface copy uses the 16px readability minimum. */
+@media (max-width: 620px) {
+  :root {
+    --type-body: 16px;
+  }
+
+  .shared-testimonials blockquote {
+    font-size: 16px !important;
+  }
+
+  .dish-price {
+    font-size: 16px !important;
+  }
+}

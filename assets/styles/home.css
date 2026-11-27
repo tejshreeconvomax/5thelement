@@ -4567,7 +4567,7 @@ footer > * {
 }
 .home-page .celebration-content > p:not(.eyebrow) {
   width: 100%;
-  max-width: 360px;
+  max-width: 100%;
   margin: 0 auto 16px;
   font-size: var(--type-body);
   line-height: 1.7;
@@ -6419,4 +6419,142 @@ html.has-site-loader .site-loader {
 }
 @media (prefers-reduced-motion: reduce) {
   .site-loader__mandala { animation-duration: 12s; }
+}
+
+/* Homepage layout corrections from the responsive review. */
+.home-page #our-story {
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(28px, 3vw, 48px);
+  padding: clamp(64px, 6vw, 100px) clamp(24px, 8vw, 130px);
+}
+.home-page #our-story .story-art {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 2 / 1;
+  margin: 0;
+  transform: none;
+}
+.home-page #our-story .story-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none;
+}
+.home-page #our-story .story-copy {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .home-page .home-feast-hero {
+    padding-inline: clamp(18px, 4vw, 32px);
+  }
+  .home-page .home-feast-hero .hero-canvas,
+  .home-page .home-feast-hero .hero-copy,
+  .home-page .home-feast-hero .intro {
+    width: 100%;
+    max-width: none;
+  }
+  .home-page .home-feast-hero .hero-title-break,
+  .home-page .home-feast-hero .hero-star {
+    display: none;
+  }
+  .home-page .home-feast-hero h1 {
+    max-width: none;
+    text-wrap: balance;
+  }
+
+  .home-page .service-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px 24px;
+    padding: 24px 5%;
+  }
+  .home-page .service-strip a {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .home-page .experience-panel > div {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+    padding-top: 0;
+  }
+  .home-page .experience-panel h3 {
+    margin-bottom: 7px;
+    line-height: 1.12;
+  }
+  .home-page .experience-panel p {
+    max-width: none;
+    margin-bottom: 10px;
+    line-height: 1.45;
+  }
+
+  .home-page .locations > .section-heading {
+    min-height: 0;
+    margin-bottom: 30px;
+  }
+  .home-page .locations .restaurant-directory {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .home-page .locations .restaurant-visual {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+  .home-page .locations .restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 26px;
+  }
+  .home-page .locations .restaurant-list a {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "region" "name" "action";
+    align-content: center;
+    row-gap: 4px;
+    padding: 17px 0;
+  }
+  .home-page .locations .restaurant-list a:hover,
+  .home-page .locations .restaurant-list a:focus-visible {
+    padding-left: 0;
+  }
+  .home-page .locations .restaurant-list a > span:first-child { grid-area: region; }
+  .home-page .locations .restaurant-list h3 { grid-area: name; }
+  .home-page .locations .restaurant-action { grid-area: action; }
+
+  .home-page #our-story .story-art { aspect-ratio: 16 / 9; }
+}
+
+@media (min-width: 760px) and (max-width: 900px) {
+  .home-page .home-feast-hero h1 { white-space: nowrap; }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .home-page .home-feast-hero .spice-photo { display: none; }
+}
+
+@media (max-width: 600px) {
+  .home-page .service-strip {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding: 12px 6%;
+  }
+  .home-page .service-strip a {
+    padding: 11px 0;
+    border-bottom: 1px solid #c6a15b55;
+    line-height: 1.35;
+  }
+  .home-page .service-strip small { line-height: 1.35; }
+  .home-page .service-strip a:last-child { border-bottom: 0; }
+  .home-page .home-feast-hero .spice-photo { display: block; }
+  .home-page .locations .restaurant-list { grid-template-columns: minmax(0, 1fr); }
+  .home-page .locations .restaurant-visual { aspect-ratio: 4 / 3; }
+  .home-page .locations .restaurant-action { font-size: 16px !important; }
+  .home-page #our-story .story-art { aspect-ratio: 1 / 1; }
 }
