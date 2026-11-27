@@ -17,6 +17,10 @@ function previewCategory(button) {
 categoryButtons.forEach(button => {
  button.addEventListener('mouseenter', () => previewCategory(button));
  button.addEventListener('focus', () => previewCategory(button));
+ button.addEventListener('click', event => {
+  event.preventDefault();
+  previewCategory(button);
+ });
 });
 document.querySelectorAll('[data-restaurant-image]').forEach(link => {
  const preview = () => {

@@ -1,7 +1,9 @@
 <?php
+require_once __DIR__ . '/includes/functions.php';
 $title = 'Your Catering Cart';
 $description = 'Catering enquiry cart for 5th Element.';
 $pageClass = 'menu-page';
+$headerTarget = sample2_url('catering/jacksonville/') . '#enquiry';
 require __DIR__ . '/layouts/inner-page-head.php';
 ?>
 <section class="page-section">

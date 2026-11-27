@@ -15,7 +15,7 @@ $sampleBase = sample2_url();
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= asset_url('styles/typography.css?v=6') ?>">
 <link rel="stylesheet" href="<?= asset_url('styles/inner.css?v=35') ?>">
-    <link rel="stylesheet" href="<?= asset_url('styles/google-reviews.css?v=1') ?>">
+    <link rel="stylesheet" href="<?= asset_url('styles/google-reviews.css?v=2') ?>">
     <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 

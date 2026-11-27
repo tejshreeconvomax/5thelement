@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles/typography.css?v=6">
-  <link rel="stylesheet" href="/assets/styles/home.css?v=12">
-  <link rel="stylesheet" href="/assets/styles/google-reviews.css?v=1">
+  <link rel="stylesheet" href="/assets/styles/home.css?v=22">
+  <link rel="stylesheet" href="/assets/styles/google-reviews.css?v=2">
   <script>document.documentElement.classList.add('has-site-loader');</script>
 </head>
 
@@ -169,7 +169,7 @@
     <?php require __DIR__ . '/sections/home/restaurant-locations.php'; ?>
     <section class="takeout-banner" id="takeout" aria-label="Takeout">
       <div class="takeout-banner__content">
-        <p class="takeout-banner__eyebrow">Takeout</p>
+        <!-- <p class="takeout-banner__eyebrow">Takeout</p> -->
         <h2>Order Online &amp; Pick Up</h2>
         <p class="takeout-banner__copy">Enjoy your favorite Indian dishes<br>from the comfort of your home.</p>
         <ul class="takeout-banner__details" aria-label="Takeout options">
@@ -258,7 +258,7 @@
   <script src="/assets/scripts/site-loader.js?v=1" defer></script>
   <script src="/assets/scripts/carousel.js?v=4" defer></script>
   <script src="/assets/scripts/google-reviews.js?v=2" defer></script>
-  <script src="/assets/scripts/home.js?v=1" defer></script>
+  <script src="/assets/scripts/home.js?v=2" defer></script>
 </body>
 
 </html>

@@ -4941,6 +4941,140 @@ footer > * {
     display: none !important;
   }
 }
+
+/* Reframe the takeout invitation in the site's emerald, burgundy, and antique-gold language. */
+.home-page #takeout.takeout-banner {
+  min-height: clamp(500px, 48vw, 720px);
+  padding: clamp(52px, 6vw, 96px) clamp(24px, 8.8vw, 164px);
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 8% 10%, #7b3342 0, transparent 32%),
+    linear-gradient(120deg, var(--deep) 0%, var(--plum) 52%, #32101a 100%);
+  border-block: 2px solid var(--saffron);
+}
+.home-page #takeout.takeout-banner::before {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 260px;
+  height: 260px;
+  background: url('/assets/svg/royal-rosette.svg') center / contain no-repeat;
+  opacity: 0.13;
+  pointer-events: none;
+  content: "";
+}
+.home-page #takeout .takeout-banner__content {
+  z-index: 1;
+  min-height: 0;
+  padding: 28px 0;
+  color: var(--paper);
+}
+.home-page #takeout .takeout-banner__eyebrow {
+  color: #e7ce96;
+}
+.home-page #takeout h2 {
+  max-width: 12ch;
+  margin-top: clamp(24px, 2.8vw, 42px);
+  color: var(--paper);
+  font: 500 clamp(48px, 5.5vw, 82px) / 0.98 var(--accent);
+  letter-spacing: -0.025em;
+}
+.home-page #takeout .takeout-banner__copy {
+  max-width: 34ch;
+  margin-top: clamp(22px, 2.2vw, 36px);
+  color: #ead4a3;
+}
+.home-page #takeout .takeout-banner__details {
+  color: var(--paper);
+}
+.home-page #takeout .takeout-banner__details li + li {
+  border-left-color: #c6a15b99;
+}
+.home-page #takeout .takeout-banner__details svg {
+  background: #32101a66;
+  border-color: var(--saffron);
+}
+.home-page #takeout .takeout-banner__cta {
+  color: var(--deep);
+  background: linear-gradient(110deg, #bd9550, #e3cd99, #c6a15b);
+  border-color: #e6c778;
+  box-shadow: inset 0 0 0 2px #fff3c566, 0 12px 24px #12050a40;
+}
+.home-page #takeout .takeout-banner__cta:hover,
+.home-page #takeout .takeout-banner__cta:focus-visible {
+  color: var(--deep);
+  background: #f2d99e;
+}
+.home-page #takeout .takeout-banner__visual {
+  z-index: 1;
+  min-height: clamp(360px, 35vw, 540px);
+  padding-top: 0;
+  align-items: center;
+}
+.home-page #takeout .takeout-banner__frame {
+  min-height: 0;
+  height: 100%;
+  border: 2px solid var(--saffron);
+  border-radius: 28px 28px 120px 28px;
+  background: var(--deep);
+  -webkit-mask: none;
+  mask: none;
+  box-shadow: 12px 16px 0 #12050a55, inset 0 0 0 1px #e7ce9680;
+  filter: none;
+}
+.home-page #takeout .takeout-banner__frame::before {
+  z-index: 1;
+  background: linear-gradient(135deg, #7b19345c, #32101a7a);
+}
+.home-page #takeout .takeout-banner__frame::after {
+  position: absolute;
+  z-index: 2;
+  inset: 12px;
+  border: 1px solid #e7ce9675;
+  border-radius: 18px 18px 108px 18px;
+  pointer-events: none;
+  content: "";
+}
+.home-page #takeout .takeout-banner__food {
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+.home-page #takeout .takeout-banner__frame-art {
+  display: none;
+}
+@media (max-width: 900px) {
+  .home-page #takeout.takeout-banner {
+    padding: 58px clamp(24px, 8vw, 76px) 68px;
+  }
+  .home-page #takeout .takeout-banner__visual {
+    min-height: clamp(340px, 65vw, 520px);
+  }
+}
+@media (max-width: 560px) {
+  .home-page #takeout.takeout-banner {
+    padding: 48px 20px 54px;
+  }
+  .home-page #takeout .takeout-banner__content {
+    padding: 8px 0;
+  }
+  .home-page #takeout h2 {
+    max-width: 10ch;
+    margin-top: 24px;
+  }
+  .home-page #takeout .takeout-banner__visual {
+    min-height: 335px;
+  }
+  .home-page #takeout .takeout-banner__frame {
+    border-radius: 22px 22px 72px 22px;
+  }
+  .home-page #takeout .takeout-banner__frame::after {
+    inset: 8px;
+    border-radius: 14px 14px 60px 14px;
+  }
+}
+
 @media (min-width: 621px) and (max-width: 900px) {
   .home-page .journal .blog-track { gap: 24px; }
   .home-page .journal .blog-track > article {
@@ -6557,4 +6691,119 @@ html.has-site-loader .site-loader {
   .home-page .locations .restaurant-visual { aspect-ratio: 4 / 3; }
   .home-page .locations .restaurant-action { font-size: 16px !important; }
   .home-page #our-story .story-art { aspect-ratio: 1 / 1; }
+}
+
+/* Keep the homepage story section in a two-column composition on desktop only. */
+@media (min-width: 901px) {
+  .home-page #our-story {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(32px, 5vw, 80px);
+  }
+  .home-page #our-story .story-art {
+    height: clamp(390px, 37vw, 530px);
+    aspect-ratio: auto;
+  }
+}
+
+/* Refine Takeout to match the site's editorial burgundy-and-gold invitation style. */
+.home-page #takeout .takeout-banner__content {
+  max-width: 620px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.home-page #takeout .takeout-banner__eyebrow {
+  display: block;
+  width: min(100%, 540px);
+  padding-top: 0;
+  background: none;
+  text-align: center;
+}
+.home-page #takeout .takeout-banner__eyebrow::before,
+.home-page #takeout .takeout-banner__eyebrow::after {
+  display: none;
+}
+.home-page #takeout .takeout-banner__copy {
+  padding-left: 18px;
+  border-left: 2px solid var(--saffron);
+}
+.home-page #takeout .takeout-banner__details {
+  width: 100%;
+  padding-top: 24px;
+  border-top: 1px solid #c6a15b80;
+}
+.home-page #takeout .takeout-banner__details li {
+  min-width: 0;
+}
+.home-page #takeout .takeout-banner__details svg {
+  transition: transform 220ms ease, color 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+}
+.home-page #takeout .takeout-banner__details li:hover svg,
+.home-page #takeout .takeout-banner__details li:focus-within svg {
+  color: var(--plum);
+  background: #e7ce96;
+  box-shadow: 0 7px 0 #32101a66;
+  transform: translateY(-4px) rotate(-4deg) scale(1.04);
+}
+.home-page #takeout .takeout-banner__frame {
+  border: 2px solid #e7ce96;
+  border-radius: 24px;
+  -webkit-mask: none;
+  mask: none;
+  box-shadow: 12px 14px 0 #e7ce96, 0 18px 30px #12050a45;
+}
+.home-page #takeout .takeout-banner__frame::after {
+  display: none;
+}
+.home-page #takeout .takeout-banner__frame::before {
+  background: none;
+}
+.home-page #takeout .takeout-banner__food {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+.home-page #takeout .takeout-banner__frame-art {
+  display: none;
+}
+@media (max-width: 900px) {
+  .home-page #takeout .takeout-banner__content {
+    width: min(100%, 620px);
+    margin-inline: auto;
+  }
+}
+@media (max-width: 560px) {
+  .home-page #takeout .takeout-banner__content {
+    padding: 0;
+  }
+  .home-page #takeout .takeout-banner__eyebrow {
+    padding-top: 0;
+  }
+  .home-page #takeout .takeout-banner__copy {
+    padding-left: 14px;
+  }
+  .home-page #takeout .takeout-banner__details {
+    padding-top: 20px;
+  }
+  .home-page #takeout .takeout-banner__frame {
+    border-radius: 20px;
+    box-shadow: 8px 10px 0 #e7ce96, 0 14px 24px #12050a45;
+  }
+}
+
+/* Keep the tablet Takeout composition at the full width available inside the section. */
+@media (min-width: 561px) and (max-width: 900px) {
+  .home-page #takeout .takeout-banner__content,
+  .home-page #takeout .takeout-banner__visual {
+    width: 100%;
+    max-width: none;
+  }
+  .home-page #takeout .takeout-banner__eyebrow,
+  .home-page #takeout .takeout-banner__details {
+    width: 100%;
+    max-width: none;
+  }
 }

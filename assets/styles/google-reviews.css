@@ -51,6 +51,7 @@
 }
 
 .shared-testimonials .review-disclosure {
+  display: none !important;
   position: relative;
   z-index: 1;
   margin: 12px 0 0;
